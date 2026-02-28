@@ -82,9 +82,36 @@ ALL_FIELDS = ",".join([
 ])
 
 
+# Grid size — number of rows and columns to split the bbox into.
+# 3×3 = 9 zones × 20 keywords = 180 calls per run.
+GRID = 3
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
+
+def split_bbox(sw: str, ne: str, rows: int = GRID, cols: int = GRID) -> list:
+    """
+    Split a bounding box into rows×cols sub-boxes.
+    Returns list of (sw_str, ne_str) tuples.
+    """
+    s, w = map(float, sw.split(","))
+    n, e = map(float, ne.split(","))
+    lat_step = (n - s) / rows
+    lon_step = (e - w) / cols
+    zones = []
+    for r in range(rows):
+        for c in range(cols):
+            zone_s = s + r * lat_step
+            zone_n = s + (r + 1) * lat_step
+            zone_w = w + c * lon_step
+            zone_e = w + (c + 1) * lon_step
+            zones.append(
+                (f"{zone_s:.6f},{zone_w:.6f}", f"{zone_n:.6f},{zone_e:.6f}")
+            )
+    return zones
 
 def make_headers() -> dict:
     return {
@@ -146,22 +173,28 @@ def main():
     if not FSQ_API_KEY:
         sys.exit("ERROR: FSQ_API_KEY not set. Add it to backend/.env")
 
+    zones = split_bbox(args.sw, args.ne)
+    total_calls = len(zones) * len(SEARCH_QUERIES)
     print(f"Bounding box  SW={args.sw}  NE={args.ne}")
+    print(f"Grid          {GRID}×{GRID} = {len(zones)} zones × {len(SEARCH_QUERIES)} queries = {total_calls} API calls")
     print(f"Output file   → {args.output}")
 
     all_places: list = []
     seen_ids: set = set()
 
-    for q in SEARCH_QUERIES:
-        places = fetch_query(q, args.sw, args.ne)
-        added = 0
-        for p in places:
-            pid = p.get("fsq_place_id")
-            if pid and pid not in seen_ids:
-                seen_ids.add(pid)
-                all_places.append(p)
-                added += 1
-        print(f"  → {added} unique new places for '{q}'. Running total: {len(all_places)}")
+    for z_idx, (z_sw, z_ne) in enumerate(zones, 1):
+        print(f"\n── Zone {z_idx}/{len(zones)}  SW={z_sw}  NE={z_ne}")
+        for q in SEARCH_QUERIES:
+            places = fetch_query(q, z_sw, z_ne)
+            added = 0
+            for p in places:
+                pid = p.get("fsq_place_id")
+                if pid and pid not in seen_ids:
+                    seen_ids.add(pid)
+                    all_places.append(p)
+                    added += 1
+            print(f"  → {added} unique new places for '{q}'. Running total: {len(all_places)}")
+            time.sleep(0.5)  # gentle pacing between requests
 
     output_path = Path(args.output)
     if not output_path.is_absolute():
