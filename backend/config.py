@@ -24,10 +24,14 @@ MADISON_BOUNDS = {
 #   weather     : how "nice" the weather is at the entity's location right now
 #   urgency     : for events — how close the event is to ending
 WEIGHTS = {
-    "correlation": 0.45,
-    "popularity":  0.25,
-    "weather":     0.15,
-    "urgency":     0.15,
+    # "correlation": 0.45,
+    # "popularity":  0.25,
+    # "weather":     0.15,
+    # "urgency":     0.15,
+    "correlation": 1,
+    "popularity":  0,
+    "weather":     0,
+    "urgency":     0,
 }
 
 # -----------------------------------------------------------------------------
