@@ -20,7 +20,8 @@
 #     "lon":          -89.39,                          required  (float)
 #     "address":      "123 Main St, Madison, WI",      required
 #     "description":  "rich keyword text ...",         required (drives similarity)
-#     "categories":   "tag1,tag2,tag3",                required (comma-separated)
+#     "categories":   "tag1,tag2,tag3",                required (comma-separated string
+#                                                        OR a JSON array of strings)
 #     "rating":       4.5,                            nullable  (null for events)
 #     "review_count": 312,                            nullable  (null for events)
 #     "price_tier":   2,                              nullable  (1-4, null if unknown)
@@ -90,9 +91,17 @@ def _parse_datetime(value: Optional[str]) -> Optional[datetime]:
 
     try:
         dt = datetime.fromisoformat(iso_str)
+        # fromisoformat("2026-02-18") returns a date, not a datetime
+        if not isinstance(dt, datetime):
+            dt = datetime(dt.year, dt.month, dt.day, tzinfo=timezone.utc)
     except ValueError:
-        # Fallback: try the most common bare format
-        dt = datetime.strptime(value.strip(), "%Y-%m-%dT%H:%M:%S")
+        try:
+            # Fallback 1: bare datetime without timezone
+            dt = datetime.strptime(value.strip(), "%Y-%m-%dT%H:%M:%S")
+        except ValueError:
+            # Fallback 2: date-only string "YYYY-MM-DD"
+            d = datetime.strptime(value.strip(), "%Y-%m-%d")
+            dt = datetime(d.year, d.month, d.day, tzinfo=timezone.utc)
 
     # If still naive (no tzinfo), assume UTC
     if dt.tzinfo is None:
@@ -115,19 +124,43 @@ def _load_json_file(filepath: str) -> List[Dict[str, Any]]:
         return json.load(f)
 
 
+def _categories_to_str(value: Any) -> str:
+    """
+    Normalise the categories field to a comma-separated string.
+
+    Accepts both the legacy string format ("tag1,tag2") used in the demo
+    data and the real Foursquare array format (["Tag One", "Tag Two"]).
+    """
+    if isinstance(value, list):
+        return ", ".join(str(v) for v in value)
+    return str(value) if value is not None else ""
+
+
 def _row_to_entity(row: Dict[str, Any]) -> EntityRaw:
     """
     Convert one JSON row (dict) into an EntityRaw dataclass instance.
 
-    Only the fields in the schema comment above are needed in the JSON.
-    entity_id, created_at, and updated_at are auto-generated here so
-    callers do not have to include them.
+    entity_id is read from the JSON when present (real Foursquare data
+    ships numeric-string IDs); falls back to an auto-generated UUID when
+    the field is absent.  created_at / updated_at likewise use the JSON
+    value when available, otherwise default to now.
+
+    categories accepts both a comma-separated string and a JSON array;
+    arrays are joined into a comma-separated string automatically.
     """
+    # entity_id: use value from JSON if present, else auto-generate
+    entity_id = str(row["entity_id"]) if row.get("entity_id") is not None else EntityRaw.make_id()
+
+    # timestamps: parse date-only strings ("2025-12-30") or full ISO 8601
+    raw_created = row.get("created_at")
+    raw_updated = row.get("updated_at")
+    created_at = _parse_datetime(raw_created) if raw_created else datetime.now(timezone.utc)
+    updated_at = _parse_datetime(raw_updated) if raw_updated else datetime.now(timezone.utc)
+
     return EntityRaw(
-        # Auto-generated fields -- NOT required in the JSON
-        entity_id   = EntityRaw.make_id(),
-        created_at  = datetime.now(timezone.utc),
-        updated_at  = datetime.now(timezone.utc),
+        entity_id   = entity_id,
+        created_at  = created_at,
+        updated_at  = updated_at,
 
         # Required string / numeric fields
         entity_type  = row["entity_type"],
@@ -139,8 +172,8 @@ def _row_to_entity(row: Dict[str, Any]) -> EntityRaw:
         address      = row["address"],
         description  = row["description"],
 
-        # categories is optional; defaults to empty string if omitted
-        categories   = row.get("categories", ""),
+        # categories: accept array (real data) or comma-string (demo data)
+        categories   = _categories_to_str(row.get("categories")),
 
         # Nullable fields -- .get() returns None when the key is absent
         rating       = row.get("rating"),
@@ -150,6 +183,10 @@ def _row_to_entity(row: Dict[str, Any]) -> EntityRaw:
         # Datetime fields (ISO 8601 strings in JSON; None for places)
         event_start  = _parse_datetime(row.get("event_start")),
         event_end    = _parse_datetime(row.get("event_end")),
+
+        # Venue hours — "HH:MM" strings; None when absent or unknown
+        open  = row.get("open")  or None,
+        close = row.get("close") or None,
     )
 
 

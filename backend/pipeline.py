@@ -108,7 +108,8 @@ def build_enriched_entities() -> List[EntityEnriched]:
 
         # -- Compute urgency_score (time-sensitive) --
         fields["urgency_score"] = urgency_score(
-            raw.event_start, raw.event_end
+            raw.event_start, raw.event_end,
+            raw.open, raw.close,
         )
 
         # -- is_active_event: True if the event is currently happening --

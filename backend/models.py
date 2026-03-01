@@ -56,6 +56,10 @@ class EntityRaw:
     event_start:  Optional[datetime]
     event_end:    Optional[datetime]
 
+    # ---- venue hours (optional; places from Foursquare have these) --------
+    open:         Optional[str] = None   # "HH:MM" local open time,  e.g. "09:00"
+    close:        Optional[str] = None   # "HH:MM" local close time, e.g. "23:00"
+
     # ---- metadata --------------------------------------------------------
     created_at:   datetime = field(default_factory=datetime.utcnow)
     updated_at:   datetime = field(default_factory=datetime.utcnow)
