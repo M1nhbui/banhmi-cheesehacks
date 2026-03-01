@@ -8,9 +8,16 @@ export type MapPlace = {
     type: "place" | "event"
     lon: number
     lat: number
-    score: number
+    address: string
     description: string
-}
+    score: number
+    breakdown: {
+      similarity: number
+      popularity: number
+      weather: number
+      urgency: number
+    }
+  }
 
 export function useSearchResults(mock = false) {
     const [places, setPlaces] = useState<MapPlace[]>([])
@@ -38,15 +45,17 @@ export function useSearchResults(mock = false) {
 
                 setMeta(json.meta)
 
-                const mapped: MapPlace[] = json.rows.map((r: ResultRow, i) => ({
+                const mapped: MapPlace[] = json.rows.map((r, i) => ({
                     id: `${r.type}-${i}`,
                     name: r.name,
                     type: r.type,
                     lon: r.lon,
                     lat: r.lat,
-                    score: r.score,
+                    address: r.address,
                     description: r.description,
-                }))
+                    score: r.score,
+                    breakdown: r.breakdown,
+                  }))
 
                 setPlaces(mapped)
             } catch (e: any) {
