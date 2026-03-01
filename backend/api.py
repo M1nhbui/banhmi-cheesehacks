@@ -136,8 +136,8 @@ def score(request: ScoreRequest) -> ScoreResponse:
         # Compute combined final score
         f_score = final_score(
             corr=corr,
-            pop=entity.popularity_score,
-            weather=entity.weather_score,
+            hotness=entity.hotness_score,
+            crowd=entity.crowd_score,
             urgency=urg,
         )
 
@@ -152,8 +152,8 @@ def score(request: ScoreRequest) -> ScoreResponse:
             score=f_score,
             breakdown=ScoreBreakdown(
                 similarity=corr,
-                popularity=entity.popularity_score,
-                weather=entity.weather_score,
+                hotness=entity.hotness_score,
+                crowd=entity.crowd_score,
                 urgency=urg,
             ),
         )

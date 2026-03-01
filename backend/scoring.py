@@ -75,7 +75,52 @@ def popularity_score(rating: float | None, review_count: int | None) -> float:
 
 
 # =============================================================================
-# 2. Weather score
+# 1b. Hotness score  (BestTime venue_hotness_final)
+# =============================================================================
+
+def hotness_score(hotness_val: Optional[float]) -> float:
+    """
+    Pass-through for the BestTime venue_hotness_final score.
+
+    The value is already normalised to [0, 1] by compute_hotness_v1.py.
+    Returns 0.0 when data is unavailable (closed / not yet crawled).
+
+    Args:
+        hotness_val : BestTime venue_hotness_final in [0, 1], or None
+
+    Returns:
+        float in [0, 1]
+    """
+    if hotness_val is None:
+        return 0.0
+    return round(float(max(0.0, min(hotness_val, 1.0))), 4)
+
+
+# =============================================================================
+# 1c. Crowd score  (BestTime current_busyness / 100)
+# =============================================================================
+
+def crowd_score(crowd_val: Optional[float]) -> float:
+    """
+    Pass-through for the BestTime crowd signal.
+
+    crowd_val should be current_busyness / 100 (i.e. the fullness_score
+    from compute_hotness_v1.py), already in [0, 1].
+    Returns 0.0 when data is unavailable.
+
+    Args:
+        crowd_val : BestTime fullness_score in [0, 1], or None
+
+    Returns:
+        float in [0, 1]
+    """
+    if crowd_val is None:
+        return 0.0
+    return round(float(max(0.0, min(crowd_val, 1.0))), 4)
+
+
+# =============================================================================
+# 2. Weather score  (kept for reference; no longer used in final_score)
 # =============================================================================
 
 def weather_score(temp_f: float, precip_prob: float, wind_mph: float) -> float:
@@ -129,8 +174,25 @@ def weather_score(temp_f: float, precip_prob: float, wind_mph: float) -> float:
 # =============================================================================
 
 # ---------------------------------------------------------------------------
-# 3a. Core math primitives
+# 3b. Simulated-clock helper
 # ---------------------------------------------------------------------------
+
+def _get_now() -> datetime:
+    """
+    Return the "current" datetime used for all urgency calculations.
+
+    When config.SIMULATED_MADISON_HOUR is set (int 0-23), the hour is
+    overridden to that value so urgency scores reflect a chosen time of day
+    rather than the real clock.  Useful for demos where the real time is
+    late at night and most venues would otherwise score 0.
+
+    Set SIMULATED_MADISON_HOUR = None in config.py to use the real clock.
+    """
+    now = datetime.now(timezone.utc)
+    h = config.SIMULATED_MADISON_HOUR
+    if h is not None:
+        return now.replace(hour=int(h) % 24, minute=0, second=0, microsecond=0)
+    return now
 
 def _exp_decay(remaining_seconds: float, tau_seconds: float) -> float:
     """Exponential decay: 1.0 when remaining→0, decays toward 0 as time grows."""
@@ -140,7 +202,7 @@ def _exp_decay(remaining_seconds: float, tau_seconds: float) -> float:
 
 
 # ---------------------------------------------------------------------------
-# 3b. Event urgency  (pre-start build-up + live wind-down)
+# 3c. Event urgency  (pre-start build-up + live wind-down)
 # ---------------------------------------------------------------------------
 
 def _compute_urgency_event(
@@ -178,7 +240,7 @@ def _compute_urgency_event(
 
 
 # ---------------------------------------------------------------------------
-# 3c. Venue urgency  (closing-time pressure)
+# 3d. Venue urgency  (closing-time pressure)
 # ---------------------------------------------------------------------------
 
 def _hhmm_to_dt(hhmm: str, reference: datetime) -> datetime:
@@ -220,7 +282,7 @@ def _compute_urgency_venue(
 
 
 # ---------------------------------------------------------------------------
-# 3d. Public dispatcher — called by pipeline.py and the API
+# 3e. Public dispatcher — called by pipeline.py and the API
 # ---------------------------------------------------------------------------
 
 def urgency_score(
@@ -248,7 +310,7 @@ def urgency_score(
     Returns:
         float in [0, 1]
     """
-    now = datetime.now(timezone.utc)
+    now = _get_now()
 
     # ---- Events --------------------------------------------------------
     if event_start is not None and event_end is not None:
@@ -341,9 +403,9 @@ def correlation_scores(
 # =============================================================================
 
 def final_score(
-    corr: float,
-    pop:  float,
-    weather: float,
+    corr:    float,
+    hotness: float,
+    crowd:   float,
     urgency: float,
 ) -> float:
     """
@@ -353,8 +415,8 @@ def final_score(
 
     Args:
         corr    : keyword ↔ description similarity in [0, 1]
-        pop     : popularity score in [0, 1]
-        weather : weather niceness score in [0, 1]
+        hotness : BestTime venue_hotness_final in [0, 1]
+        crowd   : BestTime current_busyness / 100 in [0, 1]
         urgency : urgency score in [0, 1]
 
     Returns:
@@ -363,8 +425,8 @@ def final_score(
     w = config.WEIGHTS
     score = (
         w["correlation"] * corr
-        + w["popularity"]  * pop
-        + w["weather"]     * weather
+        + w["hotness"]     * hotness
+        + w["crowd"]       * crowd
         + w["urgency"]     * urgency
     )
     # Clamp to [0, 1] to absorb any floating-point drift

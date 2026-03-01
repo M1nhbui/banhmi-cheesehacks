@@ -60,6 +60,10 @@ class EntityRaw:
     open:         Optional[str] = None   # "HH:MM" local open time,  e.g. "09:00"
     close:        Optional[str] = None   # "HH:MM" local close time, e.g. "23:00"
 
+    # ---- BestTime hotness / crowd signals (optional; None = data not available) ----
+    hotness:      Optional[float] = None  # BestTime venue_hotness_final  0..1
+    crowd:        Optional[float] = None  # BestTime current_busyness / 100  0..1
+
     # ---- metadata --------------------------------------------------------
     created_at:   datetime = field(default_factory=datetime.utcnow)
     updated_at:   datetime = field(default_factory=datetime.utcnow)
@@ -89,8 +93,8 @@ class EntityEnriched(EntityRaw):
 
     # ---- pre-computed score components -----------------------------------
     # These are computed by pipeline.py so the API doesn't redo them per request.
-    popularity_score: float = 0.5   # 0..1 (rating + review count combined)
-    weather_score:    float = 0.5   # 0..1 (how nice the weather is)
+    hotness_score:    float = 0.0   # 0..1 (BestTime venue_hotness_final)
+    crowd_score:      float = 0.0   # 0..1 (BestTime current_busyness / 100)
     urgency_score:    float = 0.0   # 0..1 (events: closeness to ending)
     is_active_event:  bool  = False  # True if event is currently happening
 
@@ -117,8 +121,8 @@ class ScoreBreakdown(BaseModel):
     Returned per row so the frontend can show a tooltip or debug panel.
     """
     similarity:  float   # keyword ↔ description cosine similarity
-    popularity:  float   # normalised rating + review count
-    weather:     float   # weather niceness
+    hotness:     float   # BestTime venue_hotness_final (0..1)
+    crowd:       float   # BestTime current_busyness / 100 (0..1)
     urgency:     float   # event urgency (0 for places)
 
 
