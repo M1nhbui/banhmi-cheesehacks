@@ -1,0 +1,29 @@
+{
+  "date": "2026-02-28",
+  "hours": [
+    { "hour": "00:00", "weather": "CLEAR" },
+    { "hour": "01:00", "weather": "CLOUDY" },
+    { "hour": "02:00", "weather": "FOG" },
+    { "hour": "03:00", "weather": "WINDY" },
+    { "hour": "04:00", "weather": "RAIN_LIGHT" },
+    { "hour": "05:00", "weather": "RAIN_HEAVY" },
+    { "hour": "06:00", "weather": "SNOW_LIGHT" },
+    { "hour": "07:00", "weather": "SNOW_HEAVY" },
+    { "hour": "08:00", "weather": "THUNDER" },
+    { "hour": "09:00", "weather": "COLD" },
+    { "hour": "10:00", "weather": "HOT" },
+    { "hour": "11:00", "weather": "CLEAR" },
+    { "hour": "12:00", "weather": "CLOUDY" },
+    { "hour": "13:00", "weather": "FOG" },
+    { "hour": "14:00", "weather": "WINDY" },
+    { "hour": "15:00", "weather": "RAIN_LIGHT" },
+    { "hour": "16:00", "weather": "RAIN_HEAVY" },
+    { "hour": "17:00", "weather": "SNOW_LIGHT" },
+    { "hour": "18:00", "weather": "SNOW_HEAVY" },
+    { "hour": "19:00", "weather": "THUNDER" },
+    { "hour": "20:00", "weather": "COLD" },
+    { "hour": "21:00", "weather": "HOT" },
+    { "hour": "22:00", "weather": "CLOUDY" },
+    { "hour": "23:00", "weather": "CLEAR" }
+  ]
+}
