@@ -51,7 +51,6 @@ export default function MapView() {
     initialMode: mode,           // or "relevant" fixed
     initialKeywords: emojis,      // likely []
     initialQuery: query,          // likely ""
-    mock: true
   })
 
 
