@@ -20,6 +20,9 @@ import { add3dBuildingsLayer } from "./mapbox-3d-buildings"
 import type { ResultRow } from "@/types/result"
 import { useSavedResults, stableId } from "@/hooks/useSavedResults"
 import { useDetailStack } from "@/hooks/useDetailStack"
+import { placeFillColor } from "@/lib/viz/color"
+
+import { eventCoreColor, eventCoreRadiusMeters, eventHaloColor, eventHaloRadiusMeters } from "@/lib/viz/event-style"
 
 type HoverInfo = PickingInfo<any> | null
 
@@ -67,7 +70,7 @@ export default function MapView() {
     setEmojis((prev) => (prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]))
   }
 
-  function refresh() {}
+  function refresh() { }
 
   const layers = useMemo(() => {
     const placeData = (places ?? []).filter((p: any) => p.type === "place")
@@ -80,17 +83,14 @@ export default function MapView() {
         pickable: true,
         autoHighlight: true,
 
-        diskResolution: 20,
-        radius: 3,
+        diskResolution: 5,
+        radius: 5,
         extruded: true,
-        elevationScale: 1.5,
+        elevationScale: 4,
 
         getPosition: (d: any) => [d.lon ?? d.lng, d.lat],
         getElevation: (d: any) => clamp01(d.score) * 80,
-        getFillColor: (d: any) => {
-          const t = clamp01(d.score)
-          return [255 * t, 120, 255 * (1 - t), 190]
-        },
+        getFillColor: (d: any) => placeFillColor(d.score),
 
         onHover: (info: any) => setHover(info.object ? info : null),
         onClick: (info: PickingInfo<any>) => {
@@ -99,78 +99,101 @@ export default function MapView() {
         },
       }),
 
+      // EVENTS: halo (behind)
       new ScatterplotLayer({
-        id: "event-dots",
+        id: "event-halo",
         data: eventData,
+
+        // important: don't steal clicks/hover
+        pickable: false,
+        autoHighlight: false,
+
+        radiusUnits: "meters",
+        getRadius: (d: any) => eventHaloRadiusMeters(d.score),
+        getPosition: (d: any) => [d.lon ?? d.lng, d.lat],
+        getFillColor: (d: any) => eventHaloColor(d.score),
+
+        // depth test off helps halo show over columns
+        parameters: { depthTest: false },
+      }),
+
+      // EVENTS: core (clickable beacon)
+      new ScatterplotLayer({
+        id: "event-core",
+        data: eventData,
+
         pickable: true,
         autoHighlight: true,
 
         radiusUnits: "meters",
-        getRadius: 25,
+        getRadius: (d: any) => eventCoreRadiusMeters(d.score),
         getPosition: (d: any) => [d.lon ?? d.lng, d.lat],
-        getFillColor: () => [255, 0, 0, 220],
+        getFillColor: (d: any) => eventCoreColor(d.score),
+
+        // makes them win visually against tall columns
+        parameters: { depthTest: false },
 
         onHover: (info: any) => setHover(info.object ? info : null),
         onClick: (info: PickingInfo<any>) => {
-          openDetailFromMap(info)
-          setHover(null)
-        },
+        openDetailFromMap(info)
+        setHover(null)
+      },
       }),
     ]
-  }, [places, openDetailFromMap])
+}, [places, openDetailFromMap])
 
-  return (
-    <div className="relative h-full w-full">
-      <DeckGL
-        initialViewState={INITIAL_VIEW}
-        controller
-        layers={layers}
-        onClick={(info) => {
-          if (!info?.object) setSelected(null)
-        }}
-      >
-        <LoadingPill show={!!loading} />
+return (
+  <div className="relative h-full w-full">
+    <DeckGL
+      initialViewState={INITIAL_VIEW}
+      controller
+      layers={layers}
+      onClick={(info) => {
+        if (!info?.object) setSelected(null)
+      }}
+    >
+      <LoadingPill show={!!loading} />
 
-        <Map
-          mapboxAccessToken={token}
-          mapStyle={MAP_STYLE}
-          onLoad={(e) => add3dBuildingsLayer(e.target)}
-        />
-      </DeckGL>
-
-      <MapSidebar
-        mode={mode}
-        onModeChange={setMode}
-        onRefresh={refresh}
-        loading={loading}
-        emojiKeys={emojis}
-        onEmojiToggle={toggleEmojis}
-        query={query}
-        onQueryChange={setQuery}
+      <Map
+        mapboxAccessToken={token}
+        mapStyle={MAP_STYLE}
+        onLoad={(e) => add3dBuildingsLayer(e.target)}
       />
+    </DeckGL>
 
-      {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
+    <MapSidebar
+      mode={mode}
+      onModeChange={setMode}
+      onRefresh={refresh}
+      loading={loading}
+      emojiKeys={emojis}
+      onEmojiToggle={toggleEmojis}
+      query={query}
+      onQueryChange={setQuery}
+    />
 
-      {selected && (
-        <DetailCard
-          row={selected as ResultRow}
-          onClose={closeDetail}
-          onToggleSaved={() => toggleSaved(selected as ResultRow)}
-          isSaved={isSaved(selected as ResultRow)}
-          onBack={detailFromSaved ? backToSavedList : undefined}
-        />
-      )}
+    {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
 
-      <SavedToggleButton count={savedCount} open={savedOpen} onToggle={toggleSavedPanel} />
+    {selected && (
+      <DetailCard
+        row={selected as ResultRow}
+        onClose={closeDetail}
+        onToggleSaved={() => toggleSaved(selected as ResultRow)}
+        isSaved={isSaved(selected as ResultRow)}
+        onBack={detailFromSaved ? backToSavedList : undefined}
+      />
+    )}
 
-      {savedOpen && (
-        <SavedPanel
-          saved={savedRows}
-          onClose={toggleSavedPanel}
-          onSelect={selectFromSavedList}
-          onRemove={removeSaved}
-        />
-      )}
-    </div>
-  )
+    <SavedToggleButton count={savedCount} open={savedOpen} onToggle={toggleSavedPanel} />
+
+    {savedOpen && (
+      <SavedPanel
+        saved={savedRows}
+        onClose={toggleSavedPanel}
+        onSelect={selectFromSavedList}
+        onRemove={removeSaved}
+      />
+    )}
+  </div>
+)
 }
