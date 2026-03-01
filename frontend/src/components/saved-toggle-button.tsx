@@ -15,14 +15,17 @@ export function SavedToggleButton({
       <Button
         type="button"
         variant={open ? "default" : "secondary"}
-        className="shadow-lg"
+        className="relative h-12 w-12 rounded-full shadow-lg p-0 cursor-pointer"
         onClick={onToggle}
       >
-        <Bookmark className="h-4 w-4 mr-2" />
-        Saved
-        <span className="ml-2 rounded-md bg-background/30 px-2 py-0.5 text-xs tabular-nums">
-          {count}
-        </span>
+        <Bookmark className="h-5 w-5" />
+
+        {/* count badge */}
+        {count > 0 && (
+          <span className="absolute -top-1 -right-1 min-w-[20px] h-[20px] px-1 flex items-center justify-center rounded-full bg-primary text-primary-foreground text-[11px] font-semibold leading-none tabular-nums">
+            {count}
+          </span>
+        )}
       </Button>
     </div>
   )

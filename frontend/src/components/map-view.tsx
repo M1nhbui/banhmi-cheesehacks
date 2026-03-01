@@ -22,6 +22,8 @@ import { useSavedResults, stableId } from "@/hooks/useSavedResults"
 import { useDetailStack } from "@/hooks/useDetailStack"
 import { placeFillColor } from "@/lib/viz/color"
 
+import { MapLegend } from "./map-legend"
+
 import { eventCoreColor, eventCoreRadiusMeters, eventHaloColor, eventHaloRadiusMeters } from "@/lib/viz/event-style"
 
 type HoverInfo = PickingInfo<any> | null
@@ -31,9 +33,9 @@ const MAP_STYLE = "mapbox://styles/mapbox/dark-v11"
 const INITIAL_VIEW = {
   longitude: -89.4012,
   latitude: 43.0731,
-  zoom: 13,
-  pitch: 45,
-  bearing: 0,
+  zoom: 15,
+  pitch: 55,
+  bearing: 40,
 }
 
 function clamp01(n: number) {
@@ -51,7 +53,6 @@ export default function MapView() {
     initialMode: mode,           // or "relevant" fixed
     initialKeywords: emojis,      // likely []
     initialQuery: query,          // likely ""
-    mock: true
   })
 
 
@@ -81,7 +82,6 @@ export default function MapView() {
     // keywords should be the emoji values (your “statements”)
     // If you want query to influence matching too, include it:
     // const keywords = query.trim() ? [query.trim(), ...emojis] : emojis
-
     await refreshScores({
       mode,
       keywords: emojis,
@@ -163,8 +163,11 @@ export default function MapView() {
     <div className="relative h-full w-full">
       <DeckGL
         initialViewState={INITIAL_VIEW}
-        controller
+        controller={{ maxZoom: 16, minZoom: 14 }}
         layers={layers}
+        getCursor={({ isDragging, isHovering }) =>
+          isDragging ? "grabbing" : isHovering ? "pointer" : "grab"
+        }
         onClick={(info) => {
           if (!info?.object) setSelected(null)
         }}
@@ -188,6 +191,7 @@ export default function MapView() {
         query={query}
         onQueryChange={setQuery}
       />
+      <MapLegend></MapLegend>
 
       {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
 
