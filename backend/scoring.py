@@ -434,8 +434,102 @@ def final_score(
 
 
 # =============================================================================
-# 5b. Mode-aware score  (POST /score?mode=...)
+# 5b. Mode-aware scoring  (POST /score?mode=...)
 # =============================================================================
+
+def tri(x: float, center: float, width: float) -> float:
+    """Triangular membership function — peaks at 1.0 at `center`, drops to 0 at ±`width`."""
+    return max(0.0, 1.0 - abs(x - center) / width)
+
+
+def mode_scores(
+    rel:      float,
+    hot:      float,
+    crowd:    float,
+    urg:      float,
+    open_now: int = 1,
+) -> dict:
+    """
+    Compute all four mode scores at once.
+
+    Returns a dict with keys: best_match, hot_right_now, hidden_gems, chill.
+    All values are in [0, 1], or -1.0 when the venue is closed (open_now=0).
+
+    Args:
+        rel      : keyword ↔ description similarity [0, 1]
+        hot      : BestTime venue_hotness_final [0, 1]
+        crowd    : BestTime current_busyness / 100 [0, 1]
+        urg      : urgency score [0, 1]
+        open_now : 1 if venue is open, 0 if closed (hard gate)
+    """
+    if not open_now:
+        return {
+            "best_match":    -1.0,
+            "hot_right_now": -1.0,
+            "hidden_gems":   -1.0,
+            "chill":         -1.0,
+        }
+
+    # Clamp inputs
+    rel   = max(0.0, min(1.0, rel))
+    hot   = max(0.0, min(1.0, hot))
+    crowd = max(0.0, min(1.0, crowd))
+    urg   = max(0.0, min(1.0, urg))
+
+    # Derived helper scores
+    mid_hot      = tri(hot,   center=0.50, width=0.25)   # peaks at moderate hotness
+    calm_hot     = tri(hot,   center=0.30, width=0.25)   # peaks at low-ish hotness
+    gentle_crowd = tri(crowd, center=0.28, width=0.22)   # peaks at comfortable crowd
+    low_crowd    = 1.0 - crowd
+    low_urg      = 1.0 - urg
+
+    # 1) Best Match
+    s_best = (
+        0.62 * rel
+        + 0.20 * hot
+        + 0.08 * crowd
+        + 0.10 * urg
+    )
+
+    # 2) Hot Right Now
+    s_hot = (
+        0.18 * rel
+        + 0.68 * hot
+        + 0.10 * crowd
+        + 0.04 * urg
+    )
+
+    # 3) Hidden Gems
+    s_hidden = (
+        0.55 * rel
+        + 0.20 * mid_hot
+        + 0.18 * gentle_crowd
+        + 0.07 * low_urg
+    )
+    if crowd > 0.75:
+        s_hidden *= 0.75
+    if hot > 0.85:
+        s_hidden *= 0.85
+
+    # 4) Chill / Not Crowded
+    s_chill = (
+        0.52 * rel
+        + 0.26 * low_crowd
+        + 0.12 * low_urg
+        + 0.10 * calm_hot
+    )
+    if crowd > 0.65:
+        s_chill *= 0.60
+    if urg > 0.80:
+        s_chill *= 0.70
+
+    return {
+        "best_match":    round(s_best,   6),
+        "hot_right_now": round(s_hot,    6),
+        "hidden_gems":   round(s_hidden, 6),
+        "chill":         round(s_chill,  6),
+    }
+
 
 def modal_score(
     corr:    float,
@@ -443,65 +537,24 @@ def modal_score(
     crowd:   float,
     urgency: float,
     mode,                 # ScoreMode — imported locally to avoid circular refs
+    open_now: int = 1,
 ) -> float:
     """
-    Compute a final score using the weight scheme for the requested mode.
-
-    Modes
-    -----
-    relevant    : keyword relevance is dominant (default)
-    hottest     : BestTime hotness drives ranking
-    hidden_gems : relevance-first; soft penalties for overcrowded/mainstream venues
-    chill       : relevance + low crowd + low urgency; soft penalties for busy venues
-
-    All inputs and output are in [0, 1].
+    Return the single score for the requested mode by delegating to mode_scores().
+    Returns -1.0 (venue closed) or a value in [0, 1].
     """
     from models import ScoreMode  # local import to avoid circular dependency
 
-    if mode == ScoreMode.relevant:
-        s = (
-            0.62 * corr
-            + 0.20 * hotness
-            + 0.08 * crowd
-            + 0.10 * urgency
-        )
+    scores = mode_scores(corr, hotness, crowd, urgency, open_now=open_now)
 
-    elif mode == ScoreMode.hottest:
-        s = (
-            0.18 * corr
-            + 0.68 * hotness
-            + 0.10 * crowd
-            + 0.04 * urgency
-        )
-
-    elif mode == ScoreMode.hidden_gems:
-        s = (
-            0.55 * corr
-            + 0.20 * hotness
-            + 0.18 * crowd
-            + 0.07 * urgency
-        )
-        # Soft penalties: avoid mainstream / too-busy venues
-        if crowd > 0.75:
-            s *= 0.75
-        if hotness > 0.85:
-            s *= 0.85
-
-    elif mode == ScoreMode.chill:
-        s = (
-            0.52 * corr
-            + 0.26 * crowd
-            + 0.12 * urgency
-            + 0.10 * hotness
-        )
-        # Soft penalties: avoid crowded or high-urgency venues
-        if crowd > 0.65:
-            s *= 0.60
-        if urgency > 0.80:
-            s *= 0.70
-
-    else:
-        # Unknown mode — fall back to default weights
-        return final_score(corr, hotness, crowd, urgency)
-
+    mapping = {
+        ScoreMode.relevant:    "best_match",
+        ScoreMode.hottest:     "hot_right_now",
+        ScoreMode.hidden_gems: "hidden_gems",
+        ScoreMode.chill:       "chill",
+    }
+    key = mapping.get(mode, "best_match")
+    s = scores[key]
+    if s < 0:
+        return s   # -1.0 sentinel for closed venues
     return round(float(max(0.0, min(s, 1.0))), 4)
