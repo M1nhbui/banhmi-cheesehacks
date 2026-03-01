@@ -16,8 +16,8 @@
 from __future__ import annotations
 
 import math
-from datetime import datetime, timezone
-from typing import List, Tuple
+from datetime import datetime, timedelta, timezone
+from typing import List, Optional, Tuple
 
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -128,54 +128,151 @@ def weather_score(temp_f: float, precip_prob: float, wind_mph: float) -> float:
 # 3. Urgency score
 # =============================================================================
 
-def urgency_score(event_start: datetime | None, event_end: datetime | None) -> float:
+# ---------------------------------------------------------------------------
+# 3a. Core math primitives
+# ---------------------------------------------------------------------------
+
+def _exp_decay(remaining_seconds: float, tau_seconds: float) -> float:
+    """Exponential decay: 1.0 when remaining→0, decays toward 0 as time grows."""
+    if remaining_seconds <= 0:
+        return 0.0
+    return math.exp(-remaining_seconds / tau_seconds)
+
+
+# ---------------------------------------------------------------------------
+# 3b. Event urgency  (pre-start build-up + live wind-down)
+# ---------------------------------------------------------------------------
+
+def _compute_urgency_event(
+    t_now: datetime,
+    t_start: datetime,
+    t_end: datetime,
+    H_start_s: float,
+    tau_start_s: float,
+    tau_event_end_s: float,
+) -> float:
     """
-    Compute how "urgent" it is to visit an event.
+    Three-phase urgency curve for a timed event:
 
-    Rules:
-      - If entity is a place (no start/end) → 0.0
-      - If the event hasn't started yet     → 0.0
-      - If the event has already ended      → 0.0
-      - If the event is in progress:
-            remaining_hours = (event_end - now).total_seconds / 3600
-            urgency = clamp(1 - remaining_hours / horizon_hours, 0, 1)
-        So an event ending in horizon_hours → urgency ≈ 0
-           an event ending right now        → urgency = 1
+      • Too early  (start > H_start away)  → 0.0
+      • Pre-start  (within H_start window) → exp_decay(delta_to_start, tau_start)
+        Score rises from ~0 at H_start hours out to 1.0 the moment it starts.
+      • Live       (start ≤ now < end)      → exp_decay(delta_to_end, tau_event_end)
+        Score is highest right after start, decays to 0 as the event ends.
+      • Ended                               → 0.0
+    """
+    if t_end <= t_start:
+        return 0.0
 
-    Args:
-        event_start : start datetime (timezone-aware preferred)
-        event_end   : end datetime (timezone-aware preferred)
+    if t_now < t_start:
+        delta_s = (t_start - t_now).total_seconds()
+        if delta_s > H_start_s:
+            return 0.0
+        return round(_exp_decay(delta_s, tau_start_s), 4)
+
+    if t_start <= t_now < t_end:
+        r_end = (t_end - t_now).total_seconds()
+        return round(_exp_decay(r_end, tau_event_end_s), 4)
+
+    return 0.0  # ended
+
+
+# ---------------------------------------------------------------------------
+# 3c. Venue urgency  (closing-time pressure)
+# ---------------------------------------------------------------------------
+
+def _hhmm_to_dt(hhmm: str, reference: datetime) -> datetime:
+    """Build a UTC-aware datetime on the same calendar day as *reference* at HH:MM."""
+    h, m = map(int, hhmm.split(":"))
+    return reference.replace(hour=h, minute=m, second=0, microsecond=0)
+
+
+def _compute_urgency_venue(
+    t_now: datetime,
+    open_str: str,
+    close_str: str,
+    tau_venue_close_s: float,
+) -> float:
+    """
+    Urgency score for a place based on how close it is to closing.
+
+    Returns 0.0 when the venue is closed or hours are unknown.
+    Rises toward 1.0 as closing time approaches (exp-decay with tau_venue_close_s).
+    Handles overnight venues (close < open → close is next calendar day).
+    """
+    # Treat "00:00" for BOTH open and close as "hours unknown" → no urgency
+    if open_str == "00:00" and close_str == "00:00":
+        return 0.0
+
+    t_open  = _hhmm_to_dt(open_str,  t_now)
+    t_close = _hhmm_to_dt(close_str, t_now)
+
+    # Overnight venue: close is after midnight on the next day
+    if t_close <= t_open:
+        t_close += timedelta(days=1)
+
+    # Venue is closed right now
+    if not (t_open <= t_now < t_close):
+        return 0.0
+
+    r_close = (t_close - t_now).total_seconds()
+    return round(_exp_decay(r_close, tau_venue_close_s), 4)
+
+
+# ---------------------------------------------------------------------------
+# 3d. Public dispatcher — called by pipeline.py and the API
+# ---------------------------------------------------------------------------
+
+def urgency_score(
+    event_start: Optional[datetime],
+    event_end:   Optional[datetime],
+    open_str:    Optional[str] = None,
+    close_str:   Optional[str] = None,
+) -> float:
+    """
+    Unified urgency score for both events and places.
+
+    Events (event_start + event_end present):
+        Uses a three-phase curve — pre-start build-up (within 6 h) then
+        live wind-down — both driven by exponential decay.
+
+    Places (open_str + close_str present):
+        Closing-time pressure: score rises as the venue approaches closing.
+
+    Default values (from config):
+        H_start        = 6 h
+        tau_start      = 90 min
+        tau_event_end  = 60 min
+        tau_venue_close = 60 min
 
     Returns:
         float in [0, 1]
     """
-    # Not an event (no times) → no urgency
-    if event_start is None or event_end is None:
-        return 0.0
-
     now = datetime.now(timezone.utc)
 
-    # Ensure both times are timezone-aware so we can compare them to `now`
-    def _make_aware(dt: datetime) -> datetime:
-        if dt.tzinfo is None:
-            return dt.replace(tzinfo=timezone.utc)
-        return dt
+    # ---- Events --------------------------------------------------------
+    if event_start is not None and event_end is not None:
+        def _aware(dt: datetime) -> datetime:
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+        return _compute_urgency_event(
+            t_now          = now,
+            t_start        = _aware(event_start),
+            t_end          = _aware(event_end),
+            H_start_s      = config.URGENCY_H_START_S,
+            tau_start_s    = config.URGENCY_TAU_START_S,
+            tau_event_end_s = config.URGENCY_TAU_EVENT_END_S,
+        )
 
-    start = _make_aware(event_start)
-    end   = _make_aware(event_end)
+    # ---- Places with open/close hours ----------------------------------
+    if open_str and close_str:
+        return _compute_urgency_venue(
+            t_now             = now,
+            open_str          = open_str,
+            close_str         = close_str,
+            tau_venue_close_s = config.URGENCY_TAU_VENUE_CLOSE_S,
+        )
 
-    # Event hasn't started yet or has already ended → no urgency
-    if now < start or now >= end:
-        return 0.0
-
-    # Event is currently active — compute remaining time
-    remaining_hours = (end - now).total_seconds() / 3600.0
-    horizon = config.URGENCY_HORIZON_HOURS
-
-    # urgency rises from 0 (horizon hours left) to 1 (ending right now)
-    raw = 1.0 - (remaining_hours / horizon)
-    score = max(0.0, min(raw, 1.0))   # clamp to [0, 1]
-    return round(float(score), 4)
+    return 0.0
 
 
 # =============================================================================

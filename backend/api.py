@@ -130,7 +130,8 @@ def score(request: ScoreRequest) -> ScoreResponse:
 
     for entity, corr in zip(_enriched_entities, corr_scores):
         # Re-compute urgency with the current time
-        urg = urgency_score(entity.event_start, entity.event_end)
+        urg = urgency_score(entity.event_start, entity.event_end,
+                            entity.open, entity.close)
 
         # Compute combined final score
         f_score = final_score(
@@ -160,6 +161,21 @@ def score(request: ScoreRequest) -> ScoreResponse:
 
     # Sort by final score descending so the best matches appear first
     rows.sort(key=lambda r: r.score, reverse=True)
+
+    # -----------------------------------------------------------------
+    # Min-max normalise scores to the full [0, 1] range
+    # -----------------------------------------------------------------
+    # Raw final_score values cluster in a narrow band (e.g. 0.0–0.3)
+    # because weights are spread across four components.  Stretching to
+    # [0, 1] makes the gradient much more useful for the frontend.
+    # The relative ordering is preserved; only the absolute values change.
+    raw_scores = [r.score for r in rows]
+    s_min, s_max = min(raw_scores), max(raw_scores)
+    if s_max > s_min:                          # at least two distinct values
+        span = s_max - s_min
+        for r in rows:
+            r.score = round((r.score - s_min) / span, 4)
+    # else: all scores identical → leave them as-is (avoid 0-div)
 
     return ScoreResponse(
         meta=ScoreMeta(
