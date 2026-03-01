@@ -1,0 +1,86 @@
+{
+  "892758008d7ffff": {
+    "n_venues": 1,
+    "cell_activity": 0.315432,
+    "cell_active_ratio": 0.0,
+    "cell_density": 0.125,
+    "cell_hotness_raw": 0.20800919999999998,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.3536975732142857,
+    "neighbor_count_used": 3,
+    "neighbor_mean_hotness": 0.45264093894557816,
+    "cell_hotness_smoothed": 0.3833805829336734
+  },
+  "8927580088bffff": {
+    "n_venues": 4,
+    "cell_activity": 0.50942725,
+    "cell_active_ratio": 0.75,
+    "cell_density": 0.5,
+    "cell_hotness_raw": 0.56815635,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.49705807040816324,
+    "neighbor_count_used": 4,
+    "neighbor_mean_hotness": 0.3941057607142857,
+    "cell_hotness_smoothed": 0.46617237749999996
+  },
+  "892758008c7ffff": {
+    "n_venues": 1,
+    "cell_activity": 0.434664,
+    "cell_active_ratio": 0.0,
+    "cell_density": 0.125,
+    "cell_hotness_raw": 0.2795484,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.37158237321428567,
+    "neighbor_count_used": 5,
+    "neighbor_mean_hotness": 0.42390849265306124,
+    "cell_hotness_smoothed": 0.3872802090459183
+  },
+  "8927580088fffff": {
+    "n_venues": 1,
+    "cell_activity": 0.477591,
+    "cell_active_ratio": 0.0,
+    "cell_density": 0.125,
+    "cell_hotness_raw": 0.3053046,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.37802142321428567,
+    "neighbor_count_used": 2,
+    "neighbor_mean_hotness": 0.4850898718112245,
+    "cell_hotness_smoothed": 0.41014195779336726
+  },
+  "89275800813ffff": {
+    "n_venues": 1,
+    "cell_activity": 0.694926,
+    "cell_active_ratio": 1.0,
+    "cell_density": 0.125,
+    "cell_hotness_raw": 0.6857056000000001,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.4731216732142857,
+    "neighbor_count_used": 3,
+    "neighbor_mean_hotness": 0.4155539556122449,
+    "cell_hotness_smoothed": 0.45585135793367343
+  },
+  "892758008cfffff": {
+    "n_venues": 1,
+    "cell_activity": 0.0,
+    "cell_active_ratio": 0.0,
+    "cell_density": 0.125,
+    "cell_hotness_raw": 0.01875,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.3063827732142857,
+    "neighbor_count_used": 2,
+    "neighbor_mean_hotness": 0.4304323732142857,
+    "cell_hotness_smoothed": 0.3435976532142857
+  },
+  "892758008c3ffff": {
+    "n_venues": 1,
+    "cell_activity": 0.802664,
+    "cell_active_ratio": 1.0,
+    "cell_density": 0.125,
+    "cell_hotness_raw": 0.7503484,
+    "city_mean_cell_hotness": 0.40226036428571427,
+    "cell_hotness_shrunk": 0.4892823732142857,
+    "neighbor_count_used": 3,
+    "neighbor_mean_hotness": 0.3438875732142857,
+    "cell_hotness_smoothed": 0.44566393321428566
+  }
+}

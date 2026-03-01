@@ -1,0 +1,726 @@
+{
+  "status": "OK",
+  "venues": [
+    {
+      "venue_id": "ven_6742705767396b414f4c4a52676f4254424571716778484a496843",
+      "day_int": 5,
+      "day_raw": [
+        30
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        45,
+        60,
+        70,
+        75,
+        80,
+        90,
+        100,
+        95,
+        75,
+        50,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 66,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "10am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 4779,
+      "price_level": 2,
+      "venue_name": "The Old Fashioned",
+      "venue_address": "23 N Pinckney St #1 Madison, WI 53703 United States",
+      "venue_lat": 43.0762535,
+      "venue_lng": -89.3837007,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_34493242496b594d30626152676f425439546f353155424a496843",
+      "day_int": 5,
+      "day_raw": [
+        80
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        70,
+        75,
+        75,
+        75,
+        90,
+        100,
+        100,
+        95,
+        85,
+        80,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 82,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 2135,
+      "price_level": 2,
+      "venue_name": "Tipsy Cow",
+      "venue_address": "102 King St Madison, WI 53703 United States",
+      "venue_lat": 43.0747636,
+      "venue_lng": -89.3815616,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_304c725f6a456c4958616f52676f4254686a6a4479784a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        40
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        25,
+        35,
+        50,
+        55,
+        50,
+        55,
+        55,
+        60,
+        65,
+        60,
+        50,
+        40,
+        30,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 0,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 46,
+        "day_max": 63,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "10am–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 2083,
+      "price_level": 2,
+      "venue_name": "The Coopers Tavern",
+      "venue_address": "20 W Mifflin St Madison, WI 53703 United States",
+      "venue_lat": 43.0751065,
+      "venue_lng": -89.3861702,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_6b50635431752d5733783952676f425442456838637a494a496843",
+      "day_int": 5,
+      "day_raw": [
+        95
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65,
+        85,
+        100,
+        100,
+        95,
+        95,
+        80,
+        60,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 16,
+        "venue_closed": 1,
+        "day_rank_mean": 1,
+        "day_rank_max": 3,
+        "day_mean": 79,
+        "day_max": 99,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 16,
+              "closes": 1,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4pm–1am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 2003,
+      "price_level": 3,
+      "venue_name": "Eno Vino Downtown",
+      "venue_address": "1 N Webster St Madison, WI 53703 United States",
+      "venue_lat": 43.0765875,
+      "venue_lng": -89.3823592,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 150
+    },
+    {
+      "venue_id": "ven_59677a416c4c483930647852676f4254396a70384f53584a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        45,
+        70,
+        90,
+        95,
+        85,
+        70,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 14,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 72,
+        "day_max": 96,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 14,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7am–2pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 1954,
+      "price_level": 2,
+      "venue_name": "Marigold Kitchen",
+      "venue_address": "118 S Pinckney St Madison, WI 53703 United States",
+      "venue_lat": 43.0741182,
+      "venue_lng": -89.3815111,
+      "venue_type": "CAFE",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 60
+    },
+    {
+      "venue_id": "ven_45634d6533415f4237533752676f4254394431644e554a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        60,
+        80,
+        85,
+        75,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 17,
+        "venue_closed": 22,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 71,
+        "day_max": 86,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 17,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "5–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 1051,
+      "price_level": 3,
+      "venue_name": "Tempest Oyster Bar",
+      "venue_address": "120 E Wilson St Suite 3 Madison, WI 53703 United States",
+      "venue_lat": 43.0739171,
+      "venue_lng": -89.3796546,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 150
+    },
+    {
+      "venue_id": "ven_6362716a64677a6e656d5552676f4254395432706d51524a496843",
+      "day_int": 5,
+      "day_raw": [
+        80
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        80,
+        80,
+        80,
+        80,
+        90,
+        75,
+        45,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 17,
+        "venue_closed": 1,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 74,
+        "day_max": 89,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 17,
+              "closes": 1,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "5pm–1am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.7,
+      "reviews": 912,
+      "price_level": 2,
+      "venue_name": "Nattspil",
+      "venue_address": "211 King St Madison, WI 53703 United States",
+      "venue_lat": 43.0744314,
+      "venue_lng": -89.3797501,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_6b62643455425744346d4e52676f42546c6a4e6850636d4a496843",
+      "day_int": 5,
+      "day_raw": [
+        65
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        65,
+        75,
+        80,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 14,
+        "venue_closed": 1,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 47,
+        "day_max": 79,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 14,
+              "closes": 1,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "2pm–1am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 840,
+      "price_level": 1,
+      "venue_name": "Genna's Lounge",
+      "venue_address": "105 W Main St Madison, WI 53703 United States",
+      "venue_lat": 43.0727616,
+      "venue_lng": -89.3843644,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_4959533148546c355a4d3952676f42546444753864796e4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        95,
+        85,
+        75,
+        70,
+        75,
+        90,
+        70,
+        65,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 20,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 79,
+        "day_max": 94,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 12,
+              "closes": 20
+            }
+          ],
+          "12h": [
+            "12–8:30pm"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 780,
+      "price_level": 2,
+      "venue_name": "Himal Chuli Restaurant",
+      "venue_address": "318 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0749385,
+      "venue_lng": -89.3907051,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_4541786c355a757764466c52676f4254647a77484832544a496843",
+      "day_int": 5,
+      "day_raw": [
+        80
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        25,
+        30,
+        25,
+        25,
+        30,
+        35,
+        45,
+        60,
+        80,
+        100,
+        95,
+        70,
+        40,
+        20,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 2,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 49,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 12,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "12pm–2:30am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 603,
+      "price_level": 1,
+      "venue_name": "The Plaza Tavern",
+      "venue_address": "319 N Henry St Madison, WI 53703 United States",
+      "venue_lat": 43.0753416,
+      "venue_lng": -89.3904261,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 120
+    }
+  ],
+  "venues_n": 10,
+  "window": {
+    "time_window_start": 6,
+    "time_window_start_ix": 0,
+    "time_window_start_12h": "6AM",
+    "day_window_start_int": 5,
+    "day_window_start_txt": "Saturday",
+    "day_window_end_int": 6,
+    "day_window_end_txt": "Sunday",
+    "time_window_end": 5,
+    "time_window_end_ix": 23,
+    "time_window_end_12h": "5AM",
+    "day_window": "Saturday 6AM until Sunday 5AM",
+    "time_local": 21,
+    "time_local_12": "9PM",
+    "time_local_index": 15
+  }
+}

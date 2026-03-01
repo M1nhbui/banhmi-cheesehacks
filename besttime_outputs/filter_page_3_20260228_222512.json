@@ -1,0 +1,6949 @@
+{
+  "status": "OK",
+  "venues": [
+    {
+      "venue_id": "ven_6b654144696a613646776b52676f4254566a535a4732364a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        55,
+        65,
+        70,
+        65,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 18,
+        "day_rank_mean": 6,
+        "day_rank_max": 6,
+        "day_mean": 59,
+        "day_max": 68,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 12,
+              "closes": 18,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "12–6pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 88,
+      "price_level": 0,
+      "venue_name": "Memorial Library",
+      "venue_address": "728 State St Madison, WI 53706 United States",
+      "venue_lat": 43.075434,
+      "venue_lng": -89.397867,
+      "venue_type": "LIBRARY",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 240
+    },
+    {
+      "venue_id": "ven_735279776744764345726152676f4254646f6e53675a6f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        100
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        70,
+        85,
+        95,
+        100,
+        90,
+        65,
+        35,
+        15,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 18,
+        "venue_closed": 2,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 74,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 18,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "6pm–2:30am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.2,
+      "reviews": 86,
+      "price_level": 0,
+      "venue_name": "Gamma Ray Bar",
+      "venue_address": "121 W Main St Madison, WI 53703 United States",
+      "venue_lat": 43.0723732,
+      "venue_lng": -89.3847831,
+      "venue_type": "PERFORMING_ARTS",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_63724d4336677230454a4a5267344273573758645939714a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65,
+        80,
+        80,
+        80,
+        95,
+        85,
+        65,
+        50,
+        30,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 21,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 68,
+        "day_max": 97,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.8,
+      "reviews": 86,
+      "price_level": 2,
+      "venue_name": "Strada",
+      "venue_address": "800 Langdon St #1333 Madison, WI 53706 United States",
+      "venue_lat": 43.0763185,
+      "venue_lng": -89.3994014,
+      "venue_type": "PIZZA_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_4930554b3570784a36495452676f42546c78324c7156434a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        50,
+        65,
+        100,
+        85,
+        85,
+        35,
+        25,
+        40,
+        60,
+        90,
+        100,
+        90,
+        85,
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 72,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 86,
+      "price_level": 2,
+      "venue_name": "Pure Green State St. Closed until 1.19.26 - Capitol Square location is open",
+      "venue_address": "634 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0749883,
+      "venue_lng": -89.3960837,
+      "venue_type": "FOOD_AND_DRINK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_4d7672797949316338676152676f42545a305f624434664a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        50,
+        45,
+        35,
+        30,
+        35,
+        25,
+        20,
+        20,
+        30,
+        25,
+        40,
+        45,
+        35,
+        30,
+        25,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        30
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 6,
+        "day_rank_max": 6,
+        "day_mean": 33,
+        "day_max": 50,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.8,
+      "reviews": 86,
+      "price_level": 0,
+      "venue_name": "Period Garden Park",
+      "venue_address": "110 E Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.0786575,
+      "venue_lng": -89.3866021,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_494831556b6e48436d3742526734427361384e504f31514a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": "Closed",
+        "venue_closed": "Closed",
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [
+            "Closed"
+          ]
+        }
+      },
+      "rating": 3.9,
+      "reviews": 84,
+      "price_level": 1,
+      "venue_name": "Subway",
+      "venue_address": "1401 University Ave Madison, WI 53715 United States",
+      "venue_lat": 43.0732287,
+      "venue_lng": -89.4091327,
+      "venue_type": "SANDWICH_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_34334e3837795a4f716a4352676f4254396e326d6139434a496843",
+      "day_int": 5,
+      "day_raw": [
+        80
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        5,
+        5,
+        5,
+        5,
+        10,
+        10,
+        10,
+        10,
+        15,
+        15,
+        15,
+        25,
+        50,
+        80,
+        100,
+        80,
+        55,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 2,
+        "day_rank_mean": 2,
+        "day_rank_max": 1,
+        "day_mean": 28,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9am–2am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.2,
+      "reviews": 81,
+      "price_level": 0,
+      "venue_name": "Chasers 2.0",
+      "venue_address": "408 W Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.0740484,
+      "venue_lng": -89.3932195,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 150
+    },
+    {
+      "venue_id": "ven_3047646b4d7263424d435352673442734f7471494a36714a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        90,
+        90,
+        70,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 15,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 76,
+        "day_max": 92,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 15
+            }
+          ],
+          "12h": [
+            "11am–3pm"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.9,
+      "reviews": 80,
+      "price_level": 1,
+      "venue_name": "Quiznos",
+      "venue_address": "318 S Park Street W Washington Vilas Ave Madison, WI 53715 United States",
+      "venue_lat": 43.0634865,
+      "venue_lng": -89.401101,
+      "venue_type": "SANDWICH_RESTAURANT",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 10
+    },
+    {
+      "venue_id": "ven_45467271546c474c5f4e3252676f42545a6a50426f354b4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        85,
+        70,
+        70,
+        60,
+        65,
+        50,
+        40,
+        25,
+        40,
+        50,
+        70,
+        75,
+        65,
+        65,
+        60,
+        65,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        30
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 5,
+        "day_rank_max": 6,
+        "day_mean": 60,
+        "day_max": 86,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 79,
+      "price_level": 0,
+      "venue_name": "Elizabeth Link Peace Park",
+      "venue_address": "452 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0748388,
+      "venue_lng": -89.3925936,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_553865356d48666a7744685267344273576268734230714a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        40,
+        40,
+        45,
+        45,
+        45,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "day_mean": 12,
+        "day_max": 47,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 79,
+      "price_level": 0,
+      "venue_name": "College Library",
+      "venue_address": "600 N Park St Madison, WI 53706 United States",
+      "venue_lat": 43.076757,
+      "venue_lng": -89.401256,
+      "venue_type": "LIBRARY",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 210
+    },
+    {
+      "venue_id": "ven_6f796d636f4e674c6b774a52676f4254464d384a6832314a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        60,
+        70,
+        85,
+        90,
+        100,
+        85,
+        75,
+        60,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 73,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.1,
+      "reviews": 76,
+      "price_level": 1,
+      "venue_name": "Eat Xpress 小食堂",
+      "venue_address": "203 W Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.075205,
+      "venue_lng": -89.3909449,
+      "venue_type": "CHINESE_RESTAURANT",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_4d6c45316261756d56716b5267344273717378304779774a496843",
+      "day_int": 5,
+      "day_raw": [
+        50
+      ],
+      "day_raw_whole": [
+        30,
+        10,
+        0,
+        0,
+        0,
+        10,
+        30,
+        70,
+        50,
+        70,
+        70,
+        30,
+        10,
+        0,
+        0,
+        20,
+        50,
+        50,
+        30,
+        20,
+        20,
+        50,
+        30,
+        10
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 3,
+        "day_rank_max": 5,
+        "day_mean": 28,
+        "day_max": 70,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 74,
+      "price_level": 0,
+      "venue_name": "The University Club - Madison",
+      "venue_address": "803 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0745707,
+      "venue_lng": -89.3992964,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6f3331336758444478513252673442746168445068794c4a496843",
+      "day_int": 5,
+      "day_raw": [
+        60
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        65,
+        75,
+        85,
+        90,
+        80,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 16,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 72,
+        "day_max": 88,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 16,
+              "closes": 23,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4–11pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.7,
+      "reviews": 74,
+      "price_level": 0,
+      "venue_name": "The Annex",
+      "venue_address": "1206 Regent St Madison, WI 53715 United States",
+      "venue_lat": 43.0678215,
+      "venue_lng": -89.4062012,
+      "venue_type": "PERFORMING_ARTS",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6b4e53496863573730423952676f42547452677254572d4a496843",
+      "day_int": 5,
+      "day_raw": [
+        70
+      ],
+      "day_raw_whole": [
+        40,
+        40,
+        60,
+        85,
+        95,
+        95,
+        95,
+        80,
+        90,
+        95,
+        95,
+        95,
+        70,
+        70,
+        85,
+        85,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 6,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 3,
+        "day_mean": 79,
+        "day_max": 97,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 6,
+              "closes": 23,
+              "opens_minutes": 30,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "6:30am–11pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 73,
+      "price_level": 2,
+      "venue_name": "Bistro 525",
+      "venue_address": "525 W Johnson St Madison, WI 53703 United States",
+      "venue_lat": 43.0715501,
+      "venue_lng": -89.3942742,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 5,
+      "venue_dwell_time_max": 60
+    },
+    {
+      "venue_id": "ven_383879325a325f6e53684252676f425446585a6c3034334a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        30,
+        50,
+        80,
+        95,
+        95,
+        85,
+        55,
+        55,
+        50,
+        35,
+        35,
+        35,
+        35,
+        35,
+        25,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        50
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 6,
+        "day_rank_max": 3,
+        "day_mean": 51,
+        "day_max": 93,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 73,
+      "price_level": 0,
+      "venue_name": "Willy Street Park",
+      "venue_address": "1002 Williamson St Madison, WI 53703 United States",
+      "venue_lat": 43.0809785,
+      "venue_lng": -89.3678768,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_63314955616867394431765267344273754d533457616a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        20
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        30,
+        40,
+        45,
+        40,
+        35,
+        45,
+        45,
+        55,
+        55,
+        55,
+        45,
+        30,
+        25,
+        25,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 8,
+        "venue_closed": 23,
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "day_mean": 40,
+        "day_max": 57,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 8,
+              "closes": 23,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "8 AM to 11 PM"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 2.3,
+      "reviews": 72,
+      "price_level": 2,
+      "venue_name": "Walgreens",
+      "venue_address": "311 E Campus Mall Madison WI 53715",
+      "venue_lat": 43.0722873,
+      "venue_lng": -89.3985428,
+      "venue_type": "OTHER",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_676177694b61486f61507252676f425464695f5f5f5f5f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        50,
+        60,
+        50,
+        60,
+        70,
+        75,
+        80,
+        100,
+        95,
+        85,
+        60,
+        75,
+        70,
+        85,
+        85,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        60
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 73,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 71,
+      "price_level": 0,
+      "venue_name": "Bernie's Beach Park",
+      "venue_address": "901 Gilson St Madison, WI 53715 United States",
+      "venue_lat": 43.056867,
+      "venue_lng": -89.388909,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_67654f6a355f77774b734452676f425452504c326c664a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        65,
+        65,
+        50,
+        35,
+        30,
+        35,
+        45,
+        50,
+        55,
+        55,
+        45,
+        40,
+        35,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 2,
+        "day_rank_mean": 4,
+        "day_rank_max": 5,
+        "day_mean": 47,
+        "day_max": 67
+      },
+      "rating": 3.6,
+      "reviews": 71,
+      "price_level": 1,
+      "venue_name": "Delicacies of Asia",
+      "venue_address": "506 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0749664,
+      "venue_lng": -89.3936004,
+      "venue_type": "ASIAN_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_7768585f733476765a487652676f425468316d396a61614a496843",
+      "day_int": 5,
+      "day_raw": [
+        95
+      ],
+      "day_raw_whole": [
+        0,
+        50,
+        40,
+        50,
+        35,
+        40,
+        40,
+        45,
+        55,
+        65,
+        60,
+        55,
+        50,
+        65,
+        85,
+        85,
+        95,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 0,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 58,
+        "day_max": 96,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 11,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            },
+            {
+              "opens": 11,
+              "closes": 13,
+              "opens_minutes": 30,
+              "closes_minutes": 30
+            },
+            {
+              "opens": 14,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7–11am",
+            "11:30am–1:30pm",
+            "2pm–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.2,
+      "reviews": 67,
+      "price_level": 0,
+      "venue_name": "The Audrey Kitchen + Bar",
+      "venue_address": "9 E Wilson St Madison, WI 53703 United States",
+      "venue_lat": 43.0727363,
+      "venue_lng": -89.3805435,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_77566767774c626230484452676f42546c3249414151414a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        45,
+        45,
+        45,
+        50,
+        70,
+        90,
+        80,
+        65,
+        65,
+        75,
+        80,
+        80,
+        70,
+        65,
+        65,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        45
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 6,
+        "venue_closed": 6,
+        "day_rank_mean": 1,
+        "day_rank_max": 4,
+        "day_mean": 48,
+        "day_max": 88,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 6,
+              "closes": 6,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "6 AM to 6 AM"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 65,
+      "price_level": 0,
+      "venue_name": "Reynolds Park",
+      "venue_address": "Reynolds Field Park 810 E Mifflin St Madison WI 53703",
+      "venue_lat": 43.0830985,
+      "venue_lng": -89.3753835,
+      "venue_type": "OTHER",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_344259344a302d7453487a52676f425446454d67745a4e4a496843",
+      "day_int": 5,
+      "day_raw": [
+        75
+      ],
+      "day_raw_whole": [
+        0,
+        60,
+        50,
+        40,
+        35,
+        35,
+        40,
+        45,
+        45,
+        40,
+        55,
+        75,
+        100,
+        85,
+        85,
+        75,
+        75,
+        80,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 1,
+        "day_rank_mean": 3,
+        "day_rank_max": 1,
+        "day_mean": 60,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 1,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7am–1am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 64,
+      "price_level": 0,
+      "venue_name": "Pinkus McBride Market & Deli",
+      "venue_address": "301 N Hamilton St Madison, WI 53703 United States",
+      "venue_lat": 43.0792851,
+      "venue_lng": -89.383818,
+      "venue_type": "CONVENIENCE_STORE",
+      "venue_dwell_time_min": 5,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_4d33726e432d734535692d52676f42544241654e4678494a496843",
+      "day_int": 5,
+      "day_raw": [
+        75
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        75,
+        95,
+        100,
+        90,
+        85,
+        75,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 16,
+        "venue_closed": 0,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 81,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 16,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4pm–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 62,
+      "price_level": 0,
+      "venue_name": "Ático Lounge - Madison",
+      "venue_address": "823 E Washington Ave Madison, WI 53703 United States",
+      "venue_lat": 43.0814509,
+      "venue_lng": -89.3739332,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 240
+    },
+    {
+      "venue_id": "ven_49705f654238637a35744c52676f4254643055305865414a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        15,
+        20,
+        30,
+        35,
+        50,
+        45,
+        45,
+        40,
+        45,
+        45,
+        50,
+        55,
+        45,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 5,
+        "venue_closed": 20,
+        "day_rank_mean": 5,
+        "day_rank_max": 7,
+        "day_mean": 40,
+        "day_max": 54,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 5,
+              "closes": 20,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "5am–8pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 59,
+      "price_level": 0,
+      "venue_name": "Pinnacle Health + Fitness - Madison",
+      "venue_address": "44 E Mifflin St Madison, WI 53703 United States",
+      "venue_lat": 43.0762906,
+      "venue_lng": -89.3844481,
+      "venue_type": "SPORTS_COMPLEX",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_597332616156622d474d6d52676f4254424163394536594a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        40,
+        40,
+        40,
+        35,
+        20,
+        20,
+        25,
+        20,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 8,
+        "venue_closed": 17,
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "day_mean": 28,
+        "day_max": 40,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 8,
+              "closes": 17,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "8am–5pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 59,
+      "price_level": 0,
+      "venue_name": "New Here Coffee",
+      "venue_address": "339 W Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.0743705,
+      "venue_lng": -89.3920643,
+      "venue_type": "COFFEE",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_455a6f4f585f707651356852676f42545665486a5730564a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        45,
+        55,
+        65,
+        100,
+        100,
+        100,
+        70,
+        50,
+        35,
+        45,
+        50,
+        50,
+        30,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 58,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 21
+            }
+          ],
+          "12h": [
+            "7AM–9PM"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 57,
+      "price_level": 1,
+      "venue_name": "MachiquesCity Venezuelan Restaurant",
+      "venue_address": "638 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0750198,
+      "venue_lng": -89.3961257,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6f5831586f7a776133535452673442735737546e587a4b4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        35,
+        45,
+        50,
+        55,
+        70,
+        75,
+        70,
+        50,
+        40,
+        35,
+        35,
+        55,
+        70,
+        65,
+        50,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 6,
+        "venue_closed": 22,
+        "day_rank_mean": 5,
+        "day_rank_max": 7,
+        "day_mean": 52,
+        "day_max": 77,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 6,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "6am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 57,
+      "price_level": 0,
+      "venue_name": "Alumni Park at UW-Madison",
+      "venue_address": "724 Langdon St Madison, WI 53706 United States",
+      "venue_lat": 43.0763506,
+      "venue_lng": -89.3989237,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_38417478695a594f54585f52673442734f7471427754334a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        55,
+        55,
+        65,
+        60,
+        70,
+        75,
+        80,
+        85,
+        85,
+        80,
+        70,
+        55,
+        55,
+        40,
+        55,
+        55,
+        65,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 0,
+        "day_rank_mean": 2,
+        "day_rank_max": 3,
+        "day_mean": 65,
+        "day_max": 87,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7am–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 2.9,
+      "reviews": 55,
+      "price_level": 0,
+      "venue_name": "bp",
+      "venue_address": "318 S Park St Madison, WI 53715 United States",
+      "venue_lat": 43.063524,
+      "venue_lng": -89.40086,
+      "venue_type": "GAS_STATION",
+      "venue_dwell_time_min": 5,
+      "venue_dwell_time_max": 5
+    },
+    {
+      "venue_id": "ven_385335727555496d484f4352676f4254787a745062354c4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        55,
+        65,
+        75,
+        90,
+        90,
+        75,
+        55,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 19,
+        "day_rank_mean": 2,
+        "day_rank_max": 3,
+        "day_mean": 67,
+        "day_max": 92,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 19,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "11am–7:30pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 55,
+      "price_level": 0,
+      "venue_name": "J&P Fresh Market",
+      "venue_address": "346 State St Madison, WI 53703 United States",
+      "venue_lat": 43.074925,
+      "venue_lng": -89.3913354,
+      "venue_type": "GROCERY",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_456f426b4e72515f47414c5267344273753974385179594a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        50,
+        45,
+        35,
+        55,
+        60,
+        55,
+        50,
+        30,
+        45,
+        50,
+        35,
+        35,
+        45,
+        45,
+        50,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        30
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 5,
+        "day_rank_max": 6,
+        "day_mean": 45,
+        "day_max": 62,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 48,
+      "price_level": 0,
+      "venue_name": "Bear Mound Park",
+      "venue_address": "1525 Vilas Ave Madison, WI 53711 United States",
+      "venue_lat": 43.0631064,
+      "venue_lng": -89.4108626,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_45735244496d6d5043775f526734427371386b7a6c66544a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        25,
+        30,
+        35,
+        35,
+        25,
+        20,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 16,
+        "day_rank_mean": 6,
+        "day_rank_max": 6,
+        "day_mean": 26,
+        "day_max": 36,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 16,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9am–4pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 48,
+      "price_level": 0,
+      "venue_name": "Wisconsin Historical Society",
+      "venue_address": "816 State St Madison, WI 53706 United States",
+      "venue_lat": 43.075402,
+      "venue_lng": -89.400054,
+      "venue_type": "LIBRARY",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_773879617637653442677152676f425446484c6337596e4a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        55,
+        65,
+        65,
+        55,
+        55,
+        65,
+        75,
+        60,
+        60,
+        65,
+        55,
+        55,
+        60,
+        65,
+        70,
+        60,
+        55,
+        45,
+        40,
+        40,
+        45,
+        55,
+        40,
+        50
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 3,
+        "day_rank_max": 6,
+        "day_mean": 56,
+        "day_max": 76,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ],
+          "special_day": null,
+          "open_24h": true,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.7,
+      "reviews": 47,
+      "price_level": 0,
+      "venue_name": "Amoco",
+      "venue_address": "1130 Williamson St Madison, WI 53703 United States",
+      "venue_lat": 43.082875,
+      "venue_lng": -89.365423,
+      "venue_type": "GAS_STATION",
+      "venue_dwell_time_min": 5,
+      "venue_dwell_time_max": 5
+    },
+    {
+      "venue_id": "ven_6b4543353453627963646152676f4254353268554666594a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        20,
+        50,
+        40,
+        40,
+        55,
+        80,
+        40,
+        30,
+        30,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 17,
+        "venue_closed": 3,
+        "day_rank_mean": 5,
+        "day_rank_max": 4,
+        "day_mean": 40,
+        "day_max": 78,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 17,
+              "closes": 3
+            }
+          ],
+          "12h": [
+            "5pm–3am"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 2.8,
+      "reviews": 45,
+      "price_level": 1,
+      "venue_name": "Asian Kitchen",
+      "venue_address": "449 State St Suite E Madison, WI 53703 United States",
+      "venue_lat": 43.0745804,
+      "venue_lng": -89.3934415,
+      "venue_type": "ASIAN_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_305043683954466733354652676f42545a4e4a7961576f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        45
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        30,
+        35,
+        30,
+        30,
+        35,
+        45,
+        45,
+        45,
+        35,
+        25,
+        15,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 15,
+        "venue_closed": 2,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 34,
+        "day_max": 43,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 15,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "3pm–2:30am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.0,
+      "reviews": 44,
+      "price_level": 0,
+      "venue_name": "City Bar",
+      "venue_address": "636 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0750193,
+      "venue_lng": -89.3961721,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_676b4b5554524432596a3652676f425468476c507633724a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        55,
+        60,
+        35,
+        35,
+        30,
+        40,
+        45,
+        60,
+        85,
+        95,
+        80,
+        50,
+        40,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 8,
+        "venue_closed": 22,
+        "day_rank_mean": 2,
+        "day_rank_max": 3,
+        "day_mean": 53,
+        "day_max": 95,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 8,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "8am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.7,
+      "reviews": 41,
+      "price_level": 0,
+      "venue_name": "Madison Food Mart",
+      "venue_address": "902 E Johnson St Madison, WI 53703 United States",
+      "venue_lat": 43.0846278,
+      "venue_lng": -89.37625,
+      "venue_type": "GROCERY",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_414b2d665f52683674715352673442734b702d447359564a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        50,
+        45,
+        35,
+        50,
+        45,
+        35,
+        35,
+        35,
+        55,
+        70,
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 19,
+        "day_rank_mean": 3,
+        "day_rank_max": 5,
+        "day_mean": 46,
+        "day_max": 68,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 19,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "9am–7:30pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 41,
+      "price_level": 0,
+      "venue_name": "McClimon Track and Soccer Fields",
+      "venue_address": "750 Walnut St Madison, WI 53705 United States",
+      "venue_lat": 43.078293,
+      "venue_lng": -89.4253991,
+      "venue_type": "SPORTS_COMPLEX",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6b6e7663482d4136795a4152673442744b4465754c35504a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        35,
+        30,
+        30,
+        30,
+        50,
+        45,
+        45,
+        50,
+        50,
+        50,
+        35,
+        40,
+        35,
+        40,
+        35,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        45
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 6,
+        "day_rank_max": 7,
+        "day_mean": 39,
+        "day_max": 51,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.0,
+      "reviews": 41,
+      "price_level": 0,
+      "venue_name": "Duane F. Bowman Park",
+      "venue_address": "1775 Fish Hatchery Rd Madison, WI 53713 United States",
+      "venue_lat": 43.0464646,
+      "venue_lng": -89.4014876,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_4163727a32384a414d4d785267344273434d71474f394a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": "Closed",
+        "venue_closed": "Closed",
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [
+            "Closed"
+          ]
+        }
+      },
+      "rating": 4.7,
+      "reviews": 40,
+      "price_level": 0,
+      "venue_name": "Steenbock Memorial Library",
+      "venue_address": "550 Babcock Dr Madison, WI 53706 United States",
+      "venue_lat": 43.0762592,
+      "venue_lng": -89.4130956,
+      "venue_type": "LIBRARY",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 240
+    },
+    {
+      "venue_id": "ven_4d6838307646476d6e744252676f42543942544b4855434a496843",
+      "day_int": 5,
+      "day_raw": [
+        80
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        35,
+        40,
+        25,
+        30,
+        30,
+        45,
+        70,
+        75,
+        80,
+        80,
+        100,
+        100,
+        80,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 61,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 23,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "10am–11pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 40,
+      "price_level": 0,
+      "venue_name": "Candy Cloud - Madison",
+      "venue_address": "638 University Ave Madison, WI 53715 United States",
+      "venue_lat": 43.0733712,
+      "venue_lng": -89.397153,
+      "venue_type": "CAFE",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6b4e4778396866374d5a43526734427457362d717136714a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        40,
+        30,
+        40,
+        40,
+        50,
+        55,
+        40,
+        25,
+        30,
+        40,
+        40,
+        40,
+        25,
+        25,
+        15,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        40
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "day_mean": 34,
+        "day_max": 57,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 38,
+      "price_level": 0,
+      "venue_name": "Nakoma Park",
+      "venue_address": "3801 Cherokee Dr Madison, WI 53711 United States",
+      "venue_lat": 43.0468182,
+      "venue_lng": -89.4415647,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_30626f776537304876536952676f4254784a575970596d4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        55,
+        100,
+        80,
+        55,
+        45,
+        45,
+        70,
+        45,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 17,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 61,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 17
+            }
+          ],
+          "12h": [
+            "9am–5pm"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 37,
+      "price_level": 1,
+      "venue_name": "MOKA",
+      "venue_address": "711 State St Suite 100 Madison, WI 53703 United States",
+      "venue_lat": 43.0748438,
+      "venue_lng": -89.3979378,
+      "venue_type": "COFFEE",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6f457663653677326430615267344273324e4b317665614a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        45,
+        60,
+        65,
+        75,
+        70,
+        75,
+        50,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 17,
+        "day_rank_mean": 4,
+        "day_rank_max": 4,
+        "day_mean": 60,
+        "day_max": 75,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 17,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9am–5pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.7,
+      "reviews": 35,
+      "price_level": 0,
+      "venue_name": "Madison Public Library - Monroe Street",
+      "venue_address": "1705 Monroe St Madison, WI 53711 United States",
+      "venue_lat": 43.0659225,
+      "venue_lng": -89.4151868,
+      "venue_type": "LIBRARY",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 45
+    },
+    {
+      "venue_id": "ven_49556e4b5a714f4159383752676f4254567a45664a57574a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        55,
+        70,
+        60,
+        50,
+        50,
+        55,
+        60,
+        60,
+        65,
+        55,
+        40,
+        30,
+        30,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 21,
+        "day_rank_mean": 6,
+        "day_rank_max": 5,
+        "day_mean": 51,
+        "day_max": 72,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.1,
+      "reviews": 35,
+      "price_level": 2,
+      "venue_name": "Walgreens",
+      "venue_address": "676 State St Walgreens Madison, WI 53703 United States",
+      "venue_lat": 43.0750053,
+      "venue_lng": -89.3972,
+      "venue_type": "SHOPPING",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_634e5839435575367976685267344273576677395666794a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        50,
+        55,
+        60,
+        60,
+        55,
+        45,
+        50,
+        45,
+        50,
+        35,
+        40,
+        40,
+        55,
+        40,
+        45,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        60,
+        50
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 3,
+        "day_rank_max": 5,
+        "day_mean": 46,
+        "day_max": 61,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 33,
+      "price_level": 0,
+      "venue_name": "Stevens Street Park",
+      "venue_address": "2710 Stevens St Madison, WI 53705 United States",
+      "venue_lat": 43.0723849,
+      "venue_lng": -89.4350235,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_496e755a6943674450716152676f42544a6d6e753554794a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        15,
+        25,
+        60,
+        100,
+        75,
+        55,
+        35,
+        55,
+        45,
+        25,
+        15,
+        25,
+        20,
+        45,
+        45,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        45
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 6,
+        "day_rank_max": 2,
+        "day_mean": 43,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.9,
+      "reviews": 33,
+      "price_level": 0,
+      "venue_name": "Tenney Park Breakwater",
+      "venue_address": "1600 Sherman Ave Madison, WI 53704 United States",
+      "venue_lat": 43.0953103,
+      "venue_lng": -89.3722198,
+      "venue_type": "BOATING",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_55576d61453534654a394352676f4254425470624538324a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        35,
+        45,
+        40,
+        30,
+        25,
+        35,
+        55,
+        55,
+        50,
+        30,
+        30,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 21,
+        "day_rank_mean": 4,
+        "day_rank_max": 4,
+        "day_mean": 38,
+        "day_max": 53,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.1,
+      "reviews": 32,
+      "price_level": 0,
+      "venue_name": "Capital Fitness",
+      "venue_address": "425 W Washington Ave #2703 Madison, WI 53703 United States",
+      "venue_lat": 43.0705317,
+      "venue_lng": -89.3895528,
+      "venue_type": "SPORTS_COMPLEX",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_45566158306f756238364f52676f4254647a76496152574a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        50,
+        55,
+        55,
+        55,
+        55,
+        60,
+        75,
+        65,
+        50,
+        45,
+        55,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 22,
+        "day_rank_mean": 5,
+        "day_rank_max": 5,
+        "day_mean": 55,
+        "day_max": 74,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "10am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.6,
+      "reviews": 32,
+      "price_level": 0,
+      "venue_name": "Triangle Market",
+      "venue_address": "302 State St #2021 Madison, WI 53703 United States",
+      "venue_lat": 43.0749279,
+      "venue_lng": -89.3903494,
+      "venue_type": "MARKET",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_7373726474776d39475f5152676f425464364a47415f444a496843",
+      "day_int": 5,
+      "day_raw": [
+        85
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        65,
+        60,
+        60,
+        55,
+        70,
+        85,
+        100,
+        80,
+        50,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 16,
+        "venue_closed": 2,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 67,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 16,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4pm–2am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 29,
+      "price_level": 0,
+      "venue_name": "Moon Bar",
+      "venue_address": "328 W Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.0743649,
+      "venue_lng": -89.3925601,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6354433939454c486867585267344273654662674c35434a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        10,
+        30,
+        40,
+        50,
+        60,
+        50,
+        45,
+        35,
+        25,
+        30,
+        45,
+        60,
+        70,
+        80,
+        60,
+        65,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        40
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 47,
+        "day_max": 82,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 27,
+      "price_level": 0,
+      "venue_name": "Reservoir Park",
+      "venue_address": "126 Glenway St Madison, WI 53705 United States",
+      "venue_lat": 43.0655349,
+      "venue_lng": -89.439516,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_4161634c797a59554b333552673442735373566c6854454a496843",
+      "day_int": 5,
+      "day_raw": [
+        40
+      ],
+      "day_raw_whole": [
+        80,
+        80,
+        60,
+        45,
+        35,
+        55,
+        70,
+        65,
+        50,
+        40,
+        35,
+        35,
+        25,
+        25,
+        35,
+        45,
+        40,
+        30,
+        20,
+        25,
+        25,
+        30,
+        70,
+        85
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 6,
+        "day_rank_max": 5,
+        "day_mean": 46,
+        "day_max": 86,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ],
+          "special_day": null,
+          "open_24h": true,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 21,
+      "price_level": 0,
+      "venue_name": "Camp Randall Memorial Arch",
+      "venue_address": "University of Wisconsin–Madison 1455 Monroe St Madison, WI 53711 United States",
+      "venue_lat": 43.0710938,
+      "venue_lng": -89.4093943,
+      "venue_type": "HISTORICAL",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_7374795a63444d67324d5a526734427353657a565556564a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        25,
+        15,
+        10,
+        20,
+        25,
+        30,
+        30,
+        25,
+        15,
+        20,
+        25,
+        30,
+        25,
+        25,
+        10,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        5
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 5,
+        "day_rank_max": 7,
+        "day_mean": 21,
+        "day_max": 29,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 21,
+      "price_level": 0,
+      "venue_name": "Hillington Green Park",
+      "venue_address": "435 Hillington Way Madison, WI 53726 United States",
+      "venue_lat": 43.0635673,
+      "venue_lng": -89.4270211,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_594d31592d4849554c615052676f42545a7868387635614a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        65,
+        55,
+        50,
+        50,
+        55,
+        45,
+        50,
+        45,
+        50,
+        55,
+        65,
+        55,
+        45,
+        45,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 8,
+        "venue_closed": 22,
+        "day_rank_mean": 4,
+        "day_rank_max": 4,
+        "day_mean": 52,
+        "day_max": 65,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 8,
+              "closes": 22
+            }
+          ],
+          "12h": [
+            "8AM–10PM"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.5,
+      "reviews": 15,
+      "price_level": 0,
+      "venue_name": "DGX",
+      "venue_address": "432 W Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.0735034,
+      "venue_lng": -89.3940251,
+      "venue_type": "CONVENIENCE_STORE",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6767737853414e4563342d52673442742d456e7662355a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        35
+      ],
+      "day_raw_whole": [
+        30,
+        25,
+        30,
+        35,
+        40,
+        30,
+        25,
+        30,
+        30,
+        35,
+        35,
+        50,
+        45,
+        45,
+        45,
+        50,
+        35,
+        50,
+        50,
+        70,
+        60,
+        55,
+        45,
+        55
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 6,
+        "day_rank_max": 6,
+        "day_mean": 42,
+        "day_max": 70,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ],
+          "special_day": null,
+          "open_24h": true,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 14,
+      "price_level": 0,
+      "venue_name": "Bascom Hill",
+      "venue_address": "1872 Lincoln Dr Madison, WI 53706 United States",
+      "venue_lat": 43.0753151,
+      "venue_lng": -89.4034355,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_496e36684533796479525652676f4254523136757330364a496843",
+      "day_int": 5,
+      "day_raw": [
+        10
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        10,
+        25,
+        50,
+        60,
+        35,
+        35,
+        10,
+        10,
+        10,
+        5,
+        5,
+        10,
+        10,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 0,
+        "day_rank_mean": 6,
+        "day_rank_max": 5,
+        "day_mean": 20,
+        "day_max": 58,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 0
+            }
+          ],
+          "12h": [
+            "10AM–12AM"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 13,
+      "price_level": 0,
+      "venue_name": "Frances Street Market",
+      "venue_address": "438 N Frances St Madison, WI 53703",
+      "venue_lat": 43.0744802,
+      "venue_lng": -89.3960787,
+      "venue_type": "CONVENIENCE_STORE",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6763354e34394c5933465052676f42544a6d714f4b586b4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        10,
+        5,
+        0,
+        5,
+        15,
+        10,
+        15,
+        40,
+        45,
+        55,
+        40,
+        30,
+        20,
+        30,
+        25,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        25
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 6,
+        "day_rank_max": 7,
+        "day_mean": 23,
+        "day_max": 55,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 10,
+      "price_level": 0,
+      "venue_name": "Tenney Park - Boat Launch",
+      "venue_address": "1414 E Johnson St Madison, WI 53706 United States",
+      "venue_lat": 43.0953331,
+      "venue_lng": -89.3702472,
+      "venue_type": "OTHER",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_675230586f5f546e75706652676f425442396f595a54464a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        60,
+        70,
+        90,
+        90,
+        85,
+        65,
+        55,
+        45,
+        40,
+        35,
+        30,
+        25,
+        25,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 8,
+        "venue_closed": 22,
+        "day_rank_mean": 7,
+        "day_rank_max": 4,
+        "day_mean": 53,
+        "day_max": 88,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 8,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "8am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.1,
+      "reviews": 9,
+      "price_level": 0,
+      "venue_name": "Target Grocery",
+      "venue_address": "610 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0751438,
+      "venue_lng": -89.3960497,
+      "venue_type": "GROCERY",
+      "venue_dwell_time_min": 5,
+      "venue_dwell_time_max": 60
+    },
+    {
+      "venue_id": "ven_736d4e416439555a4f723052676f425439582d5f2d5f5f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        35,
+        45,
+        55,
+        60,
+        60,
+        40,
+        60,
+        60,
+        70,
+        65,
+        50,
+        55,
+        40,
+        20,
+        10,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        20
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 46,
+        "day_max": 72,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.9,
+      "reviews": 8,
+      "price_level": 0,
+      "venue_name": "Emerson East Park",
+      "venue_address": "1915 E Johnson St Madison, WI 53704 United States",
+      "venue_lat": 43.0948534,
+      "venue_lng": -89.3608519,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_596c644d773865455847775267344273472d5a694853504a496843",
+      "day_int": 5,
+      "day_raw": [
+        60
+      ],
+      "day_raw_whole": [
+        0,
+        60,
+        60,
+        45,
+        40,
+        55,
+        80,
+        100,
+        80,
+        50,
+        35,
+        25,
+        40,
+        45,
+        60,
+        70,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 57,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 23,
+              "opens_minutes": 30,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7:30am–11pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.9,
+      "reviews": 8,
+      "price_level": 0,
+      "venue_name": "Oscar Rennebohm Library",
+      "venue_address": "959 Edgewood College Dr Madison, WI 53711 United States",
+      "venue_lat": 43.057036,
+      "venue_lng": -89.422907,
+      "venue_type": "LIBRARY",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_556d65796c58454949535a52676f42543954564c3262374a496843",
+      "day_int": 5,
+      "day_raw": [
+        15
+      ],
+      "day_raw_whole": [
+        70,
+        55,
+        40,
+        40,
+        40,
+        50,
+        55,
+        40,
+        35,
+        35,
+        55,
+        50,
+        55,
+        45,
+        35,
+        25,
+        15,
+        25,
+        40,
+        45,
+        40,
+        35,
+        25,
+        20
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 6,
+        "day_rank_max": 4,
+        "day_mean": 40,
+        "day_max": 69,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 5.0,
+      "reviews": 6,
+      "price_level": 0,
+      "venue_name": "Wisconsin Law Enforcement Memorial",
+      "venue_address": "E Mifflin St at N Pinckney St Madison, WI 53701 United States",
+      "venue_lat": 43.07603,
+      "venue_lng": -89.3841461,
+      "venue_type": "HISTORICAL",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_51377031666c36536167595267344273572d2d4c7355644a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        55,
+        45,
+        45,
+        60,
+        100,
+        90,
+        85,
+        55,
+        30,
+        25,
+        30,
+        40,
+        45,
+        55,
+        70,
+        75,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        40
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 2,
+        "day_rank_max": 1,
+        "day_mean": 56,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 5,
+      "price_level": 0,
+      "venue_name": "Hollister Avenue Triangle Park",
+      "venue_address": "2120 Commonwealth Ave Madison, WI 53726 United States",
+      "venue_lat": 43.0661274,
+      "venue_lng": -89.4225669,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_63634d4f716d392d54776e5267344273366c41416c556e4a496843",
+      "day_int": 5,
+      "day_raw": [
+        60
+      ],
+      "day_raw_whole": [
+        40,
+        40,
+        50,
+        65,
+        50,
+        40,
+        40,
+        45,
+        55,
+        60,
+        70,
+        70,
+        55,
+        45,
+        35,
+        55,
+        60,
+        80,
+        70,
+        70,
+        60,
+        55,
+        25,
+        20
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 3,
+        "day_rank_max": 3,
+        "day_mean": 52,
+        "day_max": 80,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 4,
+      "price_level": 0,
+      "venue_name": "Post Farm Park",
+      "venue_address": "3000 Purdue St Madison, WI 53705 United States",
+      "venue_lat": 43.0763127,
+      "venue_lng": -89.4407439,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_41354166615361622d5572526734427371386e726336454a496843",
+      "day_int": 5,
+      "day_raw": [
+        85
+      ],
+      "day_raw_whole": [
+        35,
+        25,
+        15,
+        20,
+        20,
+        20,
+        40,
+        50,
+        60,
+        45,
+        50,
+        50,
+        45,
+        50,
+        50,
+        70,
+        85,
+        95,
+        75,
+        50,
+        25,
+        10,
+        60,
+        50
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 5,
+        "day_rank_max": 3,
+        "day_mean": 46,
+        "day_max": 94,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.8,
+      "reviews": 4,
+      "price_level": 0,
+      "venue_name": "Langdon at Park - Memorial Union",
+      "venue_address": "Langdon St Madison, WI 53706 United States",
+      "venue_lat": 43.0758939,
+      "venue_lng": -89.3998477,
+      "venue_type": "BUS_STATION",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_775675684f77797871625f52676f42543147354f6a55594a496843",
+      "day_int": 5,
+      "day_raw": [
+        10
+      ],
+      "day_raw_whole": [
+        25,
+        30,
+        30,
+        25,
+        30,
+        30,
+        40,
+        50,
+        35,
+        30,
+        15,
+        25,
+        35,
+        50,
+        35,
+        30,
+        10,
+        20,
+        20,
+        30,
+        25,
+        40,
+        40,
+        50
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 4,
+        "day_rank_max": 5,
+        "day_mean": 32,
+        "day_max": 52,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ],
+          "special_day": null,
+          "open_24h": true,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 3,
+      "price_level": 0,
+      "venue_name": "Dreamkeepers",
+      "venue_address": "209 S Paterson St Madison, WI 53703 United States",
+      "venue_lat": 43.0804722,
+      "venue_lng": -89.3707258,
+      "venue_type": "OTHER",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_456274325a62387a5347395267344274754a51747533544a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        65,
+        60,
+        55,
+        60,
+        80,
+        85,
+        100,
+        80,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 70,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 3,
+      "price_level": 0,
+      "venue_name": "BBQ Stand",
+      "venue_address": "800 Langdon St Madison, WI 53706 United States",
+      "venue_lat": 43.0768955,
+      "venue_lng": -89.3992331,
+      "venue_type": "BBQ_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_494e674d4c326f424d314652676f4254393077365865384a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        90,
+        70,
+        65,
+        35,
+        50,
+        80,
+        100,
+        85,
+        50,
+        30,
+        30,
+        40,
+        40,
+        80,
+        70,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        70,
+        65
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 60,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 5.0,
+      "reviews": 3,
+      "price_level": 0,
+      "venue_name": "South & West Shore Park",
+      "venue_address": "500 S Shore Dr Madison, WI 53715 United States",
+      "venue_lat": 43.0570119,
+      "venue_lng": -89.3971712,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6b69546b6f70764e784e3052676f4254527a6f76622d354a496843",
+      "day_int": 5,
+      "day_raw": [
+        20
+      ],
+      "day_raw_whole": [
+        40,
+        45,
+        50,
+        60,
+        60,
+        45,
+        45,
+        50,
+        60,
+        60,
+        50,
+        45,
+        40,
+        40,
+        20,
+        15,
+        20,
+        30,
+        25,
+        25,
+        25,
+        15,
+        20,
+        25
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 6,
+        "day_rank_max": 5,
+        "day_mean": 38,
+        "day_max": 62,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.0,
+      "reviews": 3,
+      "price_level": 0,
+      "venue_name": "250 N. Lake St - Madison UW Campus",
+      "venue_address": "Madison, WI 53706 United States",
+      "venue_lat": 43.071668,
+      "venue_lng": -89.397602,
+      "venue_type": "BUS_STATION",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_30324d744e45626f546c4452676f4254313356487a66714a496843",
+      "day_int": 5,
+      "day_raw": [
+        35
+      ],
+      "day_raw_whole": [
+        25,
+        60,
+        75,
+        75,
+        65,
+        45,
+        40,
+        35,
+        45,
+        55,
+        60,
+        55,
+        40,
+        35,
+        35,
+        40,
+        35,
+        35,
+        45,
+        60,
+        55,
+        45,
+        60,
+        45
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 6,
+        "day_rank_max": 7,
+        "day_mean": 48,
+        "day_max": 73,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.0,
+      "reviews": 1,
+      "price_level": 0,
+      "venue_name": "Filene Park",
+      "venue_address": "1610 Sherman Ave Madison, WI 53704 United States",
+      "venue_lat": 43.0953589,
+      "venue_lng": -89.3696254,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_552d55462d467738496d5852676f4254393330633638374a496843",
+      "day_int": 5,
+      "day_raw": [
+        60
+      ],
+      "day_raw_whole": [
+        75,
+        95,
+        75,
+        55,
+        35,
+        10,
+        0,
+        5,
+        25,
+        30,
+        45,
+        35,
+        30,
+        20,
+        30,
+        35,
+        60,
+        60,
+        55,
+        60,
+        60,
+        80,
+        30,
+        30
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 4,
+        "day_rank_max": 3,
+        "day_mean": 44,
+        "day_max": 93,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 0,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "Open 24 hours"
+          ],
+          "special_day": null,
+          "open_24h": true,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 5.0,
+      "reviews": 1,
+      "price_level": 0,
+      "venue_name": "Isthmus Path Prairie Garden",
+      "venue_address": "850 E Wilson St Madison, WI 53703 United States",
+      "venue_lat": 43.079465,
+      "venue_lng": -89.3714136,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_595a514f6d6e5846464a4152676f4254313356487a66714a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        45,
+        45,
+        55,
+        55,
+        55,
+        70,
+        45,
+        35,
+        35,
+        10,
+        0,
+        0,
+        10,
+        20,
+        25,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        55
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 7,
+        "day_rank_max": 6,
+        "day_mean": 33,
+        "day_max": 72,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.0,
+      "reviews": 1,
+      "price_level": 0,
+      "venue_name": "Filene Park",
+      "venue_address": "1610 Sherman Ave Madison, WI 53704 United States",
+      "venue_lat": 43.0953589,
+      "venue_lng": -89.3696254,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_59456c3362735f3838597152673442733263766a47344b4a496843",
+      "day_int": 5,
+      "day_raw": [
+        25
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        30,
+        45,
+        55,
+        70,
+        80,
+        80,
+        70,
+        60,
+        55,
+        35,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 58,
+        "day_max": 82,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 12,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "12–10:30pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Sweet Home Wisconsin",
+      "venue_address": "910 Regent St Madison, WI 53715 United States",
+      "venue_lat": 43.0677981,
+      "venue_lng": -89.4016622,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_454837697676615368637452673442734b6b37436b2d6f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        45,
+        55,
+        50,
+        50,
+        40,
+        50,
+        50,
+        70,
+        60,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 21,
+        "day_rank_mean": 4,
+        "day_rank_max": 5,
+        "day_mean": 52,
+        "day_max": 68,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Curry in the Box - University Ave",
+      "venue_address": "2907 University Ave Madison, WI 53705 United States",
+      "venue_lat": 43.0746869,
+      "venue_lng": -89.4393102,
+      "venue_type": "THAI_RESTAURANT",
+      "venue_dwell_time_min": 15,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_5972434f47613663636f695267344274536b71736a5a344a496843",
+      "day_int": 5,
+      "day_raw": [
+        25
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        85,
+        100,
+        95,
+        70,
+        45,
+        30,
+        30,
+        25,
+        25,
+        20,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 15,
+        "venue_closed": 2,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 49,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 15,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "3pm–2am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.2,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Pizza Extreme",
+      "venue_address": "1614 Monroe St Madison, WI 53711 United States",
+      "venue_lat": 43.0672378,
+      "venue_lng": -89.4142024,
+      "venue_type": "PIZZA_RESTAURANT",
+      "venue_dwell_time_min": 15,
+      "venue_dwell_time_max": 150
+    },
+    {
+      "venue_id": "ven_674350745543507948383352673442732d56766251396b4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        35,
+        45,
+        65,
+        85,
+        100,
+        85,
+        70,
+        65,
+        50,
+        70,
+        50,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 65,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "10am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.1,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Dairy Queen (Treat)",
+      "venue_address": "2856 University Ave Madison, WI 53705 United States",
+      "venue_lat": 43.0754524,
+      "venue_lng": -89.4380893,
+      "venue_type": "DESSERT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_73704c502d3732426855365267344274326f48566b64764a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        50,
+        60,
+        65,
+        60,
+        55,
+        65,
+        85,
+        95,
+        95,
+        75,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 22,
+        "day_rank_mean": 3,
+        "day_rank_max": 3,
+        "day_mean": 70,
+        "day_max": 97,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "NORI Sushi & Grill",
+      "venue_address": "2911 University Ave Madison, WI 53705 United States",
+      "venue_lat": 43.0747147,
+      "venue_lng": -89.4394561,
+      "venue_type": "JAPANESE_RESTAURANT",
+      "venue_dwell_time_min": 15,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_6f597070705374744e626552673442735738795f5f5f5f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        35
+      ],
+      "day_raw_whole": [
+        40,
+        75,
+        60,
+        60,
+        40,
+        65,
+        75,
+        60,
+        40,
+        25,
+        15,
+        15,
+        35,
+        60,
+        40,
+        35,
+        35,
+        35,
+        35,
+        25,
+        25,
+        40,
+        35,
+        40
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 3,
+        "day_rank_max": 5,
+        "day_mean": 42,
+        "day_max": 75,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 0.0,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Camp Randall Memorial Park",
+      "venue_address": "132 N Randall Ave Madison, WI 53706 United States",
+      "venue_lat": 43.0704774,
+      "venue_lng": -89.4100684,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_6b617832754c423456577452673442744b51674c4a64364a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        30,
+        45,
+        65,
+        70,
+        65,
+        55,
+        50,
+        60,
+        75,
+        75,
+        60,
+        40,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 22,
+        "day_rank_mean": 3,
+        "day_rank_max": 3,
+        "day_mean": 55,
+        "day_max": 74,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Everly",
+      "venue_address": "2701 Monroe St Madison, WI 53711 United States",
+      "venue_lat": 43.0568222,
+      "venue_lng": -89.4288361,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 30,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_346c5a704546526c6a4b665267344273574d59566e547a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        60,
+        75,
+        85,
+        90,
+        100,
+        100,
+        85,
+        75,
+        65,
+        50,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 75,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Jordan's Big Ten Pub",
+      "venue_address": "1330 Regent St A Madison, WI 53715 United States",
+      "venue_lat": 43.0680798,
+      "venue_lng": -89.4083302,
+      "venue_type": "BEER",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_415069357734473559656c52676f4254684455642d30624a496843",
+      "day_int": 5,
+      "day_raw": [
+        100
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        25,
+        45,
+        70,
+        90,
+        100,
+        90,
+        60,
+        35,
+        15,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 17,
+        "venue_closed": 2,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 58,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 17,
+              "closes": 2,
+              "opens_minutes": 30,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "5:30pm–2:30am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Ivory Room Piano Bar",
+      "venue_address": "116 W Mifflin St Madison, WI 53703 United States",
+      "venue_lat": 43.074444,
+      "venue_lng": -89.387221,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 240
+    },
+    {
+      "venue_id": "ven_41585a2d43426f37715a4752676f425464586d7675366f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        95
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        20,
+        25,
+        25,
+        30,
+        40,
+        55,
+        80,
+        95,
+        100,
+        75,
+        45,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 14,
+        "venue_closed": 2,
+        "day_rank_mean": 2,
+        "day_rank_max": 1,
+        "day_mean": 51,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 14,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "2pm–2am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Crystal Corner Bar",
+      "venue_address": "1302 Williamson St Madison, WI 53703 United States",
+      "venue_lat": 43.0847604,
+      "venue_lng": -89.3625706,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_306245594276457558565352676f4254687a61697a594c4a496843",
+      "day_int": 5,
+      "day_raw": [
+        65
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        25,
+        30,
+        35,
+        50,
+        60,
+        70,
+        70,
+        65,
+        60,
+        45,
+        30,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 14,
+        "venue_closed": 2,
+        "day_rank_mean": 3,
+        "day_rank_max": 3,
+        "day_mean": 47,
+        "day_max": 71,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 14,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "2pm–2am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.7,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Cafe CODA",
+      "venue_address": "1224 Williamson St Madison, WI 53703 United States",
+      "venue_lat": 43.0839059,
+      "venue_lng": -89.3636951,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 180
+    },
+    {
+      "venue_id": "ven_6f593145434d6f356b696b52676f42546874736b7179454a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        15,
+        30,
+        55,
+        55,
+        70,
+        80,
+        100,
+        100,
+        75,
+        75,
+        55,
+        45,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 0,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 59,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 0,
+              "opens_minutes": 30,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11:30am–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Settle Down Tavern",
+      "venue_address": "117 S Pinckney St Madison, WI 53703 United States",
+      "venue_lat": 43.074218,
+      "venue_lng": -89.381152,
+      "venue_type": "AMERICAN_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_346262396b772d675f4a6552676f4254646a786a30654c4a496843",
+      "day_int": 5,
+      "day_raw": [
+        25
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        65,
+        75,
+        90,
+        95,
+        100,
+        95,
+        80,
+        65,
+        45,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 76,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 12,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "12–10:30pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Mad Seafood Boiler",
+      "venue_address": "201 W Gorham St Madison, WI 53703 United States",
+      "venue_lat": 43.0752436,
+      "venue_lng": -89.3908238,
+      "venue_type": "SEAFOOD_RESTAURANT",
+      "venue_dwell_time_min": 20,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_4d4e61444f6c6637646f695267344273325661434852314a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        25,
+        45,
+        75,
+        95,
+        100,
+        95,
+        85,
+        60,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 15,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 73,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 15,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "7am–3pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Ancora Cafe + Bakery",
+      "venue_address": "3256 University Ave Madison, WI 53705 United States",
+      "venue_lat": 43.075563,
+      "venue_lng": -89.4432876,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 60
+    },
+    {
+      "venue_id": "ven_555275532d3069684c594252673442734b504a775237504a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        25,
+        40,
+        50,
+        40,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 14,
+        "day_rank_mean": 3,
+        "day_rank_max": 5,
+        "day_mean": 39,
+        "day_max": 50,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 14,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9am–2pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Pasture and Plenty",
+      "venue_address": "2433 University Ave Madison, WI 53726 United States",
+      "venue_lat": 43.0718934,
+      "venue_lng": -89.4284267,
+      "venue_type": "CAFE",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_55704f3246665f76576c7452676f4254743278445779414a496843",
+      "day_int": 5,
+      "day_raw": [
+        85
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        10,
+        15,
+        20,
+        20,
+        25,
+        40,
+        50,
+        70,
+        80,
+        90,
+        85,
+        70,
+        45,
+        20,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 2,
+        "day_rank_mean": 2,
+        "day_rank_max": 3,
+        "day_mean": 43,
+        "day_max": 88,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 2,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–2am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Brass Ring Bar & Restaurant",
+      "venue_address": "701 E Washington Ave Madison, WI 53703 United States",
+      "venue_lat": 43.0800002,
+      "venue_lng": -89.3762275,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 180
+    },
+    {
+      "venue_id": "ven_55655f59756966666a587552676f4254353378426e564f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        15,
+        10,
+        15,
+        10,
+        15,
+        20,
+        30,
+        30,
+        30,
+        35,
+        35,
+        35,
+        45,
+        25,
+        20,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        5
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 24,
+        "day_max": 44,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.8,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Yahara River Parkway",
+      "venue_address": "101 N Thornton Ave Madison, WI 53703 United States",
+      "venue_lat": 43.091215,
+      "venue_lng": -89.364095,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_67346d45594e635a79695052676f42543944707367364f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        85,
+        100,
+        95,
+        70,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 17,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 87,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 17,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "5–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.5,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Johnny Delmonico's Steakhouse",
+      "venue_address": "130 S Pinckney St Madison, WI 53703 United States",
+      "venue_lat": 43.0740207,
+      "venue_lng": -89.3813538,
+      "venue_type": "STEAK_RESTAURANT",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 240
+    },
+    {
+      "venue_id": "ven_415f746a414d44662d6d2d52676f42545662645464314a4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        40,
+        65,
+        85,
+        90,
+        90,
+        80,
+        65,
+        55,
+        50,
+        50,
+        45,
+        45,
+        35,
+        35,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 5,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 57,
+        "day_max": 92,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 5,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "5am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 3.9,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Starbucks",
+      "venue_address": "2157 Rimrock Rd Madison, WI 53713 United States",
+      "venue_lat": 43.04256,
+      "venue_lng": -89.37711,
+      "venue_type": "COFFEE",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 10
+    },
+    {
+      "venue_id": "ven_55453543424a496f506e5952676f4254746d4d636c57444a496843",
+      "day_int": 5,
+      "day_raw": [
+        65
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        50,
+        65,
+        80,
+        85,
+        80,
+        75,
+        65,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 15,
+        "venue_closed": 0,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 64,
+        "day_max": 84,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 15,
+              "closes": 0,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "3pm–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Essen Haus Restaurant and Bar",
+      "venue_address": "514 E Wilson St Madison, WI 53703 United States",
+      "venue_lat": 43.076216,
+      "venue_lng": -89.3765367,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 90,
+      "venue_dwell_time_max": 150
+    },
+    {
+      "venue_id": "ven_59576a42755f4f5f4f362d52673442734f6677535951634a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        55,
+        65,
+        40,
+        30,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 7,
+        "venue_closed": 11,
+        "day_rank_mean": 7,
+        "day_rank_max": 7,
+        "day_mean": 47,
+        "day_max": 63,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 7,
+              "closes": 11,
+              "opens_minutes": 0,
+              "closes_minutes": 30
+            }
+          ],
+          "12h": [
+            "7–11:30am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 5.0,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "barre3",
+      "venue_address": "2560 University Ave Madison, WI 53705 United States",
+      "venue_lat": 43.0726035,
+      "venue_lng": -89.4301108,
+      "venue_type": "SPORTS_COMPLEX",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_386a576536754e4455796152673442734f396e694c32584a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        35,
+        35,
+        55,
+        60,
+        65,
+        80,
+        65,
+        50,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 12,
+        "venue_closed": 22,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 51,
+        "day_max": 80,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 12,
+              "closes": 22
+            }
+          ],
+          "12h": [
+            "12–10pm"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.0,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Falbo Bros. Pizza",
+      "venue_address": "406 S Park St Madison, WI 53715 United States",
+      "venue_lat": 43.0629326,
+      "venue_lng": -89.40109,
+      "venue_type": "PIZZA_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_4175632d4a61306b76356552676f42545a597231762d2d4a496843",
+      "day_int": 5,
+      "day_raw": [
+        40
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        20,
+        40,
+        50,
+        50,
+        45,
+        45,
+        50,
+        70,
+        85,
+        100,
+        90,
+        80,
+        60,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 9,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 58,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 9,
+              "closes": 23,
+              "opens_minutes": 30,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "9:30am–11pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Mint Mark",
+      "venue_address": "1874 E Washington Ave Madison, WI 53704 United States",
+      "venue_lat": 43.0922541,
+      "venue_lng": -89.3608978,
+      "venue_type": "AMERICAN_RESTAURANT",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_6b726a6c4350325a36316c5267344273696372776b576f4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        40,
+        35,
+        35,
+        40,
+        55,
+        70,
+        75,
+        65,
+        50,
+        40,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 22,
+        "day_rank_mean": 6,
+        "day_rank_max": 6,
+        "day_mean": 50,
+        "day_max": 74,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 22,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–10pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.1,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Sett Pub",
+      "venue_address": "1308 W Dayton St room 105 Madison, WI 53715 United States",
+      "venue_lat": 43.071313,
+      "venue_lng": -89.40772,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_5146585948744c61635f5052676f4254564f374657626e4a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        45,
+        50,
+        65,
+        75,
+        85,
+        90,
+        90,
+        85,
+        80,
+        90,
+        90,
+        95,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 8,
+        "venue_closed": 21,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 79,
+        "day_max": 97,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 8,
+              "closes": 21,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "8am–9pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Target",
+      "venue_address": "610 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0750075,
+      "venue_lng": -89.3960339,
+      "venue_type": "SHOPPING_CENTER",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 10
+    },
+    {
+      "venue_id": "ven_4938734b6763423863694b52676f425452544d6f3054794a496843",
+      "day_int": 5,
+      "day_raw": [
+        80
+      ],
+      "day_raw_whole": [
+        40,
+        40,
+        30,
+        30,
+        30,
+        35,
+        30,
+        20,
+        15,
+        15,
+        30,
+        20,
+        30,
+        35,
+        65,
+        65,
+        80,
+        40,
+        50,
+        35,
+        35,
+        5,
+        35,
+        20
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 0,
+        "venue_closed": 0,
+        "day_rank_mean": 7,
+        "day_rank_max": 6,
+        "day_mean": 34,
+        "day_max": 78,
+        "venue_open_close_v2": {
+          "24h": [],
+          "12h": [],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 0.0,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "University at N Bassett",
+      "venue_address": "Madison, WI 53703 United States",
+      "venue_lat": 43.073282,
+      "venue_lng": -89.394649,
+      "venue_type": "BUS_STATION",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_345969794c53624d2d4e7a5267344273327376476534334a496843",
+      "day_int": 5,
+      "day_raw": [
+        40
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65,
+        95,
+        100,
+        80,
+        65,
+        50,
+        40,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 16,
+        "venue_closed": 0,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 66,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 16,
+              "closes": 0,
+              "opens_minutes": 30,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "4:30pm–12am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Greenbush Bar",
+      "venue_address": "914 Regent St Madison, WI 53715 United States",
+      "venue_lat": 43.0678232,
+      "venue_lng": -89.401863,
+      "venue_type": "BAR",
+      "venue_dwell_time_min": 30,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_6f5a2d31536e387769674352676f4254397a3243752d724a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        30,
+        40,
+        50,
+        50,
+        60,
+        75,
+        90,
+        100,
+        95,
+        85,
+        70,
+        55,
+        45,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 1,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 59,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 1,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "10am–1am"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": true,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "The Great Dane Pub & Brewing Company",
+      "venue_address": "123 E Doty St Madison, WI 53703 United States",
+      "venue_lat": 43.074447,
+      "venue_lng": -89.380175,
+      "venue_type": "BEER",
+      "venue_dwell_time_min": 60,
+      "venue_dwell_time_max": 120
+    },
+    {
+      "venue_id": "ven_344c5f4f5766766e5a7764526734427453436c463752654a496843",
+      "day_int": 5,
+      "day_raw": [
+        40
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        50,
+        70,
+        90,
+        100,
+        85,
+        75,
+        65,
+        60,
+        65,
+        60,
+        60,
+        45,
+        40,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 10,
+        "venue_closed": 0,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 64,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 10,
+              "closes": 0
+            }
+          ],
+          "12h": [
+            "10AM–12AM"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.4,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "The Borough",
+      "venue_address": "444 S Park St Madison, WI 53715 United States",
+      "venue_lat": 43.062212,
+      "venue_lng": -89.4010793,
+      "venue_type": "AMERICAN_RESTAURANT",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_7752504250467654616d4852676f4254316d48363733704a496843",
+      "day_int": 5,
+      "day_raw": [
+        0
+      ],
+      "day_raw_whole": [
+        35,
+        55,
+        40,
+        50,
+        40,
+        55,
+        50,
+        40,
+        70,
+        80,
+        100,
+        70,
+        70,
+        50,
+        55,
+        35,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        5
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 4,
+        "venue_closed": 22,
+        "day_rank_mean": 1,
+        "day_rank_max": 2,
+        "day_mean": 57,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 4,
+              "closes": 22
+            }
+          ],
+          "12h": [
+            "4AM–10PM"
+          ]
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Kerr - McGee Triangle Park",
+      "venue_address": "728 Jenifer St Madison, WI 53703 United States",
+      "venue_lat": 43.0774805,
+      "venue_lng": -89.3722548,
+      "venue_type": "PARK",
+      "venue_dwell_time_min": 0,
+      "venue_dwell_time_max": 0
+    },
+    {
+      "venue_id": "ven_41574e376f77484d5f753752676f425468465653542d654a496843",
+      "day_int": 5,
+      "day_raw": [
+        45
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        55,
+        80,
+        95,
+        100,
+        85,
+        75,
+        65,
+        65,
+        75,
+        80,
+        60,
+        45,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 73,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 23,
+              "opens_minutes": 0,
+              "closes_minutes": 45
+            }
+          ],
+          "12h": [
+            "11am–11:45pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.8,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Hot Lunch",
+      "venue_address": "708 1/4 E Johnson St Madison, WI 53703 United States",
+      "venue_lat": 43.0822442,
+      "venue_lng": -89.3795667,
+      "venue_type": "RESTAURANT",
+      "venue_dwell_time_min": 45,
+      "venue_dwell_time_max": 90
+    },
+    {
+      "venue_id": "ven_4d584c7536636778746b6552676f4254566a33517665654a496843",
+      "day_int": 5,
+      "day_raw": [
+        55
+      ],
+      "day_raw_whole": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        35,
+        60,
+        80,
+        100,
+        95,
+        95,
+        90,
+        85,
+        75,
+        70,
+        60,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 5,
+        "day_text": "Saturday",
+        "venue_open": 11,
+        "venue_closed": 23,
+        "day_rank_mean": 1,
+        "day_rank_max": 1,
+        "day_mean": 75,
+        "day_max": 100,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 11,
+              "closes": 23,
+              "opens_minutes": 0,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "11am–11pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Saturday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.3,
+      "reviews": 0,
+      "price_level": 0,
+      "venue_name": "Chen’s Dumpling House",
+      "venue_address": "505 State St Madison, WI 53703 United States",
+      "venue_lat": 43.0747526,
+      "venue_lng": -89.3939738,
+      "venue_type": "CHINESE_RESTAURANT",
+      "venue_dwell_time_min": 25,
+      "venue_dwell_time_max": 60
+    }
+  ],
+  "venues_n": 100,
+  "window": {
+    "time_window_start": 6,
+    "time_window_start_ix": 0,
+    "time_window_start_12h": "6AM",
+    "day_window_start_int": 5,
+    "day_window_start_txt": "Saturday",
+    "day_window_end_int": 6,
+    "day_window_end_txt": "Sunday",
+    "time_window_end": 5,
+    "time_window_end_ix": 23,
+    "time_window_end_12h": "5AM",
+    "day_window": "Saturday 6AM until Sunday 5AM",
+    "time_local": 22,
+    "time_local_12": "10PM",
+    "time_local_index": 16
+  }
+}
