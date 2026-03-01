@@ -395,6 +395,12 @@ def correlation_scores(
     # Result shape: (1, N) — we flatten to a 1-D list
     sims = cosine_similarity(query_vec, desc_vecs).flatten()
 
+    # Power-stretch: sim^alpha spreads the compressed [0, ~0.1] range across
+    # [0, 1] while keeping 0 → 0 and preserving ranking order.
+    alpha = config.SIMILARITY_STRETCH_ALPHA
+    if alpha != 1.0:
+        sims = np.where(sims > 0, np.power(sims, alpha), 0.0)
+
     return [round(float(s), 4) for s in sims]
 
 
@@ -486,7 +492,7 @@ def mode_scores(
     # 1) Best Match
     s_best = (
         0.80 * rel
-        + 0.0 * hot
+        + 0.02 * hot
         + 0.08 * crowd
         + 0.08 * urg
     )

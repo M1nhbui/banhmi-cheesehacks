@@ -75,6 +75,22 @@ TEMP_IDEAL_LOW_F  = 60   # °F
 TEMP_IDEAL_HIGH_F = 78   # °F
 TEMP_DECAY_F      = 20   # degrees of deviation → score falls to ~0
 
+# -----------------------------------------------------------------------------
+# Similarity stretch
+# -----------------------------------------------------------------------------
+# Raw TF-IDF cosine similarity values cluster near 0 (typical max ≈ 0.10–0.15).
+# Applying a power transform  sim^alpha  (alpha < 1) spreads them across [0, 1]
+# while keeping 0 → 0 and preserving rank order.
+#
+# Effect of alpha=0.35 on raw cosine values:
+#   raw 0.01  → stretched ≈ 0.21
+#   raw 0.025 → stretched ≈ 0.35
+#   raw 0.05  → stretched ≈ 0.50
+#   raw 0.10  → stretched ≈ 0.63
+#
+# Set to 1.0 to disable (identity transform).
+SIMILARITY_STRETCH_ALPHA: float = 0.35
+
 # API settings
 API_HOST = "0.0.0.0"
 API_PORT = 8000
