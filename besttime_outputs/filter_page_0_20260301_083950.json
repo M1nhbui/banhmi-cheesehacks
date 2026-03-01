@@ -275,7 +275,7 @@
       "venue_id": "ven_6b4432423052774465474e5267344273324e5a375254564a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        25
       ],
       "day_raw_whole": [
         0,
@@ -616,7 +616,7 @@
         "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
       },
       "rating": 4.6,
-      "reviews": 2443,
+      "reviews": 2447,
       "price_level": 2,
       "venue_name": "Dotty Dumpling's Dowry",
       "venue_address": "317 N Frances St Madison, WI 53703 United States",
@@ -624,7 +624,7 @@
       "venue_lng": -89.3956735,
       "venue_type": "BURGER_RESTAURANT",
       "venue_dwell_time_min": 45,
-      "venue_dwell_time_max": 120
+      "venue_dwell_time_max": 90
     },
     {
       "venue_id": "ven_30614c705939587135776c52676f42546444755a2d53744a496843",
@@ -772,7 +772,7 @@
       "venue_id": "ven_51492d4c3248373477565752676f4254645871734352724a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        25
       ],
       "day_raw_whole": [
         0,
@@ -1120,7 +1120,7 @@
       "venue_id": "ven_772d4f4b6672636262653352676f42543554615a4853554a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        10
       ],
       "day_raw_whole": [
         0,
@@ -1405,7 +1405,7 @@
       "venue_id": "ven_59677a416c4c483930647852676f4254396a70384f53584a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        45
       ],
       "day_raw_whole": [
         0,
@@ -1618,7 +1618,7 @@
       "venue_id": "ven_4d4f667632335f4e504c4e52673442734f4d58626731434a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        60
       ],
       "day_raw_whole": [
         0,
@@ -1689,7 +1689,7 @@
       "venue_id": "ven_59504658415a5a53697a7552676f42545a446d5f4d35514a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        40
       ],
       "day_raw_whole": [
         0,
@@ -1831,7 +1831,7 @@
       "venue_id": "ven_4d5365524834785a32654652673442733663514c612d734a496843",
       "day_int": 6,
       "day_raw": [
-        10
+        20
       ],
       "day_raw_whole": [
         10,
@@ -2044,7 +2044,7 @@
       "venue_id": "ven_41755975476a495a646a3952676f42544e3034697834634a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        40
       ],
       "day_raw_whole": [
         30,
@@ -2493,7 +2493,7 @@
       "venue_id": "ven_41494f764a38373438793952676f4254527a57423936794a496843",
       "day_int": 6,
       "day_raw": [
-        10
+        0
       ],
       "day_raw_whole": [
         0,
@@ -2913,7 +2913,7 @@
       "venue_id": "ven_6b5366364a674f7849466752676f4254685458424e66464a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        25
       ],
       "day_raw_whole": [
         0,
@@ -3653,7 +3653,7 @@
       "venue_id": "ven_5935365a456b54564f5a4952673442732d38384b4e2d4f4a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        45
       ],
       "day_raw_whole": [
         25,
@@ -4427,7 +4427,7 @@
       "venue_id": "ven_3479566f3375473232544652673442732d46764261332d4a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        40
       ],
       "day_raw_whole": [
         0,
@@ -4563,7 +4563,7 @@
       "venue_id": "ven_51674b674b36673277696a52676f425452447a57782d4a4a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        35
       ],
       "day_raw_whole": [
         0,
@@ -4634,7 +4634,7 @@
       "venue_id": "ven_7754683137566a4248414952673442732d6377776735544a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        55
       ],
       "day_raw_whole": [
         0,
@@ -5249,77 +5249,6 @@
       "venue_dwell_time_max": 90
     },
     {
-      "venue_id": "ven_496370506e4672465f527652673442733250516333645a4a496843",
-      "day_int": 6,
-      "day_raw": [
-        0
-      ],
-      "day_raw_whole": [
-        15,
-        30,
-        45,
-        70,
-        80,
-        95,
-        85,
-        85,
-        75,
-        75,
-        55,
-        40,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "day_info": {
-        "day_int": 6,
-        "day_text": "Sunday",
-        "venue_open": 6,
-        "venue_closed": 18,
-        "day_rank_mean": 2,
-        "day_rank_max": 2,
-        "day_mean": 62,
-        "day_max": 94,
-        "venue_open_close_v2": {
-          "24h": [
-            {
-              "opens": 6,
-              "closes": 18,
-              "opens_minutes": 30,
-              "closes_minutes": 0
-            }
-          ],
-          "12h": [
-            "6:30am–6pm"
-          ],
-          "special_day": null,
-          "open_24h": false,
-          "crosses_midnight": false,
-          "day_text": "Sunday"
-        },
-        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
-      },
-      "rating": 4.6,
-      "reviews": 858,
-      "price_level": 2,
-      "venue_name": "Colectivo Coffee Monroe St.",
-      "venue_address": "2530 Monroe St Madison, WI 53711 United States",
-      "venue_lat": 43.0580583,
-      "venue_lng": -89.4279708,
-      "venue_type": "CAFE",
-      "venue_dwell_time_min": 10,
-      "venue_dwell_time_max": 90
-    },
-    {
       "venue_id": "ven_384a6e5371756e52546d6c52676f4254393848664232514a496843",
       "day_int": 6,
       "day_raw": [
@@ -5391,10 +5320,81 @@
       "venue_dwell_time_max": 60
     },
     {
+      "venue_id": "ven_496370506e4672465f527652673442733250516333645a4a496843",
+      "day_int": 6,
+      "day_raw": [
+        45
+      ],
+      "day_raw_whole": [
+        15,
+        30,
+        45,
+        70,
+        80,
+        95,
+        85,
+        85,
+        75,
+        75,
+        55,
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "day_info": {
+        "day_int": 6,
+        "day_text": "Sunday",
+        "venue_open": 6,
+        "venue_closed": 18,
+        "day_rank_mean": 2,
+        "day_rank_max": 2,
+        "day_mean": 62,
+        "day_max": 94,
+        "venue_open_close_v2": {
+          "24h": [
+            {
+              "opens": 6,
+              "closes": 18,
+              "opens_minutes": 30,
+              "closes_minutes": 0
+            }
+          ],
+          "12h": [
+            "6:30am–6pm"
+          ],
+          "special_day": null,
+          "open_24h": false,
+          "crosses_midnight": false,
+          "day_text": "Sunday"
+        },
+        "note": "Update: venue_open_close_v2 replaces venue_open and venue_closed and supports multiple opening times per day."
+      },
+      "rating": 4.6,
+      "reviews": 858,
+      "price_level": 2,
+      "venue_name": "Colectivo Coffee Monroe St.",
+      "venue_address": "2530 Monroe St Madison, WI 53711 United States",
+      "venue_lat": 43.0580583,
+      "venue_lng": -89.4279708,
+      "venue_type": "CAFE",
+      "venue_dwell_time_min": 10,
+      "venue_dwell_time_max": 90
+    },
+    {
       "venue_id": "ven_6358356c6b4f683058385a52676f4254645463785131684a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        20
       ],
       "day_raw_whole": [
         0,
@@ -5607,7 +5607,7 @@
       "venue_id": "ven_30645171593547525f315952676f42544245796e5258324a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        70
       ],
       "day_raw_whole": [
         0,
@@ -5678,7 +5678,7 @@
       "venue_id": "ven_634f627452357a366e53485267344273363164504165654a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        50
       ],
       "day_raw_whole": [
         20,
@@ -5820,7 +5820,7 @@
       "venue_id": "ven_6f6c69444e6a307966374352676f42545268306765546d4a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        20
       ],
       "day_raw_whole": [
         0,
@@ -6084,7 +6084,7 @@
       "venue_id": "ven_4d30652d4a6f4a6c464c4952676f42535239626f4c53564a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        25
       ],
       "day_raw_whole": [
         0,
@@ -6226,7 +6226,7 @@
       "venue_id": "ven_67716b6974477168562d3152676f42544a4935352d77594a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        60
       ],
       "day_raw_whole": [
         0,
@@ -6297,7 +6297,7 @@
       "venue_id": "ven_6f6c74317474387448336452676f42546c6d53415630454a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        25
       ],
       "day_raw_whole": [
         10,
@@ -6510,7 +6510,7 @@
       "venue_id": "ven_7377722d6831353172656a52676f42544a584573365f374a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        40
       ],
       "day_raw_whole": [
         0,
@@ -6581,7 +6581,7 @@
       "venue_id": "ven_4133713073623968587a4352676f4254566a6f415f5f304a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        40
       ],
       "day_raw_whole": [
         0,
@@ -6652,7 +6652,7 @@
       "venue_id": "ven_385133474153656478775952676f4253783846527066574a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        30
       ],
       "day_raw_whole": [
         0,
@@ -6723,7 +6723,7 @@
       "venue_id": "ven_77474258722d5f68626b395267344273536438354d79684a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        40
       ],
       "day_raw_whole": [
         15,
@@ -6859,7 +6859,7 @@
       "venue_id": "ven_776e4535657350704c693352676f42546c4757667a53384a496843",
       "day_int": 6,
       "day_raw": [
-        0
+        45
       ],
       "day_raw_whole": [
         0,
@@ -6940,8 +6940,8 @@
     "time_window_end_ix": 23,
     "time_window_end_12h": "5AM",
     "day_window": "Sunday 6AM until Monday 5AM",
-    "time_local": 2,
-    "time_local_12": "2AM",
-    "time_local_index": 20
+    "time_local": 8,
+    "time_local_12": "8AM",
+    "time_local_index": 2
   }
 }

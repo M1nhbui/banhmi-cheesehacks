@@ -5667,8 +5667,8 @@
     "updated_at": "2026-02-24",
     "open": "07:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021843,
+    "crowd": 0.0
   },
   {
     "entity_id": "224",
@@ -5745,8 +5745,8 @@
     "updated_at": "2026-02-20",
     "open": "10:30",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.019357,
+    "crowd": 0.0
   },
   {
     "entity_id": "227",
@@ -5823,8 +5823,8 @@
     "updated_at": "2026-01-14",
     "open": "07:00",
     "close": "17:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.057986,
+    "crowd": 0.0
   },
   {
     "entity_id": "230",
@@ -5951,8 +5951,8 @@
     "updated_at": "2026-02-20",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.016989,
+    "crowd": 0.0
   },
   {
     "entity_id": "235",
@@ -5976,8 +5976,8 @@
     "updated_at": "2026-02-24",
     "open": "16:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02341,
+    "crowd": 0.0
   },
   {
     "entity_id": "236",
@@ -6076,8 +6076,8 @@
     "updated_at": "2026-02-16",
     "open": "10:30",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.037181,
+    "crowd": 0.0
   },
   {
     "entity_id": "240",
@@ -6177,8 +6177,8 @@
     "updated_at": "2026-02-20",
     "open": "05:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.071291,
+    "crowd": 0.0
   },
   {
     "entity_id": "244",
@@ -6330,8 +6330,8 @@
     "updated_at": "2026-02-24",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.074335,
+    "crowd": 0.0
   },
   {
     "entity_id": "250",
@@ -6560,8 +6560,8 @@
     "updated_at": "2026-02-18",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.082895,
+    "crowd": 0.0
   },
   {
     "entity_id": "259",
@@ -6737,8 +6737,8 @@
     "updated_at": "2026-02-18",
     "open": "10:30",
     "close": "02:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.030577,
+    "crowd": 0.0
   },
   {
     "entity_id": "266",
@@ -6788,8 +6788,8 @@
     "updated_at": "2026-02-22",
     "open": "08:00",
     "close": "16:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.074335,
+    "crowd": 0.0
   },
   {
     "entity_id": "268",
@@ -6894,8 +6894,8 @@
     "updated_at": "2026-02-20",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023813,
+    "crowd": 0.0
   },
   {
     "entity_id": "272",
@@ -7052,8 +7052,8 @@
     "updated_at": "2026-02-22",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.044878,
+    "crowd": 0.0
   },
   {
     "entity_id": "278",
@@ -7105,8 +7105,8 @@
     "updated_at": "2026-02-18",
     "open": "11:00",
     "close": "19:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023813,
+    "crowd": 0.0
   },
   {
     "entity_id": "280",
@@ -7256,8 +7256,8 @@
     "updated_at": "2026-02-03",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026805,
+    "crowd": 0.0
   },
   {
     "entity_id": "286",
@@ -7308,8 +7308,8 @@
     "updated_at": "2026-02-20",
     "open": "00:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.037181,
+    "crowd": 0.0
   },
   {
     "entity_id": "288",
@@ -7462,8 +7462,8 @@
     "updated_at": "2026-02-23",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.044878,
+    "crowd": 0.0
   },
   {
     "entity_id": "294",
@@ -7590,8 +7590,8 @@
     "updated_at": "2026-02-25",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038907,
+    "crowd": 0.0
   },
   {
     "entity_id": "299",
@@ -7820,8 +7820,8 @@
     "updated_at": "2026-01-25",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02341,
+    "crowd": 0.0
   },
   {
     "entity_id": "308",
@@ -8259,8 +8259,8 @@
     "updated_at": "2026-02-12",
     "open": "08:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "325",
@@ -8312,8 +8312,8 @@
     "updated_at": "2026-02-18",
     "open": "06:30",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "327",
@@ -8338,8 +8338,8 @@
     "updated_at": "2026-02-22",
     "open": "07:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021681,
+    "crowd": 0.0
   },
   {
     "entity_id": "328",
@@ -8441,8 +8441,8 @@
     "updated_at": "2025-08-22",
     "open": "06:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021681,
+    "crowd": 0.0
   },
   {
     "entity_id": "332",
@@ -8466,8 +8466,8 @@
     "updated_at": "2025-10-04",
     "open": "11:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026805,
+    "crowd": 0.0
   },
   {
     "entity_id": "333",
@@ -8516,8 +8516,8 @@
     "updated_at": "2025-09-08",
     "open": "07:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.01974,
+    "crowd": 0.0
   },
   {
     "entity_id": "335",
@@ -8591,8 +8591,8 @@
     "updated_at": "2018-08-30",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "338",
@@ -8642,8 +8642,8 @@
     "updated_at": "2025-03-21",
     "open": "06:30",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "340",
@@ -8793,8 +8793,8 @@
     "updated_at": "2014-09-24",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021036,
+    "crowd": 0.0
   },
   {
     "entity_id": "346",
@@ -8972,8 +8972,8 @@
     "updated_at": "2016-11-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "353",
@@ -9047,8 +9047,8 @@
     "updated_at": "2025-03-21",
     "open": "00:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.079195,
+    "crowd": 0.0
   },
   {
     "entity_id": "356",
@@ -9073,8 +9073,8 @@
     "updated_at": "2022-08-25",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.089142,
+    "crowd": 0.0
   },
   {
     "entity_id": "357",
@@ -9098,8 +9098,8 @@
     "updated_at": "2012-08-01",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.044878,
+    "crowd": 0.0
   },
   {
     "entity_id": "358",
@@ -9198,8 +9198,8 @@
     "updated_at": "2025-07-03",
     "open": "11:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.082895,
+    "crowd": 0.0
   },
   {
     "entity_id": "362",
@@ -9223,8 +9223,8 @@
     "updated_at": "2013-03-10",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "363",
@@ -9248,8 +9248,8 @@
     "updated_at": "2025-03-21",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.078697,
+    "crowd": 0.0
   },
   {
     "entity_id": "364",
@@ -9273,8 +9273,8 @@
     "updated_at": "2014-10-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.078697,
+    "crowd": 0.0
   },
   {
     "entity_id": "365",
@@ -9324,8 +9324,8 @@
     "updated_at": "2012-11-02",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.036712,
+    "crowd": 0.0
   },
   {
     "entity_id": "367",
@@ -9349,8 +9349,8 @@
     "updated_at": "2019-09-30",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.037181,
+    "crowd": 0.0
   },
   {
     "entity_id": "368",
@@ -9399,8 +9399,8 @@
     "updated_at": "2026-01-10",
     "open": "11:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02341,
+    "crowd": 0.0
   },
   {
     "entity_id": "370",
@@ -9477,8 +9477,8 @@
     "updated_at": "2025-10-24",
     "open": "10:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.017785,
+    "crowd": 0.0
   },
   {
     "entity_id": "373",
@@ -9761,8 +9761,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.037181,
+    "crowd": 0.0
   },
   {
     "entity_id": "384",
@@ -9915,8 +9915,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023813,
+    "crowd": 0.35
   },
   {
     "entity_id": "390",
@@ -9941,8 +9941,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.098786,
+    "crowd": 0.0
   },
   {
     "entity_id": "391",
@@ -10018,8 +10018,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021036,
+    "crowd": 0.0
   },
   {
     "entity_id": "394",
@@ -10147,8 +10147,8 @@
     "updated_at": "2025-12-05",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.5
   },
   {
     "entity_id": "399",
@@ -10508,8 +10508,8 @@
     "updated_at": "2025-12-14",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026805,
+    "crowd": 0.0
   },
   {
     "entity_id": "413",
@@ -10708,8 +10708,8 @@
     "updated_at": "2018-11-11",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.018772,
+    "crowd": 0.0
   },
   {
     "entity_id": "421",
@@ -10733,8 +10733,8 @@
     "updated_at": "2019-08-03",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026805,
+    "crowd": 0.0
   },
   {
     "entity_id": "422",
@@ -10759,8 +10759,8 @@
     "updated_at": "2025-08-22",
     "open": "09:00",
     "close": "19:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023813,
+    "crowd": 0.0
   },
   {
     "entity_id": "423",
@@ -10810,8 +10810,8 @@
     "updated_at": "2019-07-30",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.018005,
+    "crowd": 0.0
   },
   {
     "entity_id": "425",
@@ -10835,8 +10835,8 @@
     "updated_at": "2026-02-17",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "426",
@@ -10860,8 +10860,8 @@
     "updated_at": "2016-08-07",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "427",
@@ -10885,8 +10885,8 @@
     "updated_at": "2025-08-22",
     "open": "11:00",
     "close": "13:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "428",
@@ -10985,8 +10985,8 @@
     "updated_at": "2025-08-19",
     "open": "12:00",
     "close": "16:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.018005,
+    "crowd": 0.0
   },
   {
     "entity_id": "432",
@@ -11262,8 +11262,8 @@
     "updated_at": "2026-02-19",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.016997,
+    "crowd": 0.0
   },
   {
     "entity_id": "443",
@@ -11287,8 +11287,8 @@
     "updated_at": "2025-12-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.017013,
+    "crowd": 0.0
   },
   {
     "entity_id": "444",
@@ -11413,8 +11413,8 @@
     "updated_at": "2026-01-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.016997,
+    "crowd": 0.0
   },
   {
     "entity_id": "449",
@@ -11489,8 +11489,8 @@
     "updated_at": "2015-07-11",
     "open": "12:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.068467,
+    "crowd": 0.0
   },
   {
     "entity_id": "452",
@@ -11514,8 +11514,8 @@
     "updated_at": "2012-04-24",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "453",
@@ -11766,8 +11766,8 @@
     "updated_at": "2025-04-25",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.069752,
+    "crowd": 0.0
   },
   {
     "entity_id": "463",
@@ -11791,8 +11791,8 @@
     "updated_at": "2018-04-09",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "464",
@@ -11841,8 +11841,8 @@
     "updated_at": "2013-08-02",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.069752,
+    "crowd": 0.0
   },
   {
     "entity_id": "466",
@@ -11891,8 +11891,8 @@
     "updated_at": "2026-02-20",
     "open": "09:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "468",
@@ -11941,8 +11941,8 @@
     "updated_at": "2023-08-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.018772,
+    "crowd": 0.0
   },
   {
     "entity_id": "470",
@@ -11967,8 +11967,8 @@
     "updated_at": "2018-08-12",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "471",
@@ -12068,8 +12068,8 @@
     "updated_at": "2014-11-16",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "475",
@@ -12294,8 +12294,8 @@
     "updated_at": "2025-10-19",
     "open": "11:00",
     "close": "02:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "484",
@@ -12420,8 +12420,8 @@
     "updated_at": "2017-06-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.044878,
+    "crowd": 0.0
   },
   {
     "entity_id": "489",
@@ -12445,8 +12445,8 @@
     "updated_at": "2026-02-11",
     "open": "07:00",
     "close": "01:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.179378,
+    "crowd": 0.2
   },
   {
     "entity_id": "490",
@@ -12572,8 +12572,8 @@
     "updated_at": "2026-02-19",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.069752,
+    "crowd": 0.0
   },
   {
     "entity_id": "495",
@@ -12599,8 +12599,8 @@
     "updated_at": "2025-12-17",
     "open": "16:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "496",
@@ -12624,8 +12624,8 @@
     "updated_at": "2025-05-01",
     "open": "10:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021843,
+    "crowd": 0.0
   },
   {
     "entity_id": "497",
@@ -12649,8 +12649,8 @@
     "updated_at": "2024-06-12",
     "open": "00:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.082895,
+    "crowd": 0.0
   },
   {
     "entity_id": "498",
@@ -12700,8 +12700,8 @@
     "updated_at": "2025-04-23",
     "open": "00:30",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.063813,
+    "crowd": 0.0
   },
   {
     "entity_id": "500",
@@ -12801,8 +12801,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.037181,
+    "crowd": 0.0
   },
   {
     "entity_id": "504",
@@ -12826,8 +12826,8 @@
     "updated_at": "2012-05-30",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.037181,
+    "crowd": 0.0
   },
   {
     "entity_id": "505",
@@ -12877,8 +12877,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.021036,
+    "crowd": 0.0
   },
   {
     "entity_id": "507",
@@ -13031,8 +13031,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.057023,
+    "crowd": 0.0
   },
   {
     "entity_id": "513",
@@ -13056,8 +13056,8 @@
     "updated_at": "2023-02-04",
     "open": "08:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023813,
+    "crowd": 0.0
   },
   {
     "entity_id": "514",
@@ -13081,8 +13081,8 @@
     "updated_at": "2017-05-10",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.179378,
+    "crowd": 0.2
   },
   {
     "entity_id": "515",
@@ -13181,8 +13181,8 @@
     "updated_at": "2024-06-08",
     "open": "10:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.020623,
+    "crowd": 0.0
   },
   {
     "entity_id": "519",
@@ -13256,8 +13256,8 @@
     "updated_at": "2025-12-15",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.069007,
+    "crowd": 0.0
   },
   {
     "entity_id": "522",
@@ -13281,8 +13281,8 @@
     "updated_at": "2014-08-09",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023813,
+    "crowd": 0.0
   },
   {
     "entity_id": "523",
@@ -13308,8 +13308,8 @@
     "updated_at": "2025-12-20",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.018772,
+    "crowd": 0.0
   },
   {
     "entity_id": "524",
@@ -13333,8 +13333,8 @@
     "updated_at": "2012-03-09",
     "open": "10:00",
     "close": "16:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.020623,
+    "crowd": 0.0
   },
   {
     "entity_id": "525",
@@ -13513,8 +13513,8 @@
     "updated_at": "2022-09-24",
     "open": "09:00",
     "close": "19:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "532",
@@ -13563,8 +13563,8 @@
     "updated_at": "2017-05-30",
     "open": "11:00",
     "close": "16:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.01974,
+    "crowd": 0.0
   },
   {
     "entity_id": "534",
@@ -13588,8 +13588,8 @@
     "updated_at": "2017-02-09",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.5
   },
   {
     "entity_id": "535",
@@ -13638,8 +13638,8 @@
     "updated_at": "2012-11-06",
     "open": "10:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029091,
+    "crowd": 0.0
   },
   {
     "entity_id": "537",
@@ -22043,8 +22043,8 @@
     "updated_at": "2025-06-12",
     "open": "07:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.049629,
+    "crowd": 0.0
   },
   {
     "entity_id": "868",
@@ -22069,8 +22069,8 @@
     "updated_at": "2026-01-10",
     "open": "07:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.034176,
+    "crowd": 0.0
   },
   {
     "entity_id": "869",
@@ -22169,8 +22169,8 @@
     "updated_at": "2026-02-18",
     "open": "10:45",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "873",
@@ -22222,8 +22222,8 @@
     "updated_at": "2026-02-23",
     "open": "10:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "875",
@@ -22299,8 +22299,8 @@
     "updated_at": "2026-02-22",
     "open": "10:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.35
   },
   {
     "entity_id": "878",
@@ -22707,8 +22707,8 @@
     "updated_at": "2026-02-18",
     "open": "10:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076746,
+    "crowd": 0.0
   },
   {
     "entity_id": "894",
@@ -22859,8 +22859,8 @@
     "updated_at": "2026-02-20",
     "open": "15:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029153,
+    "crowd": 0.0
   },
   {
     "entity_id": "900",
@@ -22884,8 +22884,8 @@
     "updated_at": "2026-02-21",
     "open": "17:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "901",
@@ -22909,8 +22909,8 @@
     "updated_at": "2026-02-18",
     "open": "10:30",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "902",
@@ -23112,8 +23112,8 @@
     "updated_at": "2026-02-18",
     "open": "10:30",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076789,
+    "crowd": 0.0
   },
   {
     "entity_id": "910",
@@ -23394,8 +23394,8 @@
     "updated_at": "2026-02-25",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "921",
@@ -23470,8 +23470,8 @@
     "updated_at": "2025-12-01",
     "open": "11:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.085092,
+    "crowd": 0.0
   },
   {
     "entity_id": "924",
@@ -23497,8 +23497,8 @@
     "updated_at": "2026-02-24",
     "open": "10:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.0753,
+    "crowd": 0.0
   },
   {
     "entity_id": "925",
@@ -23624,8 +23624,8 @@
     "updated_at": "2026-02-20",
     "open": "05:30",
     "close": "19:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "930",
@@ -23828,8 +23828,8 @@
     "updated_at": "2026-01-25",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "938",
@@ -23932,8 +23932,8 @@
     "updated_at": "2026-02-21",
     "open": "10:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "942",
@@ -24060,8 +24060,8 @@
     "updated_at": "2026-02-25",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "947",
@@ -24112,8 +24112,8 @@
     "updated_at": "2026-02-15",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.091792,
+    "crowd": 0.0
   },
   {
     "entity_id": "949",
@@ -24188,8 +24188,8 @@
     "updated_at": "2025-10-25",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "952",
@@ -24318,8 +24318,8 @@
     "updated_at": "2026-02-09",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "957",
@@ -24370,8 +24370,8 @@
     "updated_at": "2026-02-18",
     "open": "05:30",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "959",
@@ -24447,8 +24447,8 @@
     "updated_at": "2026-02-20",
     "open": "11:00",
     "close": "02:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "962",
@@ -24473,8 +24473,8 @@
     "updated_at": "2025-12-07",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02047,
+    "crowd": 0.0
   },
   {
     "entity_id": "963",
@@ -24499,8 +24499,8 @@
     "updated_at": "2026-02-20",
     "open": "10:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.083985,
+    "crowd": 0.0
   },
   {
     "entity_id": "964",
@@ -24524,8 +24524,8 @@
     "updated_at": "2026-02-20",
     "open": "08:00",
     "close": "18:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "965",
@@ -24676,8 +24676,8 @@
     "updated_at": "2026-02-08",
     "open": "06:30",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.098404,
+    "crowd": 0.0
   },
   {
     "entity_id": "971",
@@ -24728,8 +24728,8 @@
     "updated_at": "2026-01-25",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.06672,
+    "crowd": 0.0
   },
   {
     "entity_id": "973",
@@ -24958,8 +24958,8 @@
     "updated_at": "2025-11-20",
     "open": "06:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "982",
@@ -24983,8 +24983,8 @@
     "updated_at": "2019-02-02",
     "open": "06:30",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "983",
@@ -25008,8 +25008,8 @@
     "updated_at": "2025-07-12",
     "open": "06:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.087145,
+    "crowd": 0.0
   },
   {
     "entity_id": "984",
@@ -25033,8 +25033,8 @@
     "updated_at": "2025-10-22",
     "open": "07:00",
     "close": "13:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "985",
@@ -25085,8 +25085,8 @@
     "updated_at": "2025-08-22",
     "open": "11:00",
     "close": "19:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.072629,
+    "crowd": 0.0
   },
   {
     "entity_id": "987",
@@ -25185,8 +25185,8 @@
     "updated_at": "2014-09-06",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "991",
@@ -25210,8 +25210,8 @@
     "updated_at": "2025-10-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "992",
@@ -25311,8 +25311,8 @@
     "updated_at": "2025-04-23",
     "open": "07:00",
     "close": "14:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.034176,
+    "crowd": 0.3
   },
   {
     "entity_id": "996",
@@ -25361,8 +25361,8 @@
     "updated_at": "2018-11-29",
     "open": "06:30",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.033399,
+    "crowd": 0.0
   },
   {
     "entity_id": "998",
@@ -25386,8 +25386,8 @@
     "updated_at": "2023-07-04",
     "open": "09:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "999",
@@ -25436,8 +25436,8 @@
     "updated_at": "2026-02-18",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025193,
+    "crowd": 0.0
   },
   {
     "entity_id": "1001",
@@ -25461,8 +25461,8 @@
     "updated_at": "2016-09-26",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1002",
@@ -25561,8 +25561,8 @@
     "updated_at": "2026-01-28",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023275,
+    "crowd": 0.0
   },
   {
     "entity_id": "1006",
@@ -25611,8 +25611,8 @@
     "updated_at": "2026-02-18",
     "open": "11:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "1008",
@@ -25686,8 +25686,8 @@
     "updated_at": "2025-06-06",
     "open": "00:00",
     "close": "03:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "1011",
@@ -25711,8 +25711,8 @@
     "updated_at": "2018-11-10",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "1012",
@@ -25736,8 +25736,8 @@
     "updated_at": "2018-10-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1013",
@@ -25761,8 +25761,8 @@
     "updated_at": "2025-10-23",
     "open": "12:00",
     "close": "03:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "1014",
@@ -25811,8 +25811,8 @@
     "updated_at": "2025-08-22",
     "open": "16:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023275,
+    "crowd": 0.0
   },
   {
     "entity_id": "1016",
@@ -25836,8 +25836,8 @@
     "updated_at": "2026-01-13",
     "open": "15:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "1017",
@@ -25886,8 +25886,8 @@
     "updated_at": "2014-03-25",
     "open": "10:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1019",
@@ -25911,8 +25911,8 @@
     "updated_at": "2012-05-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "1020",
@@ -25936,8 +25936,8 @@
     "updated_at": "2016-10-16",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1021",
@@ -25963,8 +25963,8 @@
     "updated_at": "2014-08-22",
     "open": "11:00",
     "close": "22:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.044878,
+    "crowd": 0.0
   },
   {
     "entity_id": "1022",
@@ -25988,8 +25988,8 @@
     "updated_at": "2025-07-04",
     "open": "00:00",
     "close": "04:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.10198,
+    "crowd": 0.0
   },
   {
     "entity_id": "1023",
@@ -26013,8 +26013,8 @@
     "updated_at": "2025-07-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023237,
+    "crowd": 0.0
   },
   {
     "entity_id": "1024",
@@ -26038,8 +26038,8 @@
     "updated_at": "2012-02-08",
     "open": "16:30",
     "close": "22:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076448,
+    "crowd": 0.0
   },
   {
     "entity_id": "1025",
@@ -26063,8 +26063,8 @@
     "updated_at": "2025-07-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.077867,
+    "crowd": 0.0
   },
   {
     "entity_id": "1026",
@@ -26113,8 +26113,8 @@
     "updated_at": "2012-02-22",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "1028",
@@ -26140,8 +26140,8 @@
     "updated_at": "2019-12-29",
     "open": "16:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.033399,
+    "crowd": 0.0
   },
   {
     "entity_id": "1029",
@@ -26165,8 +26165,8 @@
     "updated_at": "2025-07-04",
     "open": "11:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02002,
+    "crowd": 0.0
   },
   {
     "entity_id": "1030",
@@ -26191,8 +26191,8 @@
     "updated_at": "2016-08-11",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1031",
@@ -26241,8 +26241,8 @@
     "updated_at": "2012-02-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.080033,
+    "crowd": 0.0
   },
   {
     "entity_id": "1033",
@@ -26266,8 +26266,8 @@
     "updated_at": "2015-10-25",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.080033,
+    "crowd": 0.0
   },
   {
     "entity_id": "1034",
@@ -26419,8 +26419,8 @@
     "updated_at": "2025-12-06",
     "open": "10:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025389,
+    "crowd": 0.0
   },
   {
     "entity_id": "1040",
@@ -26444,8 +26444,8 @@
     "updated_at": "2026-01-18",
     "open": "11:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023275,
+    "crowd": 0.0
   },
   {
     "entity_id": "1041",
@@ -26469,8 +26469,8 @@
     "updated_at": "2023-09-23",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1042",
@@ -26495,8 +26495,8 @@
     "updated_at": "2026-02-22",
     "open": "12:00",
     "close": "02:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02002,
+    "crowd": 0.0
   },
   {
     "entity_id": "1043",
@@ -26521,8 +26521,8 @@
     "updated_at": "2018-07-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "1044",
@@ -26596,8 +26596,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023057,
+    "crowd": 0.0
   },
   {
     "entity_id": "1047",
@@ -26671,8 +26671,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023057,
+    "crowd": 0.0
   },
   {
     "entity_id": "1050",
@@ -26696,8 +26696,8 @@
     "updated_at": "2025-06-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.069618,
+    "crowd": 0.0
   },
   {
     "entity_id": "1051",
@@ -26772,8 +26772,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023057,
+    "crowd": 0.0
   },
   {
     "entity_id": "1054",
@@ -26848,8 +26848,8 @@
     "updated_at": "2026-02-22",
     "open": "10:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.033399,
+    "crowd": 0.0
   },
   {
     "entity_id": "1057",
@@ -26873,8 +26873,8 @@
     "updated_at": "2025-09-20",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026573,
+    "crowd": 0.45
   },
   {
     "entity_id": "1058",
@@ -26898,8 +26898,8 @@
     "updated_at": "2025-12-16",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.35
   },
   {
     "entity_id": "1059",
@@ -26949,8 +26949,8 @@
     "updated_at": "2026-02-11",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1061",
@@ -26974,8 +26974,8 @@
     "updated_at": "2025-10-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.063379,
+    "crowd": 0.0
   },
   {
     "entity_id": "1062",
@@ -26999,8 +26999,8 @@
     "updated_at": "2019-07-02",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1063",
@@ -27024,8 +27024,8 @@
     "updated_at": "2023-11-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023057,
+    "crowd": 0.0
   },
   {
     "entity_id": "1064",
@@ -27074,8 +27074,8 @@
     "updated_at": "2025-05-11",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1066",
@@ -27125,8 +27125,8 @@
     "updated_at": "2023-08-12",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.074554,
+    "crowd": 0.0
   },
   {
     "entity_id": "1068",
@@ -27152,8 +27152,8 @@
     "updated_at": "2023-07-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.022196,
+    "crowd": 0.0
   },
   {
     "entity_id": "1069",
@@ -27202,8 +27202,8 @@
     "updated_at": "2024-07-14",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1071",
@@ -27228,8 +27228,8 @@
     "updated_at": "2025-08-23",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1072",
@@ -27279,8 +27279,8 @@
     "updated_at": "2025-11-23",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1074",
@@ -27331,8 +27331,8 @@
     "updated_at": "2025-08-22",
     "open": "11:30",
     "close": "17:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1076",
@@ -27383,8 +27383,8 @@
     "updated_at": "2025-11-09",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1078",
@@ -27409,8 +27409,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.034176,
+    "crowd": 0.0
   },
   {
     "entity_id": "1079",
@@ -27459,8 +27459,8 @@
     "updated_at": "2012-04-15",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1081",
@@ -27484,8 +27484,8 @@
     "updated_at": "2019-03-05",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1082",
@@ -27536,8 +27536,8 @@
     "updated_at": "2024-08-18",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1084",
@@ -27561,8 +27561,8 @@
     "updated_at": "2026-02-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "1085",
@@ -27586,8 +27586,8 @@
     "updated_at": "2026-02-11",
     "open": "14:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.034176,
+    "crowd": 0.0
   },
   {
     "entity_id": "1086",
@@ -27638,8 +27638,8 @@
     "updated_at": "2025-11-22",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1088",
@@ -27663,8 +27663,8 @@
     "updated_at": "2025-08-20",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1089",
@@ -27688,8 +27688,8 @@
     "updated_at": "2025-08-22",
     "open": "20:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023975,
+    "crowd": 0.0
   },
   {
     "entity_id": "1090",
@@ -27713,8 +27713,8 @@
     "updated_at": "2019-08-17",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.0753,
+    "crowd": 0.0
   },
   {
     "entity_id": "1091",
@@ -27763,8 +27763,8 @@
     "updated_at": "2015-11-05",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041702,
+    "crowd": 0.0
   },
   {
     "entity_id": "1093",
@@ -27788,8 +27788,8 @@
     "updated_at": "2014-10-06",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1094",
@@ -27838,8 +27838,8 @@
     "updated_at": "2026-02-22",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.01847,
+    "crowd": 0.0
   },
   {
     "entity_id": "1096",
@@ -27888,8 +27888,8 @@
     "updated_at": "2022-09-10",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.033399,
+    "crowd": 0.0
   },
   {
     "entity_id": "1098",
@@ -27913,8 +27913,8 @@
     "updated_at": "2025-08-22",
     "open": "11:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026805,
+    "crowd": 0.0
   },
   {
     "entity_id": "1099",
@@ -27963,8 +27963,8 @@
     "updated_at": "2025-10-11",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.089356,
+    "crowd": 0.0
   },
   {
     "entity_id": "1101",
@@ -27988,8 +27988,8 @@
     "updated_at": "2025-11-22",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025193,
+    "crowd": 0.0
   },
   {
     "entity_id": "1102",
@@ -28013,8 +28013,8 @@
     "updated_at": "2012-09-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041702,
+    "crowd": 0.0
   },
   {
     "entity_id": "1103",
@@ -28039,8 +28039,8 @@
     "updated_at": "2012-05-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076789,
+    "crowd": 0.0
   },
   {
     "entity_id": "1104",
@@ -28064,8 +28064,8 @@
     "updated_at": "2025-08-19",
     "open": "13:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.034176,
+    "crowd": 0.0
   },
   {
     "entity_id": "1105",
@@ -28089,8 +28089,8 @@
     "updated_at": "2012-08-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "1106",
@@ -28114,8 +28114,8 @@
     "updated_at": "2018-12-25",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.094358,
+    "crowd": 0.0
   },
   {
     "entity_id": "1107",
@@ -28164,8 +28164,8 @@
     "updated_at": "2014-07-24",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.35
   },
   {
     "entity_id": "1109",
@@ -28214,8 +28214,8 @@
     "updated_at": "2013-10-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.033399,
+    "crowd": 0.0
   },
   {
     "entity_id": "1111",
@@ -28239,8 +28239,8 @@
     "updated_at": "2013-04-14",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "1112",
@@ -28264,8 +28264,8 @@
     "updated_at": "2025-10-19",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.083985,
+    "crowd": 0.0
   },
   {
     "entity_id": "1113",
@@ -28314,8 +28314,8 @@
     "updated_at": "2011-12-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.07566,
+    "crowd": 0.0
   },
   {
     "entity_id": "1115",
@@ -28390,8 +28390,8 @@
     "updated_at": "2025-11-16",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1118",
@@ -28415,8 +28415,8 @@
     "updated_at": "2012-05-05",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025389,
+    "crowd": 0.0
   },
   {
     "entity_id": "1119",
@@ -28441,8 +28441,8 @@
     "updated_at": "2018-09-09",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.022196,
+    "crowd": 0.0
   },
   {
     "entity_id": "1120",
@@ -28491,8 +28491,8 @@
     "updated_at": "2017-05-06",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.033399,
+    "crowd": 0.0
   },
   {
     "entity_id": "1122",
@@ -28516,8 +28516,8 @@
     "updated_at": "2019-10-27",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1123",
@@ -28541,8 +28541,8 @@
     "updated_at": "2014-07-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.022689,
+    "crowd": 0.0
   },
   {
     "entity_id": "1124",
@@ -28566,8 +28566,8 @@
     "updated_at": "2015-03-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1125",
@@ -28591,8 +28591,8 @@
     "updated_at": "2025-08-22",
     "open": "12:00",
     "close": "20:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "1126",
@@ -28641,8 +28641,8 @@
     "updated_at": "2011-12-20",
     "open": "11:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.072629,
+    "crowd": 0.0
   },
   {
     "entity_id": "1128",
@@ -28666,8 +28666,8 @@
     "updated_at": "2021-07-12",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.073274,
+    "crowd": 0.0
   },
   {
     "entity_id": "1129",
@@ -28692,8 +28692,8 @@
     "updated_at": "2025-08-30",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1130",
@@ -28717,8 +28717,8 @@
     "updated_at": "2023-09-17",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.083985,
+    "crowd": 0.0
   },
   {
     "entity_id": "1131",
@@ -28742,8 +28742,8 @@
     "updated_at": "2014-08-22",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1132",
@@ -28767,8 +28767,8 @@
     "updated_at": "2012-02-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1133",
@@ -28793,8 +28793,8 @@
     "updated_at": "2025-12-06",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.044878,
+    "crowd": 0.0
   },
   {
     "entity_id": "1134",
@@ -28844,8 +28844,8 @@
     "updated_at": "2020-02-29",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.0753,
+    "crowd": 0.0
   },
   {
     "entity_id": "1136",
@@ -28894,8 +28894,8 @@
     "updated_at": "2026-02-25",
     "open": "11:00",
     "close": "02:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1138",
@@ -28995,8 +28995,8 @@
     "updated_at": "2026-01-11",
     "open": "14:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02047,
+    "crowd": 0.0
   },
   {
     "entity_id": "1142",
@@ -29045,8 +29045,8 @@
     "updated_at": "2026-02-15",
     "open": "11:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1144",
@@ -29147,8 +29147,8 @@
     "updated_at": "2026-02-07",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02047,
+    "crowd": 0.0
   },
   {
     "entity_id": "1148",
@@ -29174,8 +29174,8 @@
     "updated_at": "2025-03-21",
     "open": "09:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.034176,
+    "crowd": 0.0
   },
   {
     "entity_id": "1149",
@@ -29199,8 +29199,8 @@
     "updated_at": "2025-11-01",
     "open": "10:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038907,
+    "crowd": 0.0
   },
   {
     "entity_id": "1150",
@@ -29225,8 +29225,8 @@
     "updated_at": "2021-11-21",
     "open": "00:00",
     "close": "00:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.070553,
+    "crowd": 0.0
   },
   {
     "entity_id": "1151",
@@ -29352,8 +29352,8 @@
     "updated_at": "2020-08-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.082477,
+    "crowd": 0.0
   },
   {
     "entity_id": "1156",
@@ -29378,8 +29378,8 @@
     "updated_at": "2025-08-22",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1157",
@@ -29504,8 +29504,8 @@
     "updated_at": "2025-12-29",
     "open": "16:00",
     "close": "02:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1162",
@@ -29554,8 +29554,8 @@
     "updated_at": "2025-07-20",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.046781,
+    "crowd": 0.0
   },
   {
     "entity_id": "1164",
@@ -29604,8 +29604,8 @@
     "updated_at": "2026-02-07",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1166",
@@ -29679,8 +29679,8 @@
     "updated_at": "2025-08-22",
     "open": "10:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1169",
@@ -29704,8 +29704,8 @@
     "updated_at": "2024-08-06",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.023057,
+    "crowd": 0.0
   },
   {
     "entity_id": "1170",
@@ -29755,8 +29755,8 @@
     "updated_at": "2023-11-12",
     "open": "19:00",
     "close": "23:30",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.02002,
+    "crowd": 0.0
   },
   {
     "entity_id": "1172",
@@ -29780,8 +29780,8 @@
     "updated_at": "2012-01-05",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041696,
+    "crowd": 0.0
   },
   {
     "entity_id": "1173",
@@ -29831,8 +29831,8 @@
     "updated_at": "2025-10-22",
     "open": "11:00",
     "close": "23:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.022196,
+    "crowd": 0.0
   },
   {
     "entity_id": "1175",
@@ -29856,8 +29856,8 @@
     "updated_at": "2025-11-22",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.073274,
+    "crowd": 0.0
   },
   {
     "entity_id": "1176",
@@ -29882,8 +29882,8 @@
     "updated_at": "2025-03-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.373135,
+    "crowd": 0.3
   },
   {
     "entity_id": "1177",
@@ -29907,8 +29907,8 @@
     "updated_at": "2026-03-01T00:58:25.218694+00:00",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.022196,
+    "crowd": 0.0
   },
   {
     "entity_id": "1178",
@@ -29933,8 +29933,8 @@
     "updated_at": "2015-07-11",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1179",
@@ -30061,8 +30061,8 @@
     "updated_at": "2015-12-26",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076789,
+    "crowd": 0.0
   },
   {
     "entity_id": "1184",
@@ -30086,8 +30086,8 @@
     "updated_at": "2016-06-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1185",
@@ -30111,8 +30111,8 @@
     "updated_at": "2021-08-07",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1186",
@@ -30136,8 +30136,8 @@
     "updated_at": "2011-10-14",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.089356,
+    "crowd": 0.0
   },
   {
     "entity_id": "1187",
@@ -30161,8 +30161,8 @@
     "updated_at": "2022-05-07",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076789,
+    "crowd": 0.0
   },
   {
     "entity_id": "1188",
@@ -30236,8 +30236,8 @@
     "updated_at": "2014-01-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.083985,
+    "crowd": 0.0
   },
   {
     "entity_id": "1191",
@@ -30263,8 +30263,8 @@
     "updated_at": "2026-02-21",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1192",
@@ -30313,8 +30313,8 @@
     "updated_at": "2025-08-22",
     "open": "13:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1194",
@@ -30413,8 +30413,8 @@
     "updated_at": "2013-11-16",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1198",
@@ -30463,8 +30463,8 @@
     "updated_at": "2026-02-20",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1200",
@@ -30488,8 +30488,8 @@
     "updated_at": "2025-12-15",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026987,
+    "crowd": 0.0
   },
   {
     "entity_id": "1201",
@@ -30513,8 +30513,8 @@
     "updated_at": "2015-09-04",
     "open": "11:00",
     "close": "19:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041702,
+    "crowd": 0.0
   },
   {
     "entity_id": "1202",
@@ -30563,8 +30563,8 @@
     "updated_at": "2012-02-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "1204",
@@ -30588,8 +30588,8 @@
     "updated_at": "2022-06-18",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.038139,
+    "crowd": 0.0
   },
   {
     "entity_id": "1205",
@@ -30613,8 +30613,8 @@
     "updated_at": "2022-05-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.083985,
+    "crowd": 0.0
   },
   {
     "entity_id": "1206",
@@ -30638,8 +30638,8 @@
     "updated_at": "2019-12-02",
     "open": "09:00",
     "close": "21:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.089356,
+    "crowd": 0.0
   },
   {
     "entity_id": "1207",
@@ -30688,8 +30688,8 @@
     "updated_at": "2017-05-08",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.03849,
+    "crowd": 0.0
   },
   {
     "entity_id": "1209",
@@ -30713,8 +30713,8 @@
     "updated_at": "2024-05-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.080033,
+    "crowd": 0.0
   },
   {
     "entity_id": "1210",
@@ -30738,8 +30738,8 @@
     "updated_at": "2025-04-06",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.041846,
+    "crowd": 0.0
   },
   {
     "entity_id": "1211",
@@ -30763,8 +30763,8 @@
     "updated_at": "2013-10-05",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.040992,
+    "crowd": 0.0
   },
   {
     "entity_id": "1212",
@@ -30788,8 +30788,8 @@
     "updated_at": "2026-02-04",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.094358,
+    "crowd": 0.0
   },
   {
     "entity_id": "1213",
@@ -30813,8 +30813,8 @@
     "updated_at": "2019-11-10",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.026573,
+    "crowd": 0.0
   },
   {
     "entity_id": "1214",
@@ -30863,8 +30863,8 @@
     "updated_at": "2022-03-19",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1216",
@@ -30888,8 +30888,8 @@
     "updated_at": "2012-06-07",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.045295,
+    "crowd": 0.0
   },
   {
     "entity_id": "1217",
@@ -30913,8 +30913,8 @@
     "updated_at": "2024-02-03",
     "open": "10:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025193,
+    "crowd": 0.0
   },
   {
     "entity_id": "1218",
@@ -30938,8 +30938,8 @@
     "updated_at": "2022-06-22",
     "open": "10:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.076789,
+    "crowd": 0.0
   },
   {
     "entity_id": "1219",
@@ -32014,8 +32014,8 @@
     "updated_at": "2026-02-11",
     "open": "07:00",
     "close": "15:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029954,
+    "crowd": 0.0
   },
   {
     "entity_id": "1261",
@@ -32653,8 +32653,8 @@
     "updated_at": "2026-01-25",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029954,
+    "crowd": 0.0
   },
   {
     "entity_id": "1286",
@@ -34233,8 +34233,8 @@
     "updated_at": "2025-07-03",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.07904,
+    "crowd": 0.0
   },
   {
     "entity_id": "1348",
@@ -35698,8 +35698,8 @@
     "updated_at": "2025-07-13",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025389,
+    "crowd": 0.0
   },
   {
     "entity_id": "1406",
@@ -35949,8 +35949,8 @@
     "updated_at": "2026-02-21",
     "open": "09:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.019133,
+    "crowd": 0.0
   },
   {
     "entity_id": "1416",
@@ -37130,8 +37130,8 @@
     "updated_at": "2025-08-22",
     "open": "12:00",
     "close": "22:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.029954,
+    "crowd": 0.0
   },
   {
     "entity_id": "1463",
@@ -37715,8 +37715,8 @@
     "updated_at": "2017-06-23",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025389,
+    "crowd": 0.0
   },
   {
     "entity_id": "1486",
@@ -37868,8 +37868,8 @@
     "updated_at": "2026-02-22",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.019133,
+    "crowd": 0.0
   },
   {
     "entity_id": "1492",
@@ -38095,8 +38095,8 @@
     "updated_at": "2025-07-24",
     "open": "11:00",
     "close": "18:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.025389,
+    "crowd": 0.0
   },
   {
     "entity_id": "1501",
@@ -38248,8 +38248,8 @@
     "updated_at": "2013-02-24",
     "open": "09:00",
     "close": "17:00",
-    "hotness": null,
-    "crowd": null
+    "hotness": 0.019133,
+    "crowd": 0.0
   },
   {
     "entity_id": "1507",
