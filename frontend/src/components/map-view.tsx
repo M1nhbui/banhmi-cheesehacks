@@ -41,12 +41,19 @@ function clamp01(n: number) {
 }
 
 export default function MapView() {
-  const { places, loading } = useSearchResults(true)
 
   const [hover, setHover] = useState<HoverInfo>(null)
   const [mode, setMode] = useState<ScoreMode>("relevant")
   const [emojis, setEmojis] = useState<string[]>([])
   const [query, setQuery] = useState("")
+
+  const { places, loading, refresh: refreshScores } = useSearchResults({
+    initialMode: mode,           // or "relevant" fixed
+    initialKeywords: emojis,      // likely []
+    initialQuery: query,          // likely ""
+    mock: true
+  })
+
 
   const token = import.meta.env.VITE_MAPBOX_TOKEN as string
 
@@ -70,7 +77,17 @@ export default function MapView() {
     setEmojis((prev) => (prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]))
   }
 
-  function refresh() { }
+  async function refresh() {
+    // keywords should be the emoji values (your “statements”)
+    // If you want query to influence matching too, include it:
+    // const keywords = query.trim() ? [query.trim(), ...emojis] : emojis
+
+    await refreshScores({
+      mode,
+      keywords: emojis,
+      query
+    })
+  }
 
   const layers = useMemo(() => {
     const placeData = (places ?? []).filter((p: any) => p.type === "place")
@@ -135,65 +152,65 @@ export default function MapView() {
 
         onHover: (info: any) => setHover(info.object ? info : null),
         onClick: (info: PickingInfo<any>) => {
-        openDetailFromMap(info)
-        setHover(null)
-      },
+          openDetailFromMap(info)
+          setHover(null)
+        },
       }),
     ]
-}, [places, openDetailFromMap])
+  }, [places, openDetailFromMap])
 
-return (
-  <div className="relative h-full w-full">
-    <DeckGL
-      initialViewState={INITIAL_VIEW}
-      controller
-      layers={layers}
-      onClick={(info) => {
-        if (!info?.object) setSelected(null)
-      }}
-    >
-      <LoadingPill show={!!loading} />
+  return (
+    <div className="relative h-full w-full">
+      <DeckGL
+        initialViewState={INITIAL_VIEW}
+        controller
+        layers={layers}
+        onClick={(info) => {
+          if (!info?.object) setSelected(null)
+        }}
+      >
+        <LoadingPill show={!!loading} />
 
-      <Map
-        mapboxAccessToken={token}
-        mapStyle={MAP_STYLE}
-        onLoad={(e) => add3dBuildingsLayer(e.target)}
+        <Map
+          mapboxAccessToken={token}
+          mapStyle={MAP_STYLE}
+          onLoad={(e) => add3dBuildingsLayer(e.target)}
+        />
+      </DeckGL>
+
+      <MapSidebar
+        mode={mode}
+        onModeChange={setMode}
+        onRefresh={refresh}
+        loading={loading}
+        emojiKeys={emojis}
+        onEmojiToggle={toggleEmojis}
+        query={query}
+        onQueryChange={setQuery}
       />
-    </DeckGL>
 
-    <MapSidebar
-      mode={mode}
-      onModeChange={setMode}
-      onRefresh={refresh}
-      loading={loading}
-      emojiKeys={emojis}
-      onEmojiToggle={toggleEmojis}
-      query={query}
-      onQueryChange={setQuery}
-    />
+      {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
 
-    {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
+      {selected && (
+        <DetailCard
+          row={selected as ResultRow}
+          onClose={closeDetail}
+          onToggleSaved={() => toggleSaved(selected as ResultRow)}
+          isSaved={isSaved(selected as ResultRow)}
+          onBack={detailFromSaved ? backToSavedList : undefined}
+        />
+      )}
 
-    {selected && (
-      <DetailCard
-        row={selected as ResultRow}
-        onClose={closeDetail}
-        onToggleSaved={() => toggleSaved(selected as ResultRow)}
-        isSaved={isSaved(selected as ResultRow)}
-        onBack={detailFromSaved ? backToSavedList : undefined}
-      />
-    )}
+      <SavedToggleButton count={savedCount} open={savedOpen} onToggle={toggleSavedPanel} />
 
-    <SavedToggleButton count={savedCount} open={savedOpen} onToggle={toggleSavedPanel} />
-
-    {savedOpen && (
-      <SavedPanel
-        saved={savedRows}
-        onClose={toggleSavedPanel}
-        onSelect={selectFromSavedList}
-        onRemove={removeSaved}
-      />
-    )}
-  </div>
-)
+      {savedOpen && (
+        <SavedPanel
+          saved={savedRows}
+          onClose={toggleSavedPanel}
+          onSelect={selectFromSavedList}
+          onRemove={removeSaved}
+        />
+      )}
+    </div>
+  )
 }
