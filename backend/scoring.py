@@ -485,18 +485,18 @@ def mode_scores(
 
     # 1) Best Match
     s_best = (
-        0.62 * rel
-        + 0.20 * hot
+        0.80 * rel
+        + 0.0 * hot
         + 0.08 * crowd
-        + 0.10 * urg
+        + 0.08 * urg
     )
 
     # 2) Hot Right Now
     s_hot = (
-        0.18 * rel
-        + 0.68 * hot
-        + 0.10 * crowd
-        + 0.04 * urg
+        0.08 * rel
+        + 0.76 * hot
+        + 0.08 * crowd
+        + 0.08 * urg
     )
 
     # 3) Hidden Gems
@@ -513,10 +513,10 @@ def mode_scores(
 
     # 4) Chill / Not Crowded
     s_chill = (
-        0.52 * rel
-        + 0.26 * low_crowd
-        + 0.12 * low_urg
-        + 0.10 * calm_hot
+        0.5 * rel
+        + 0.05 * low_crowd
+        + 0.05 * low_urg
+        + 0.4 * calm_hot
     )
     if crowd > 0.65:
         s_chill *= 0.60
