@@ -1,37 +1,38 @@
 # Madison Interest Map (Keyword-Driven Scoring)
 
-An end-to-end demo project that ingests **places** and **events** for **Madison, WI**, enriches each row with **weather**, computes a **keyword-to-description correlation** (cosine similarity), plus **popularity** and **urgency** signals, then returns a **final table** of scored map points for a frontend interactive map.
+An end-to-end backend that ingests **places** and **events** for **Madison, WI**, enriches each row with **weather**, computes a **keyword-to-description correlation** (cosine similarity), plus **popularity**, **weather**, and **urgency** signals, then returns a **final ranked table** of scored map points for a frontend interactive map.
 
-> Goal: keep the system simple, explainable, and easy to extend later when you plug in real online data sources.
+> Goal: keep the system simple, explainable, and easy to extend when you plug in additional real-time data sources.
 
 ---
 
 ## Demo scope
 
-* **City:** Madison, WI only (fixed boundary).
-* **User:** single demo user (or a request-time keyword list).
-* **Entities:** two types of rows:
+* **City:** Madison, WI only (fixed bounding box).
+* **User:** single demo user — only input is a keyword list at request time.
+* **Entities:** two types:
 
-  * **Place**: has rating/reviews, static info.
-  * **Event**: has start/end times; urgency increases as the event is closer to ending.
+  * **Place** (1,708 real Foursquare venues): has rating/reviews, `open`/`close` hours, static info.
+  * **Event** (15 hand-crafted): has `event_start`/`event_end`; urgency builds before the event starts and decays as it winds down.
 * **No personalization:** the only user input is a list of keywords.
+* **Data files:** `data/places.json` and `data/events.json` — swap either file to update the dataset without touching code.
 
 ---
 
 ## What the frontend receives
 
-The backend returns a list of rows. Each row is already scored and is ready to plot as a marker:
+The backend returns a list of rows sorted by `score` descending. Each row is ready to plot as a map marker:
 
 * `name`
 * `lat`, `lon`
 * `address`
 * `description`
-* `score` (0..1)
+* `score` — **min-max normalised to `[0, 1]`** across all returned results (see [Final score](#final-score))
 
 Optional debug/UI fields:
 
 * `type` (`place` or `event`)
-* `breakdown` (similarity/popularity/weather/urgency)
+* `breakdown` (raw component scores: similarity / popularity / weather / urgency)
 
 ---
 
@@ -66,24 +67,26 @@ The system uses a unified concept called an **Entity**.
 
 Each row is either a **place** or an **event**.
 
-| Field          | Type        | Description                            |
-| -------------- | ----------- | -------------------------------------- |
-| `entity_id`    | string/uuid | Internal unique id                     |
-| `entity_type`  | enum        | `place` or `event`                     |
-| `source`       | string      | `yelp`, `osm`, `eventbrite`, etc.      |
-| `source_id`    | string      | Unique id from the source              |
-| `name`         | string      | Display name                           |
-| `lat` / `lon`  | float       | Coordinates                            |
-| `address`      | string      | One-line address for UI                |
-| `description`  | string      | Main text used for similarity          |
-| `categories`   | list/string | Tags/categories (optional but helpful) |
-| `rating`       | float?      | 0–5 (nullable; mostly for places)      |
-| `review_count` | int?        | Popularity proxy (nullable)            |
-| `price_tier`   | int?        | Optional (nullable)                    |
-| `event_start`  | datetime?   | Only for events                        |
-| `event_end`    | datetime?   | Only for events                        |
-| `created_at`   | datetime    | Row created                            |
-| `updated_at`   | datetime    | Row updated                            |
+| Field          | Type        | Description                                                |
+| -------------- | ----------- | ---------------------------------------------------------- |
+| `entity_id`    | string      | Unique id (numeric string for Foursquare data, UUID otherwise) |
+| `entity_type`  | enum        | `place` or `event`                                         |
+| `source`       | string      | `foursquare`, `manual`, etc.                               |
+| `source_id`    | string      | Unique id from the source                                  |
+| `name`         | string      | Display name                                               |
+| `lat` / `lon`  | float       | Coordinates                                                |
+| `address`      | string      | One-line address for UI                                    |
+| `description`  | string      | Main text used for keyword similarity                      |
+| `categories`   | list or string | Tags/categories — JSON array preferred; comma-string also accepted |
+| `rating`       | float?      | 0–5 (nullable; mostly for places)                          |
+| `review_count` | int?        | Popularity proxy (nullable)                                |
+| `price_tier`   | int?        | 1–4, like $ to $$$$ (nullable)                             |
+| `event_start`  | datetime?   | ISO 8601, UTC — events only                                |
+| `event_end`    | datetime?   | ISO 8601, UTC — events only                                |
+| `open`         | string?     | `HH:MM` local open time, e.g. `"09:00"` — places only      |
+| `close`        | string?     | `HH:MM` local close time, e.g. `"23:00"` — places only     |
+| `created_at`   | date/datetime | Row created (`YYYY-MM-DD` or ISO 8601)                   |
+| `updated_at`   | date/datetime | Row last updated                                         |
 
 **Important:** Keep `description` intentionally rich (categories + vibe words + short summary). This is what makes keyword similarity meaningful.
 
@@ -147,45 +150,67 @@ Output:
 
 * `weather_score ∈ [0,1]`
 
-### 4) Urgency score (events only)
+### 4) Urgency score (events + venues)
 
-Requirement:
+Urgency measures how time-sensitive it is to act on an entity *right now*. The score is driven by **exponential decay** using configurable time constants.
 
-* **Events**: more urgent when close to ending.
-* **Places**: urgency = 0.
+#### Events (`event_start` / `event_end` present)
 
-Simple rule:
+Three phases:
 
-* If `now` is not within `[event_start, event_end]` → urgency = 0
-* Else:
+| Phase | Condition | Score |
+|---|---|---|
+| Too early | `now < event_start` and `delta > H_start` | `0.0` |
+| Pre-start build-up | `now < event_start` and `delta ≤ H_start` | `exp(-delta / tau_start)` |
+| Live wind-down | `event_start ≤ now < event_end` | `exp(-remaining / tau_event_end)` |
+| Ended | `now ≥ event_end` | `0.0` |
 
-  * `remaining_hours = (event_end - now)`
-  * `urgency = clamp(1 - remaining_hours / horizon_hours)`
-  * Example: `horizon_hours = 3`
+Where:
+* `delta` = seconds until `event_start`
+* `remaining` = seconds until `event_end`
 
-Output:
+#### Venues / places (`open` / `close` hours present)
 
-* `urgency_score ∈ [0,1]`
+* If the venue is closed right now → `0.0`
+* If open: `urgency = exp(-remaining_until_close / tau_venue_close)`
+
+Rises as closing time approaches; handles overnight hours (e.g. `open=22:00`, `close=02:00`).
+
+#### Config defaults (`config.py`)
+
+| Constant | Default | Meaning |
+|---|---|---|
+| `URGENCY_H_START_S` | `21600` (6 h) | Lookahead window before event start |
+| `URGENCY_TAU_START_S` | `5400` (90 min) | Pre-start decay time constant |
+| `URGENCY_TAU_EVENT_END_S` | `3600` (60 min) | Live wind-down decay time constant |
+| `URGENCY_TAU_VENUE_CLOSE_S` | `3600` (60 min) | Venue closing-time decay constant |
 
 ### Final score
 
-Recommended simple weights:
+Weights (configured in `config.py`, must sum to 1.0):
 
 * `w_corr = 0.45`
 * `w_pop = 0.25`
 * `w_weather = 0.15`
 * `w_urgency = 0.15`
 
-Formula:
+Step 1 — weighted sum:
 
 ```
-final_score = w_corr * correlation_score
-            + w_pop  * popularity_score
-            + w_weather * weather_score
-            + w_urgency * urgency_score
+raw_score = w_corr    * correlation_score
+          + w_pop     * popularity_score
+          + w_weather * weather_score
+          + w_urgency * urgency_score
 ```
 
-All terms are in `[0,1]`, so the final score stays in `[0,1]`.
+Step 2 — **min-max normalization** across all results in the response:
+
+```
+score = (raw_score - min(raw_scores)) / (max(raw_scores) - min(raw_scores))
+```
+
+This stretches the final scores so the best result always maps to `1.0` and the worst to `0.0`, giving the frontend a full `[0, 1]` gradient regardless of the keyword query.  
+The `breakdown` sub-scores returned per row are the **raw (pre-normalization)** component values.
 
 ---
 
@@ -204,15 +229,20 @@ Use it to:
 
 ### Step 2: Ingest data into `entities_raw`
 
-For each source:
+Data is loaded from two JSON files in `data/`:
 
-* map source fields to the schema
-* normalize times to ISO datetimes (UTC preferred)
-* build a rich `description`
+* **`data/places.json`** — 1,708 real Foursquare venues for Madison, WI (schema as above, including `open`/`close`).
+* **`data/events.json`** — 15 hand-crafted Madison events with real venue coordinates.
 
-**Places sources (examples):** Google Places, Yelp, Foursquare, OSM
+To swap in a different dataset, replace either JSON file. The loader (`fake_data.py`) handles:
 
-**Event sources (examples):** Eventbrite, Ticketmaster, city calendars, UW events
+* `categories` as either a JSON array or a comma-separated string
+* `entity_id` as either a numeric string (Foursquare) or UUID
+* `created_at`/`updated_at` as either `YYYY-MM-DD` date strings or full ISO 8601 datetimes
+
+**Places sources (for future replacement):** Foursquare, Google Places, Yelp, OSM
+
+**Event sources (for future replacement):** Eventbrite, Ticketmaster, city calendars, UW events
 
 ### Step 3: Weather enrichment
 
@@ -261,17 +291,17 @@ Two options:
   "meta": {
     "city": "Madison, WI",
     "keywords": ["ramen", "coffee", "cozy"],
-    "rows_returned": 200
+    "rows_returned": 1565
   },
   "rows": [
     {
-      "name": "Place 0042",
+      "name": "Yola's Café & Coffee Shop of Madison",
       "type": "place",
-      "lat": 43.07,
-      "lon": -89.39,
-      "address": "123 Demo St, Madison, WI",
-      "description": "ramen, japanese. cozy, quiet, downtown...",
-      "score": 0.83,
+      "lat": 43.05551,
+      "lon": -89.52325,
+      "address": "7463 Mineral Point Rd, Madison, WI 53717",
+      "description": "Café, Coffee Shop. cozy, quiet, study-friendly...",
+      "score": 1.0,
       "breakdown": {
         "similarity": 0.72,
         "popularity": 0.81,
@@ -282,6 +312,8 @@ Two options:
   ]
 }
 ```
+
+> **Note:** `score` is min-max normalised across all rows in the response (`1.0` = best match for this query). `breakdown` values are the raw pre-normalisation component scores.
 
 ---
 
