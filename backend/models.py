@@ -15,7 +15,20 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional, List
 
+from enum import Enum
+
 from pydantic import BaseModel
+
+
+# =============================================================================
+# Score mode enum
+# =============================================================================
+
+class ScoreMode(str, Enum):
+    relevant    = "relevant"     # Keyword relevance is dominant (default)
+    hottest     = "hottest"      # Hot right now — BestTime hotness-driven
+    hidden_gems = "hidden_gems"  # Relevant but not overcrowded / mainstream
+    chill       = "chill"        # Relevant + low crowd + low urgency pressure
 
 
 # =============================================================================
@@ -113,6 +126,7 @@ class ScoreRequest(BaseModel):
         }
     """
     keywords: List[str]   # list of interest keywords from the user
+    mode: ScoreMode = ScoreMode.relevant  # also settable via ?mode= query param
 
 
 class ScoreBreakdown(BaseModel):

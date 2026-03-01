@@ -431,3 +431,77 @@ def final_score(
     )
     # Clamp to [0, 1] to absorb any floating-point drift
     return round(float(max(0.0, min(score, 1.0))), 4)
+
+
+# =============================================================================
+# 5b. Mode-aware score  (POST /score?mode=...)
+# =============================================================================
+
+def modal_score(
+    corr:    float,
+    hotness: float,
+    crowd:   float,
+    urgency: float,
+    mode,                 # ScoreMode — imported locally to avoid circular refs
+) -> float:
+    """
+    Compute a final score using the weight scheme for the requested mode.
+
+    Modes
+    -----
+    relevant    : keyword relevance is dominant (default)
+    hottest     : BestTime hotness drives ranking
+    hidden_gems : relevance-first; soft penalties for overcrowded/mainstream venues
+    chill       : relevance + low crowd + low urgency; soft penalties for busy venues
+
+    All inputs and output are in [0, 1].
+    """
+    from models import ScoreMode  # local import to avoid circular dependency
+
+    if mode == ScoreMode.relevant:
+        s = (
+            0.62 * corr
+            + 0.20 * hotness
+            + 0.08 * crowd
+            + 0.10 * urgency
+        )
+
+    elif mode == ScoreMode.hottest:
+        s = (
+            0.18 * corr
+            + 0.68 * hotness
+            + 0.10 * crowd
+            + 0.04 * urgency
+        )
+
+    elif mode == ScoreMode.hidden_gems:
+        s = (
+            0.55 * corr
+            + 0.20 * hotness
+            + 0.18 * crowd
+            + 0.07 * urgency
+        )
+        # Soft penalties: avoid mainstream / too-busy venues
+        if crowd > 0.75:
+            s *= 0.75
+        if hotness > 0.85:
+            s *= 0.85
+
+    elif mode == ScoreMode.chill:
+        s = (
+            0.52 * corr
+            + 0.26 * crowd
+            + 0.12 * urgency
+            + 0.10 * hotness
+        )
+        # Soft penalties: avoid crowded or high-urgency venues
+        if crowd > 0.65:
+            s *= 0.60
+        if urgency > 0.80:
+            s *= 0.70
+
+    else:
+        # Unknown mode — fall back to default weights
+        return final_score(corr, hotness, crowd, urgency)
+
+    return round(float(max(0.0, min(s, 1.0))), 4)
