@@ -7,6 +7,8 @@ import Map from "react-map-gl/mapbox"
 import "mapbox-gl/dist/mapbox-gl.css"
 
 import { useSearchResults } from "@/hooks/usePlaces"
+import { MapSidebar, type ScoreMode } from "./map-sidebar"
+import {PlaceHoverCard} from "./hover-card"
 
 type HoverInfo = PickingInfo<any> | null
 
@@ -24,9 +26,19 @@ export default function MapView() {
   const [hover, setHover] = useState<HoverInfo>(null)
   const { places, loading } = useSearchResults(true)
 
+  const [mode, setMode] = useState<ScoreMode>("relevant")
 
-  console.log("places length:", places?.length)
-  console.log("first place:", places?.[0])
+  const [emojis, setEmojis] = useState<string[] | []>([])
+  const [query, setQuery] = useState("")
+
+  const toggleEmojis = (key: string) => {
+    setEmojis((prev: string[]) => (prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]))
+  }
+
+
+  function refresh() {
+
+  }
 
   const token = import.meta.env.VITE_MAPBOX_TOKEN as string
 
@@ -39,25 +51,26 @@ export default function MapView() {
         pickable: true,
         autoHighlight: true,
 
-        // shape
-        diskResolution: 16,
-        radius: 18, // meters (world units)
+        diskResolution: 20,
+        radius: 3,
         extruded: true,
 
-        // position + height
+        // ✅ easiest knob to make columns shorter:
+        elevationScale: 1.5, // try 0.2–0.6
+
         getPosition: (d: any) => [d.lon ?? d.lng, d.lat],
+
+        // keep this in "meters-ish" then control overall with elevationScale
         getElevation: (d: any) => {
           const s = Math.max(0, Math.min(1, Number(d.score ?? 0)))
-          return 50 + s * 800 // meters
+          return s * 80
         },
 
-        // color
         getFillColor: (d: any) => {
           const t = Math.max(0, Math.min(1, Number(d.score ?? 0)))
           return [255 * t, 120, 255 * (1 - t), 200]
         },
 
-        // hover
         onHover: info => setHover(info.object ? info : null),
       }),
     ]
@@ -72,20 +85,53 @@ export default function MapView() {
           </div>
         )}
 
-        <Map mapboxAccessToken={token} mapStyle={MAP_STYLE} />
+        <Map
+          mapboxAccessToken={token}
+          mapStyle={MAP_STYLE}
+          onLoad={(e) => {
+            const map = e.target
+            if (map.getLayer("3d-buildings")) return
+
+            // insert under labels
+            const layers = map.getStyle().layers
+            const labelLayerId = layers?.find(
+              (l: any) => l.type === "symbol" && l.layout?.["text-field"]
+            )?.id
+
+            map.addLayer(
+              {
+                id: "3d-buildings",
+                source: "composite",
+                "source-layer": "building",
+                filter: ["==", "extrude", "true"],
+                type: "fill-extrusion",
+                minzoom: 13, // make buildings show earlier
+                paint: {
+                  "fill-extrusion-color": "#9aa0a6",
+                  // make buildings SMALL/subtle
+                  "fill-extrusion-height": ["*", ["coalesce", ["get", "height"], 6], 0.22],
+                  "fill-extrusion-base": ["*", ["coalesce", ["get", "min_height"], 0], 0.22],
+                  "fill-extrusion-opacity": 0.5,
+                },
+              },
+              labelLayerId
+            )
+          }}
+        />
       </DeckGL>
 
-      {hover && (
-        <div
-          className="absolute z-10 rounded-xl px-3 py-2 text-sm bg-black/60 text-white backdrop-blur-md border border-white/10 shadow-xl"
-          style={{ left: hover.x + 12, top: hover.y + 12 }}
-        >
-          <div className="font-semibold">{hover.object?.name ?? "Place"}</div>
-          <div className="opacity-80 text-xs">
-            Score {Number(hover.object?.score ?? 0).toFixed(2)}
-          </div>
-        </div>
-      )}
+      <MapSidebar
+        mode={mode}
+        onModeChange={setMode}
+        onRefresh={refresh}
+        loading={loading}
+        emojiKeys={emojis}
+        onEmojiToggle={toggleEmojis}
+        query={query}
+        onQueryChange={setQuery}
+      />
+
+      {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
     </div>
   )
 }
