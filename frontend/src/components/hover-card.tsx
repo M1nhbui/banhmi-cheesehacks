@@ -4,7 +4,7 @@ import type { ScoreMode } from "./map-sidebar"
 import { clampText } from "@/lib/hover/text"
 import { breakdownToTags, scoreToStatus } from "@/lib/hover/tags"
 import { HoverPill } from "@/lib/hover/HoverPill"
-import { formatPlaceInsight } from "@/lib/scoringCopy" // keep your copy generator
+import { useSmartHoverPosition } from "@/hooks/useSmartHoverPosition"
 
 export function PlaceHoverCard({
   hover,
@@ -26,10 +26,13 @@ export function PlaceHoverCard({
   const status = scoreToStatus(p.score)
   const microTags = breakdownToTags(p.breakdown, p.score)
 
+  const { ref, pos } = useSmartHoverPosition(hover.x, hover.y)
+
   return (
     <div
+      ref={ref}
       className="absolute z-30 w-[320px] rounded-xl bg-black/70 text-white backdrop-blur-md border border-white/10 shadow-xl"
-      style={{ left: hover.x + 12, top: hover.y + 12 }}
+      style={{ left: pos.left, top: pos.top }}
     >
       <div className="p-3 space-y-2">
         {/* Header */}

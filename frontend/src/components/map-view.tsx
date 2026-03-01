@@ -22,6 +22,8 @@ import { useSavedResults, stableId } from "@/hooks/useSavedResults"
 import { useDetailStack } from "@/hooks/useDetailStack"
 import { placeFillColor } from "@/lib/viz/color"
 
+import { MapLegend } from "./map-legend"
+
 import { eventCoreColor, eventCoreRadiusMeters, eventHaloColor, eventHaloRadiusMeters } from "@/lib/viz/event-style"
 
 type HoverInfo = PickingInfo<any> | null
@@ -164,6 +166,9 @@ export default function MapView() {
         initialViewState={INITIAL_VIEW}
         controller={{ maxZoom: 16, minZoom: 14 }}
         layers={layers}
+        getCursor={({ isDragging, isHovering }) =>
+          isDragging ? "grabbing" : isHovering ? "pointer" : "grab"
+        }
         onClick={(info) => {
           if (!info?.object) setSelected(null)
         }}
@@ -187,6 +192,7 @@ export default function MapView() {
         query={query}
         onQueryChange={setQuery}
       />
+      <MapLegend></MapLegend>
 
       {hover?.object && <PlaceHoverCard hover={hover} mode={mode} />}
 

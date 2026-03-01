@@ -139,7 +139,7 @@ function Header({
         <Button
           size="sm"
           variant="secondary"
-          className="h-8 px-3"
+          className="h-8 px-3 cursor-pointer disabled:cursor-not-allowed"
           onClick={onRefresh}
           disabled={loading}
         >
@@ -193,7 +193,7 @@ function VibesPicker({
               key={opt.id}
               variant={active ? "default" : "secondary"}
               size="sm"
-              className={["flex-1 transition-all", active && "ring-2 ring-primary"].join(" ")}
+              className={["flex-1 transition-all cursor-pointer disabled:cursor-not-allowed", active && "ring-2 ring-primary"].join(" ")}
               onClick={() => onToggle(opt.value)}
               title={opt.label}
             >
@@ -238,7 +238,7 @@ function ModePicker({
               type="button"
               variant={active ? "default" : "secondary"}
               className={[
-                "h-10 justify-start px-3 transition-all",
+                "h-10 justify-start px-3 transition-all cursor-pointer disabled:cursor-not-allowed",
                 active && "ring-2 ring-primary",
               ].join(" ")}
               onClick={() => onModeChange(opt.id)}
