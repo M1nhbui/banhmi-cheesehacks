@@ -62,8 +62,8 @@ export function PlaceHoverCard({
 
         <div className="pt-2 border-t border-white/10 space-y-1">
           <BreakdownRow label="Similarity" v={p.breakdown.similarity} />
-          <BreakdownRow label="Popularity" v={p.breakdown.popularity} />
-          <BreakdownRow label="Weather" v={p.breakdown.weather} />
+          <BreakdownRow label="Hotness" v={p.breakdown.hotness} />
+          <BreakdownRow label="Crowd" v={p.breakdown.crowd} />
           <BreakdownRow label="Urgency" v={p.breakdown.urgency} />
         </div>
       </div>

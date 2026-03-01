@@ -31,9 +31,9 @@ const MAP_STYLE = "mapbox://styles/mapbox/dark-v11"
 const INITIAL_VIEW = {
   longitude: -89.4012,
   latitude: 43.0731,
-  zoom: 13,
-  pitch: 45,
-  bearing: 0,
+  zoom: 15,
+  pitch: 55,
+  bearing: 40,
 }
 
 function clamp01(n: number) {
@@ -162,7 +162,7 @@ export default function MapView() {
     <div className="relative h-full w-full">
       <DeckGL
         initialViewState={INITIAL_VIEW}
-        controller
+        controller={{ maxZoom: 16, minZoom: 14 }}
         layers={layers}
         onClick={(info) => {
           if (!info?.object) setSelected(null)

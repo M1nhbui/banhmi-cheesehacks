@@ -13,8 +13,8 @@ export type MapPlace = {
     score: number
     breakdown: {
         similarity: number
-        popularity: number
-        weather: number
+        hotness: number
+        crowd: number
         urgency: number
     }
 }
