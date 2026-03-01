@@ -28,10 +28,10 @@ WEIGHTS = {
     # "popularity":  0.25,
     # "weather":     0.15,
     # "urgency":     0.15,
-    "correlation": 0,
+    "correlation": 1,
     "popularity":  0,
     "weather":     0,
-    "urgency":     1,
+    "urgency":     0,
 }
 
 # -----------------------------------------------------------------------------
