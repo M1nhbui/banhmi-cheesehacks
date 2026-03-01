@@ -6,3 +6,4 @@ uvicorn[standard]
 scikit-learn
 numpy
 pydantic
+h3

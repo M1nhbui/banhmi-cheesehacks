@@ -20,18 +20,14 @@ MADISON_BOUNDS = {
 # -----------------------------------------------------------------------------
 # Each component contributes this fraction to the final 0..1 score.
 #   correlation : how well the entity matches the user's keywords (TF-IDF cosine)
-#   popularity  : normalised (rating + review count)
-#   weather     : how "nice" the weather is at the entity's location right now
+#   hotness     : BestTime venue_hotness_final — replaces popularity
+#   crowd       : BestTime current_busyness / 100 — replaces weather
 #   urgency     : for events — how close the event is to ending
 WEIGHTS = {
-    # "correlation": 0.45,
-    # "popularity":  0.25,
-    # "weather":     0.15,
-    # "urgency":     0.15,
-    "correlation": 1,
-    "popularity":  0,
-    "weather":     0,
-    "urgency":     0,
+    "correlation": 0.45,
+    "hotness":     0.25,   # BestTime venue_hotness_final (0..1)
+    "crowd":       0.15,   # BestTime current_busyness / 100 (0..1)
+    "urgency":     0.15,
 }
 
 # -----------------------------------------------------------------------------
@@ -54,6 +50,21 @@ URGENCY_H_START_S         = 6 * 3600   # 6 hours in seconds
 URGENCY_TAU_START_S       = 90 * 60    # 90 minutes in seconds
 URGENCY_TAU_EVENT_END_S   = 60 * 60    # 60 minutes in seconds
 URGENCY_TAU_VENUE_CLOSE_S = 60 * 60    # 60 minutes in seconds
+
+# -----------------------------------------------------------------------------
+# Demo time simulation
+# -----------------------------------------------------------------------------
+# Urgency scores depend heavily on the current time of day.  Late at night most
+# venues are closed and score 0, making the urgency signal useless for demos.
+#
+# Set SIMULATED_MADISON_HOUR to an integer 0-23 (Madison local time, CST/CDT)
+# to pin the "now" used by urgency scoring to that hour of day.
+#
+# Examples:
+#   14  → 2:00 PM — most venues open, good spread of urgency values  ← demo default
+#   18  → 6:00 PM — evening; restaurants, bars, events peaking
+#   None → use the real system clock (set this for production)
+SIMULATED_MADISON_HOUR: int | None = 14
 
 # -----------------------------------------------------------------------------
 # Weather "comfortable" ranges — used to build weather_score

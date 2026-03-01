@@ -1,5 +1,5 @@
 # =============================================================================
-# pipeline.py — Batch pipeline: ingest → weather enrich → compute features
+# pipeline.py — Batch pipeline: ingest → compute features
 # =============================================================================
 # This module is the "offline" part of the system (described in the README
 # under "Offline / batch pipeline").
@@ -7,11 +7,7 @@
 # Steps:
 #   1. Ingest raw entities (places + events) from fake_data.py
 #   2. Filter to Madison boundary
-#   3. Attach a weather snapshot to every entity
-#   4. Compute popularity_score and weather_score (pre-baked per entity)
-#   5. Compute urgency_score and is_active_event (time-sensitive, done here
-#      too for the snapshot — but the API re-computes urgency at request time
-#      for accuracy)
+#   3. Compute hotness_score, crowd_score, urgency_score per entity
 #
 # Exposed function:
 #   build_enriched_entities() -> list[EntityEnriched]
@@ -25,8 +21,7 @@ from typing import List
 import config
 from fake_data import get_all_entities
 from models import EntityRaw, EntityEnriched
-from weather import get_madison_weather, enrich_weather
-from scoring import popularity_score, weather_score, urgency_score
+from scoring import hotness_score, crowd_score, urgency_score
 
 
 # =============================================================================
@@ -74,16 +69,7 @@ def build_enriched_entities() -> List[EntityEnriched]:
           f"({dropped} dropped outside bounds)")
 
     # -----------------------------------------------------------------
-    # Step 3: Get (fake) weather snapshot — city-wide for the demo
-    # -----------------------------------------------------------------
-    snapshot = get_madison_weather()
-    print(f"[pipeline] Weather: {snapshot.condition}, "
-          f"{snapshot.temp_f}°F, "
-          f"precip={snapshot.precip_prob:.0%}, "
-          f"wind={snapshot.wind_mph}mph")
-
-    # -----------------------------------------------------------------
-    # Step 4 & 5: For each entity, attach weather and compute scores
+    # Step 3: For each entity compute scores
     # -----------------------------------------------------------------
     enriched: List[EntityEnriched] = []
 
@@ -91,20 +77,11 @@ def build_enriched_entities() -> List[EntityEnriched]:
         # Convert the dataclass to a plain dict so we can mutate it freely
         fields = asdict(raw)
 
-        # -- Attach weather fields to the dict --
-        enrich_weather(fields, snapshot)
+        # -- Compute hotness_score (from BestTime venue_hotness_final) --
+        fields["hotness_score"] = hotness_score(raw.hotness)
 
-        # -- Compute popularity_score (static; depends only on rating/reviews) --
-        fields["popularity_score"] = popularity_score(
-            raw.rating, raw.review_count
-        )
-
-        # -- Compute weather_score (static for this run; same snapshot city-wide) --
-        fields["weather_score"] = weather_score(
-            snapshot.temp_f,
-            snapshot.precip_prob,
-            snapshot.wind_mph,
-        )
+        # -- Compute crowd_score (from BestTime current_busyness / 100) --
+        fields["crowd_score"] = crowd_score(raw.crowd)
 
         # -- Compute urgency_score (time-sensitive) --
         fields["urgency_score"] = urgency_score(

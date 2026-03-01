@@ -20,13 +20,13 @@ from __future__ import annotations
 
 from typing import List
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
 import config
-from models import EntityEnriched, ScoreRequest, ScoreResponse, ScoreMeta, ScoredRow, ScoreBreakdown
+from models import EntityEnriched, ScoreMode, ScoreRequest, ScoreResponse, ScoreMeta, ScoredRow, ScoreBreakdown
 from pipeline import build_enriched_entities
-from scoring import correlation_scores, urgency_score, final_score
+from scoring import correlation_scores, urgency_score, modal_score
 
 # =============================================================================
 # App setup
@@ -87,10 +87,22 @@ def health():
 # =============================================================================
 
 @app.post("/score", response_model=ScoreResponse, summary="Rank entities by keywords")
-def score(request: ScoreRequest) -> ScoreResponse:
+def score(
+    request: ScoreRequest,
+    mode: ScoreMode = Query(
+        default=ScoreMode.relevant,
+        description="Scoring mode: relevant | hottest | hidden_gems | chill",
+    ),
+) -> ScoreResponse:
     """
     Given a list of user keywords, return all Madison places and events
-    ranked by a combined score (similarity + popularity + weather + urgency).
+    ranked by a combined score.
+
+    **Modes** (via `?mode=`):
+    - `relevant` *(default)* — keyword match is dominant
+    - `hottest` — ranked by BestTime hotness signal
+    - `hidden_gems` — relevant but not overcrowded / too mainstream
+    - `chill` — relevant + low crowd + low urgency pressure
 
     **Request body:**
     ```json
@@ -133,12 +145,13 @@ def score(request: ScoreRequest) -> ScoreResponse:
         urg = urgency_score(entity.event_start, entity.event_end,
                             entity.open, entity.close)
 
-        # Compute combined final score
-        f_score = final_score(
+        # Compute mode-aware final score
+        f_score = modal_score(
             corr=corr,
-            pop=entity.popularity_score,
-            weather=entity.weather_score,
+            hotness=entity.hotness_score,
+            crowd=entity.crowd_score,
             urgency=urg,
+            mode=mode,
         )
 
         # Build the response row
@@ -152,8 +165,8 @@ def score(request: ScoreRequest) -> ScoreResponse:
             score=f_score,
             breakdown=ScoreBreakdown(
                 similarity=corr,
-                popularity=entity.popularity_score,
-                weather=entity.weather_score,
+                hotness=entity.hotness_score,
+                crowd=entity.crowd_score,
                 urgency=urg,
             ),
         )

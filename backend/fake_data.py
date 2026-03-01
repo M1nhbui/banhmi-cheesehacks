@@ -187,6 +187,10 @@ def _row_to_entity(row: Dict[str, Any]) -> EntityRaw:
         # Venue hours — "HH:MM" strings; None when absent or unknown
         open  = row.get("open")  or None,
         close = row.get("close") or None,
+
+        # BestTime hotness / crowd signals — None when not yet crawled
+        hotness = float(row["hotness"]) if row.get("hotness") is not None else None,
+        crowd   = float(row["crowd"])   if row.get("crowd")   is not None else None,
     )
 
 
