@@ -1,6 +1,6 @@
 # Madison Interest Map (Keyword-Driven Scoring)
 
-An end-to-end backend that ingests **places** and **events** for **Madison, WI**, enriches each row with **weather**, computes a **keyword-to-description correlation** (cosine similarity), plus **popularity**, **weather**, and **urgency** signals, then returns a **final ranked table** of scored map points for a frontend interactive map.
+A FastAPI backend that ingests **places** and **events** for **Madison, WI**, enriches each entity with **real-time popularity and crowd signals** from BestTime, computes a **keyword-to-description correlation** (TF-IDF cosine similarity with sigmoid stretch), combines it with **hotness**, **crowd**, and **urgency** signals, then returns a **ranked list of scored map markers** for a frontend interactive map.
 
 > Goal: keep the system simple, explainable, and easy to extend when you plug in additional real-time data sources.
 
@@ -8,13 +8,12 @@ An end-to-end backend that ingests **places** and **events** for **Madison, WI**
 
 ## Demo scope
 
-* **City:** Madison, WI only (fixed bounding box).
-* **User:** single demo user — only input is a keyword list at request time.
+* **City:** Madison, WI only (fixed bounding box: lat 43.02–43.15, lon −89.55–−89.30).
+* **User:** single demo user — only inputs are a keyword list and a scoring mode at request time.
 * **Entities:** two types:
-
-  * **Place** (1,708 real Foursquare venues): has rating/reviews, `open`/`close` hours, static info.
-  * **Event** (15 hand-crafted): has `event_start`/`event_end`; urgency builds before the event starts and decays as it winds down.
-* **No personalization:** the only user input is a list of keywords.
+  * **Place** (1,708 real Foursquare venues): has `open`/`close` hours, BestTime hotness and crowd scores.
+  * **Event** (51 hand-crafted Madison events): has `event_start`/`event_end`; urgency builds before the event starts and decays as it winds down.
+* **No personalization:** the only user inputs are a keyword list and an optional scoring mode.
 * **Data files:** `data/places.json` and `data/events.json` — swap either file to update the dataset without touching code.
 
 ---
@@ -27,12 +26,12 @@ The backend returns a list of rows sorted by `score` descending. Each row is rea
 * `lat`, `lon`
 * `address`
 * `description`
-* `score` — **min-max normalised to `[0, 1]`** across all returned results (see [Final score](#final-score))
+* `score` — **min-max normalised to `[0, 1]`** across all returned results
 
 Optional debug/UI fields:
 
 * `type` (`place` or `event`)
-* `breakdown` (raw component scores: similarity / popularity / weather / urgency)
+* `breakdown` — raw pre-normalisation component scores: `similarity`, `hotness`, `crowd`, `urgency`
 
 ---
 
@@ -40,243 +39,255 @@ Optional debug/UI fields:
 
 ### Offline / batch pipeline
 
-1. **Ingest places** from online sources → normalize into schema.
-2. **Ingest events** from online sources → normalize into schema.
-3. **Enrich weather** at each entity coordinate.
-4. **Compute enriched features** (popularity/weather; urgency can be runtime).
+```
+crawldata.py  →  BestTime API  →  hotness_v1_ranked_<timestamp>.csv
+                                            ↓
+                                    merge_hotness.py
+                                            ↓
+                              data/places.json  (with hotness + crowd fields)
+```
 
-Output:
-
-* `entities_raw` → normalized, source-agnostic rows
-* `entities_enriched` → rows with computed numeric features
+1. **`crawldata.py`** — crawls Foursquare venues and calls BestTime for foot-traffic data.
+2. **`compute_hotness_v1.py`** — computes `venue_hotness_final` and `current_busyness` per venue and writes `hotness_v1_ranked_<timestamp>.csv`.
+3. **`merge_hotness.py`** — reads the newest CSV from `besttime_outputs/`, geo+name-matches venues to `places.json`, and writes `hotness` and `crowd` back into the JSON.
+4. **`data/events.json`** — hand-crafted; `hotness` and `crowd` are set manually per event.
 
 ### Runtime API
 
-1. User sends **keyword list**.
-2. Backend computes **cosine similarity** between keywords and entity descriptions.
-3. Backend combines similarity + popularity + weather + urgency → `final_score`.
-4. Backend returns the **final table** to the frontend.
+1. User sends **keyword list** + optional **mode**.
+2. Backend computes **TF-IDF cosine similarity** (with sigmoid stretch) between keywords and entity descriptions.
+3. Backend recomputes **urgency** in real-time.
+4. Backend combines similarity + hotness + crowd + urgency via a **mode-specific formula**.
+5. Backend **min-max normalises** the scores across all results and returns the ranked table.
 
 ---
 
 ## Data model (schema)
 
-The system uses a unified concept called an **Entity**.
-
-### 1) `entities_raw` (canonical normalized rows)
-
-Each row is either a **place** or an **event**.
-
-| Field          | Type        | Description                                                |
-| -------------- | ----------- | ---------------------------------------------------------- |
-| `entity_id`    | string      | Unique id (numeric string for Foursquare data, UUID otherwise) |
-| `entity_type`  | enum        | `place` or `event`                                         |
-| `source`       | string      | `foursquare`, `manual`, etc.                               |
-| `source_id`    | string      | Unique id from the source                                  |
-| `name`         | string      | Display name                                               |
-| `lat` / `lon`  | float       | Coordinates                                                |
-| `address`      | string      | One-line address for UI                                    |
-| `description`  | string      | Main text used for keyword similarity                      |
-| `categories`   | list or string | Tags/categories — JSON array preferred; comma-string also accepted |
-| `rating`       | float?      | 0–5 (nullable; mostly for places)                          |
-| `review_count` | int?        | Popularity proxy (nullable)                                |
-| `price_tier`   | int?        | 1–4, like $ to $$$$ (nullable)                             |
-| `event_start`  | datetime?   | ISO 8601, UTC — events only                                |
-| `event_end`    | datetime?   | ISO 8601, UTC — events only                                |
-| `open`         | string?     | `HH:MM` local open time, e.g. `"09:00"` — places only      |
-| `close`        | string?     | `HH:MM` local close time, e.g. `"23:00"` — places only     |
-| `created_at`   | date/datetime | Row created (`YYYY-MM-DD` or ISO 8601)                   |
-| `updated_at`   | date/datetime | Row last updated                                         |
-
-**Important:** Keep `description` intentionally rich (categories + vibe words + short summary). This is what makes keyword similarity meaningful.
-
-### 2) Weather enrichment
-
-For simplicity, weather can be stored **inside** each row after enrichment.
-
-* `weather_temp_f`
-* `weather_precip_prob` (0..1)
-* `weather_wind_mph`
-* `weather_condition`
-* `weather_updated_at`
-
-(You can later normalize this into a separate weather table keyed by grid/time buckets.)
-
-### 3) `entities_enriched` (raw + derived numeric features)
-
-This is `entities_raw` plus computed fields:
-
-* `popularity_score` (0..1)
-* `weather_score` (0..1)
-* `urgency_score` (0..1; events only; can be computed at runtime)
-* `is_active_event` (boolean)
+| Field | Type | Description |
+|---|---|---|
+| `entity_id` | string | Unique id (numeric string for Foursquare data, UUID otherwise) |
+| `entity_type` | enum | `place` or `event` |
+| `source` | string | `foursquare`, `manual`, etc. |
+| `source_id` | string | Unique id from the source |
+| `name` | string | Display name |
+| `lat` / `lon` | float | Coordinates |
+| `address` | string | One-line address for UI |
+| `description` | string | Rich text used for keyword similarity (categories + vibe words) |
+| `categories` | list or string | Tags/categories |
+| `rating` | float? | 0–5, nullable |
+| `review_count` | int? | Popularity proxy, nullable |
+| `price_tier` | int? | 1–4 ($ to $$$$), nullable |
+| `hotness` | float? | BestTime `venue_hotness_final` in [0, 1] |
+| `crowd` | float? | BestTime `current_busyness / 100` in [0, 1] |
+| `event_start` | datetime? | ISO 8601 UTC — events only |
+| `event_end` | datetime? | ISO 8601 UTC — events only |
+| `open` | string? | `HH:MM` local open time — places only |
+| `close` | string? | `HH:MM` local close time — places only |
 
 ---
 
 ## Scoring design
 
-Each entity gets 4 component scores, all normalized to **0..1**.
+Each entity gets **4 component scores**, all in **[0, 1]**.
 
-### 1) Correlation score (keyword ⇄ description)
+---
 
-* Tokenize descriptions.
-* Tokenize user keywords.
-* Build TF-IDF vectors.
-* Compute cosine similarity.
+### 1) Correlation score — TF-IDF cosine + sigmoid stretch
 
-Output:
+#### Step 1 — TF-IDF cosine similarity
 
-* `correlation_score ∈ [0,1]`
+All entity descriptions and the user's keyword string are fed into a single `TfidfVectorizer` (word + bigram, sublinear TF) so IDF weights are computed across the whole corpus.
 
-### 2) Popularity score (rating + reviews)
+```
+query_vec  = TF-IDF(keywords joined as one string)
+desc_vec_i = TF-IDF(entity i description)
+raw_sim_i  = cosine_similarity(query_vec, desc_vec_i)   ∈ [0, 1]
+```
 
-Typical normalization:
+#### Step 2 — Remapped sigmoid stretch
 
-* `rating_score = rating / 5`
-* `count_score = log(1 + review_count) / log(1 + cap)`
-* `popularity_score = 0.7 * rating_score + 0.3 * count_score`
+Raw cosine values cluster tightly near 0 (typical max ≈ 0.10–0.15). A remapped sigmoid is applied to create clear divergence between relevant and non-relevant results:
 
-If rating/reviews are missing (common for some event sources), you can default to a neutral value (e.g. `0.5`).
+$$
+f(x) = \frac{\sigma\!\left(k(x - c)\right) - \sigma\!\left(-kc\right)}{\sigma\!\left(k(1-c)\right) - \sigma\!\left(-kc\right)}
+\quad \text{where} \quad \sigma(z) = \frac{1}{1+e^{-z}}
+$$
 
-### 3) Weather score (per entity coordinate)
+This guarantees $f(0) = 0$, $f(1) = 1$, with a steep S-shaped transition at $x = c$.
 
-Compute a simple score from:
+Config defaults:
 
-* temperature closeness to a comfortable range
-* low precipitation probability
-* low wind
+| Parameter | Value | Meaning |
+|---|---|---|
+| `SIMILARITY_SIGMOID_CENTER` | `0.04` | Inflection point — raw cosine ≈ 0.04 maps to stretched score ≈ 0.5 |
+| `SIMILARITY_SIGMOID_K` | `80.0` | Steepness — higher = sharper cliff |
 
-Output:
+Representative mapping at these defaults:
 
-* `weather_score ∈ [0,1]`
+| Raw cosine | Stretched score |
+|---|---|
+| 0.00 | 0.00 |
+| 0.01 | ≈ 0.07 |
+| 0.04 | ≈ 0.50 |
+| 0.06 | ≈ 0.82 |
+| 0.10 | ≈ 0.98 |
 
-### 4) Urgency score (events + venues)
+Output: `correlation_score ∈ [0, 1]`
 
-Urgency measures how time-sensitive it is to act on an entity *right now*. The score is driven by **exponential decay** using configurable time constants.
+---
 
-#### Events (`event_start` / `event_end` present)
+### 2) Hotness score — BestTime `venue_hotness_final`
 
-Three phases:
+Pass-through of the precomputed BestTime hotness signal, already normalised to [0, 1]:
+
+```
+hotness_score = venue_hotness_final   (clipped to [0, 1])
+```
+
+Returns `0.0` when data is unavailable (venue not crawled or closed).
+
+---
+
+### 3) Crowd score — BestTime `current_busyness`
+
+Pass-through of the precomputed BestTime busyness signal:
+
+```
+crowd_score = current_busyness / 100   (clipped to [0, 1])
+```
+
+Returns `0.0` when data is unavailable.
+
+---
+
+### 4) Urgency score — exponential decay
+
+Urgency measures how time-sensitive it is to act *right now*. Driven by exponential decay:
+
+$$\text{urgency} = e^{-t / \tau}$$
+
+where $t$ is the relevant remaining time in seconds and $\tau$ is the decay time constant.
+
+> **Demo note:** `SIMULATED_MADISON_HOUR = 14` in `config.py` pins the clock to 2 PM Madison time so urgency scores are meaningful during a demo even if the real time is late at night. Set to `None` for production.
+
+#### Events (`event_start` + `event_end` present)
 
 | Phase | Condition | Score |
 |---|---|---|
 | Too early | `now < event_start` and `delta > H_start` | `0.0` |
-| Pre-start build-up | `now < event_start` and `delta ≤ H_start` | `exp(-delta / tau_start)` |
-| Live wind-down | `event_start ≤ now < event_end` | `exp(-remaining / tau_event_end)` |
+| Pre-start build-up | `now < event_start` and `delta ≤ H_start` | $e^{-\delta / \tau_\text{start}}$ |
+| Live wind-down | `event_start ≤ now < event_end` | $e^{-r / \tau_\text{end}}$ |
 | Ended | `now ≥ event_end` | `0.0` |
 
-Where:
-* `delta` = seconds until `event_start`
-* `remaining` = seconds until `event_end`
+* $\delta$ = seconds until `event_start`
+* $r$ = seconds until `event_end`
 
-#### Venues / places (`open` / `close` hours present)
+#### Places (`open` + `close` hours present)
 
-* If the venue is closed right now → `0.0`
-* If open: `urgency = exp(-remaining_until_close / tau_venue_close)`
+```
+urgency = 0.0                                    if venue is closed
+urgency = exp(-remaining_until_close / τ_venue)  if open
+```
 
-Rises as closing time approaches; handles overnight hours (e.g. `open=22:00`, `close=02:00`).
+Handles overnight venues (e.g. `open=22:00`, `close=02:00`) by adding one day to `close` when `close ≤ open`.
 
-#### Config defaults (`config.py`)
+#### Config defaults
 
 | Constant | Default | Meaning |
 |---|---|---|
 | `URGENCY_H_START_S` | `21600` (6 h) | Lookahead window before event start |
 | `URGENCY_TAU_START_S` | `5400` (90 min) | Pre-start decay time constant |
 | `URGENCY_TAU_EVENT_END_S` | `3600` (60 min) | Live wind-down decay time constant |
-| `URGENCY_TAU_VENUE_CLOSE_S` | `3600` (60 min) | Venue closing-time decay constant |
-
-### Final score
-
-Weights (configured in `config.py`, must sum to 1.0):
-
-* `w_corr = 0.45`
-* `w_pop = 0.25`
-* `w_weather = 0.15`
-* `w_urgency = 0.15`
-
-Step 1 — weighted sum:
-
-```
-raw_score = w_corr    * correlation_score
-          + w_pop     * popularity_score
-          + w_weather * weather_score
-          + w_urgency * urgency_score
-```
-
-Step 2 — **min-max normalization** across all results in the response:
-
-```
-score = (raw_score - min(raw_scores)) / (max(raw_scores) - min(raw_scores))
-```
-
-This stretches the final scores so the best result always maps to `1.0` and the worst to `0.0`, giving the frontend a full `[0, 1]` gradient regardless of the keyword query.  
-The `breakdown` sub-scores returned per row are the **raw (pre-normalization)** component values.
+| `URGENCY_TAU_VENUE_CLOSE_S` | `3600` (60 min) | Closing-time decay constant for places |
 
 ---
 
-## Workflow (how you’ll build it)
+### 5) Mode-aware final score
 
-### Step 1: Define Madison boundary
+Instead of a single fixed weighted sum, the final score depends on the **mode** (`?mode=`) requested by the client.
 
-Create a config for:
+#### Helper functions
 
-* `min_lat, min_lon, max_lat, max_lon`
+**Triangular membership `tri(x, center, width)`** — peaks at 1.0 at `center`, drops linearly to 0 at `center ± width`:
 
-Use it to:
+$$\text{tri}(x,\, c,\, w) = \max\!\left(0,\; 1 - \frac{|x - c|}{w}\right)$$
 
-* validate incoming data
-* filter entities to Madison
+**Derived scores** (computed once per entity per request, where `hot` = hotness, `crowd` = crowd, `urg` = urgency):
 
-### Step 2: Ingest data into `entities_raw`
+```
+mid_hot      = tri(hot,   center=0.50, width=0.25)   # peaks at moderate hotness
+calm_hot     = tri(hot,   center=0.30, width=0.25)   # peaks at low-ish hotness
+gentle_crowd = tri(crowd, center=0.28, width=0.22)   # peaks at comfortable crowd level
+low_crowd    = 1 - crowd
+low_urg      = 1 - urg
+```
 
-Data is loaded from two JSON files in `data/`:
+> **Hard gate:** if the venue/event is closed (`open_now = 0`), **all modes return `−1.0`** and the entity is excluded from results.
 
-* **`data/places.json`** — 1,708 real Foursquare venues for Madison, WI (schema as above, including `open`/`close`).
-* **`data/events.json`** — 15 hand-crafted Madison events with real venue coordinates.
+#### Mode formulas
 
-To swap in a different dataset, replace either JSON file. The loader (`fake_data.py`) handles:
+**`relevant` (default)** — keyword match dominates:
 
-* `categories` as either a JSON array or a comma-separated string
-* `entity_id` as either a numeric string (Foursquare) or UUID
-* `created_at`/`updated_at` as either `YYYY-MM-DD` date strings or full ISO 8601 datetimes
+```
+score = 0.80 * rel
+      + 0.02 * hot
+      + 0.08 * crowd
+      + 0.08 * urg
+```
 
-**Places sources (for future replacement):** Foursquare, Google Places, Yelp, OSM
+**`hottest`** — BestTime hotness dominates:
 
-**Event sources (for future replacement):** Eventbrite, Ticketmaster, city calendars, UW events
+```
+score = 0.08 * rel
+      + 0.76 * hot
+      + 0.08 * crowd
+      + 0.08 * urg
+```
 
-### Step 3: Weather enrichment
+**`hidden_gems`** — relevant but not mainstream; soft penalties when too packed or too hot:
 
-Two options:
+```
+score = 0.55 * rel
+      + 0.20 * mid_hot
+      + 0.18 * gentle_crowd
+      + 0.07 * low_urg
 
-* **Simple:** attach the same city-wide weather snapshot to all rows.
-* **Better:** attach weather per coordinate (nearest grid point), cached by time bucket.
+if crowd > 0.75:  score *= 0.75
+if hot   > 0.85:  score *= 0.85
+```
 
-### Step 4: Compute enriched features
+**`chill`** — relevant + relaxed; soft penalties when crowded or high urgency:
 
-* popularity_score (precompute)
-* weather_score (precompute)
-* urgency_score (compute at runtime for accuracy, or precompute as snapshot)
+```
+score = 0.50 * rel
+      + 0.05 * low_crowd
+      + 0.05 * low_urg
+      + 0.40 * calm_hot
 
-### Step 5: Runtime scoring API
-
-* Input: `keywords: string[]`
-* Process: compute correlation + combine with other signals
-* Output: final table rows with `score`
-
-### Step 6: Frontend map
-
-* fetch scored rows
-* plot markers at `(lat, lon)`
-* marker size/color based on `score`
-* popup shows name/address/description and optionally breakdown
+if crowd > 0.65:  score *= 0.60
+if urg   > 0.80:  score *= 0.70
+```
 
 ---
 
-## Example API contract
+### 6) Min-max normalisation across the response
 
-### Request
+After scoring all entities with the chosen mode, every score is stretched so the best result maps to 1.0 and the worst to 0.0:
 
-`POST /score`
+$$\text{score}_i = \frac{s_i - s_{\min}}{s_{\max} - s_{\min}}$$
+
+The relative ordering is preserved; only the absolute values change. `breakdown` fields always contain the **raw pre-normalisation** component values.
+
+---
+
+## API contract
+
+### `POST /score`
+
+**Query parameter:** `?mode=relevant` *(default)* | `hottest` | `hidden_gems` | `chill`
+
+**Request body:**
 
 ```json
 {
@@ -284,14 +295,14 @@ Two options:
 }
 ```
 
-### Response
+**Response:**
 
 ```json
 {
   "meta": {
     "city": "Madison, WI",
-    "keywords": ["ramen", "coffee", "cozy"],
-    "rows_returned": 1565
+    "keywords": ["ramen", "coffee", "cozy", "quiet", "study-friendly"],
+    "rows_returned": 1759
   },
   "rows": [
     {
@@ -303,28 +314,71 @@ Two options:
       "description": "Café, Coffee Shop. cozy, quiet, study-friendly...",
       "score": 1.0,
       "breakdown": {
-        "similarity": 0.72,
-        "popularity": 0.81,
-        "weather": 0.64,
-        "urgency": 0.00
+        "similarity": 0.9821,
+        "hotness": 0.42,
+        "crowd": 0.31,
+        "urgency": 0.12
       }
     }
   ]
 }
 ```
 
-> **Note:** `score` is min-max normalised across all rows in the response (`1.0` = best match for this query). `breakdown` values are the raw pre-normalisation component scores.
+> `score` is min-max normalised across all rows (`1.0` = best match for this query + mode).
+> `breakdown` values are the raw pre-normalisation component scores.
+
+### `GET /health`
+
+Returns server status and count of loaded entities.
+
+```json
+{ "status": "ok", "entities_loaded": 1759 }
+```
+
+---
+
+## Data pipeline workflow
+
+```
+1. crawldata.py               — fetch Foursquare + BestTime data
+2. compute_hotness_v1.py      — auto-detected; outputs hotness_v1_ranked_<ts>.csv
+3. merge_hotness.py           — reads newest CSV → geo+name matches → writes
+                                hotness & crowd fields into data/places.json
+4. uvicorn api:app --reload   — runtime API
+```
+
+`merge_hotness.py` matching strategy (in priority order):
+
+1. Name similarity ≥ 0.6 within 200 m (Levenshtein ratio via `difflib`)
+2. Nearest neighbour within 80 m (geo fallback)
+
+Last run: **453 / 1,708 places matched** (179 name match + 274 geo fallback).
+
+---
+
+## Config reference (`config.py`)
+
+| Key | Default | Description |
+|---|---|---|
+| `WEIGHTS` | `{correlation: 0.45, hotness: 0.25, crowd: 0.15, urgency: 0.15}` | Component weights (used as baseline; modes override these) |
+| `SIMILARITY_SIGMOID_CENTER` | `0.04` | S-curve inflection point for cosine stretch |
+| `SIMILARITY_SIGMOID_K` | `80.0` | S-curve steepness |
+| `URGENCY_H_START_S` | `21600` | Lookahead window before event start (6 h) |
+| `URGENCY_TAU_START_S` | `5400` | Pre-start decay τ (90 min) |
+| `URGENCY_TAU_EVENT_END_S` | `3600` | Live wind-down decay τ (60 min) |
+| `URGENCY_TAU_VENUE_CLOSE_S` | `3600` | Venue closing-time decay τ (60 min) |
+| `SIMULATED_MADISON_HOUR` | `14` | Pin demo clock to this hour (2 PM); `None` = real clock |
+| `REVIEW_COUNT_CAP` | `500` | Cap for log-normalising review counts |
 
 ---
 
 ## Extending the project later
 
-Once the demo works, you can improve it without changing the core concept:
-
-* Replace fake datasets with real APIs.
+* Replace hand-crafted events with Eventbrite / Ticketmaster API.
 * Add a real DB (Postgres/PostGIS) to store entities and query by bounds.
-* Add a city grid/tiling strategy for efficient weather + event lookups.
-* Add better text embeddings (e.g., sentence transformers) instead of TF-IDF.
+* Replace TF-IDF with sentence-transformer embeddings for richer semantic matching.
+* Add per-user preference weighting.
+* Refresh BestTime data on a schedule and stream `crowd` updates in real-time.
 
 ---
 
