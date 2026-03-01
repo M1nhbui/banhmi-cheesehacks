@@ -395,11 +395,24 @@ def correlation_scores(
     # Result shape: (1, N) — we flatten to a 1-D list
     sims = cosine_similarity(query_vec, desc_vecs).flatten()
 
-    # Power-stretch: sim^alpha spreads the compressed [0, ~0.1] range across
-    # [0, 1] while keeping 0 → 0 and preserving ranking order.
-    alpha = config.SIMILARITY_STRETCH_ALPHA
-    if alpha != 1.0:
-        sims = np.where(sims > 0, np.power(sims, alpha), 0.0)
+    # Remapped sigmoid stretch: creates a clear S-curve so "similar" and
+    # "not similar" diverge clearly rather than clustering near 0.
+    #
+    # Formula:  f(x) = (σ(k·(x−c)) − σ(−k·c)) / (σ(k·(1−c)) − σ(−k·c))
+    # This guarantees f(0)=0, f(1)=1, and a steep transition at x=c.
+    c = config.SIMILARITY_SIGMOID_CENTER
+    k = config.SIMILARITY_SIGMOID_K
+
+    def _sig(z: np.ndarray) -> np.ndarray:
+        return 1.0 / (1.0 + np.exp(-z))
+
+    sig_lo = _sig(np.array(-k * c))         # σ(k·(0 − c))
+    sig_hi = _sig(np.array(k * (1.0 - c)))  # σ(k·(1 − c))
+    span = float(sig_hi - sig_lo)
+
+    if span > 1e-9:
+        sims = (_sig(k * (sims - c)) - sig_lo) / span
+        sims = np.clip(sims, 0.0, 1.0)
 
     return [round(float(s), 4) for s in sims]
 

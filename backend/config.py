@@ -76,20 +76,29 @@ TEMP_IDEAL_HIGH_F = 78   # °F
 TEMP_DECAY_F      = 20   # degrees of deviation → score falls to ~0
 
 # -----------------------------------------------------------------------------
-# Similarity stretch
+# Similarity stretch — remapped sigmoid (S-curve)
 # -----------------------------------------------------------------------------
-# Raw TF-IDF cosine similarity values cluster near 0 (typical max ≈ 0.10–0.15).
-# Applying a power transform  sim^alpha  (alpha < 1) spreads them across [0, 1]
-# while keeping 0 → 0 and preserving rank order.
+# Raw TF-IDF cosine values cluster tightly near 0 (typical max ≈ 0.10–0.15).
+# A remapped sigmoid creates a clear divergence: noise stays near 0 and real
+# matches are pushed toward 1, with a steep transition in the middle.
 #
-# Effect of alpha=0.35 on raw cosine values:
-#   raw 0.01  → stretched ≈ 0.21
-#   raw 0.025 → stretched ≈ 0.35
-#   raw 0.05  → stretched ≈ 0.50
-#   raw 0.10  → stretched ≈ 0.63
+# SIMILARITY_SIGMOID_CENTER : raw cosine value at the inflection point (0.5).
+#   Set to roughly the p75 of non-zero raw cosines for your corpus (~0.04).
+#   Below center → score < 0.5 (weakly similar)
+#   Above center → score > 0.5 (clearly similar)
 #
-# Set to 1.0 to disable (identity transform).
-SIMILARITY_STRETCH_ALPHA: float = 0.35
+# SIMILARITY_SIGMOID_K : steepness. Higher = sharper cliff between sim/not-sim.
+#   40–60 : gradual S; 80–120 : steep cliff
+#
+# Effect at center=0.04, k=80 on raw cosine values:
+#   raw 0.00 → 0.00     (zero stays zero — remapped)
+#   raw 0.01 → ≈ 0.07   (weak overlap, nearly irrelevant)
+#   raw 0.02 → ≈ 0.18   (some common words)
+#   raw 0.04 → ≈ 0.50   (inflection — "maybe relevant")
+#   raw 0.06 → ≈ 0.82   (clearly relevant)
+#   raw 0.10 → ≈ 0.98   (strong match)
+SIMILARITY_SIGMOID_CENTER: float = 0.04
+SIMILARITY_SIGMOID_K:      float = 80.0
 
 # API settings
 API_HOST = "0.0.0.0"
