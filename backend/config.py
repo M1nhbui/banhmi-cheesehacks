@@ -38,11 +38,18 @@ WEIGHTS = {
 REVIEW_COUNT_CAP = 500
 
 # -----------------------------------------------------------------------------
-# Urgency constant
+# Urgency constants
 # -----------------------------------------------------------------------------
-# An event that is URGENCY_HORIZON_HOURS or more away from ending gets urgency=0.
-# An event ending *right now* gets urgency=1.
-URGENCY_HORIZON_HOURS = 3
+# Events:
+#   H_START_S        — lookahead window: no pre-start urgency beyond 6 h
+#   TAU_START_S      — exp-decay time constant for pre-start build-up (90 min)
+#   TAU_EVENT_END_S  — exp-decay time constant as event winds down (60 min)
+# Venues:
+#   TAU_VENUE_CLOSE_S — exp-decay time constant as venue approaches closing (60 min)
+URGENCY_H_START_S         = 6 * 3600   # 6 hours in seconds
+URGENCY_TAU_START_S       = 90 * 60    # 90 minutes in seconds
+URGENCY_TAU_EVENT_END_S   = 60 * 60    # 60 minutes in seconds
+URGENCY_TAU_VENUE_CLOSE_S = 60 * 60    # 60 minutes in seconds
 
 # -----------------------------------------------------------------------------
 # Weather "comfortable" ranges — used to build weather_score
