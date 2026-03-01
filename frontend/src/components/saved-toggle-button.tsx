@@ -15,7 +15,7 @@ export function SavedToggleButton({
       <Button
         type="button"
         variant={open ? "default" : "secondary"}
-        className="relative h-12 w-12 rounded-full shadow-lg p-0"
+        className="relative h-12 w-12 rounded-full shadow-lg p-0 cursor-pointer"
         onClick={onToggle}
       >
         <Bookmark className="h-5 w-5" />

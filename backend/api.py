@@ -114,6 +114,8 @@ def score(
     # Validate input
     if not request.keywords:
         raise HTTPException(status_code=400, detail="keywords list must not be empty")
+    
+    print(request)
 
     # Clean up keywords: lowercase, strip whitespace, remove empty strings
     keywords = [kw.strip().lower() for kw in request.keywords if kw.strip()]

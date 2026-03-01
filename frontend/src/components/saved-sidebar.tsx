@@ -3,8 +3,8 @@
 import type { ResultRow } from "@/types/result"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { X, Bookmark, ExternalLink, Trash2 } from "lucide-react"
+import { HoverPill } from "@/lib/hover/HoverPill"
 
 function buildGoogleMapsUrl(r: ResultRow) {
   const q = encodeURIComponent(`${r.name} ${r.address}`.trim())
@@ -27,11 +27,15 @@ function SavedRow({
   return (
     <div className="group flex items-center gap-2 rounded-md border bg-muted/10 p-2 hover:bg-muted/20">
       {/* whole left area clickable -> open DetailCard */}
-      <button type="button" onClick={onSelect} className="flex-1 min-w-0 text-left">
+      <button type="button" onClick={onSelect} className="flex-1 min-w-0 text-left cursor-pointer">
         <div className="flex items-center gap-2 min-w-0">
-          <Badge variant="secondary" className="shrink-0">
-            {row.type}
-          </Badge>
+          <HoverPill
+            variant={row.type === "event" ? "event" : "place"}
+            surface="light"
+            className="shrink-0 mt-0.5"
+          >
+            {row.type.toUpperCase()}
+          </HoverPill>
           <div className="truncate font-medium">{row.name}</div>
         </div>
         <div className="truncate text-xs text-muted-foreground">{row.address}</div>
@@ -40,7 +44,7 @@ function SavedRow({
       {/* open google maps */}
       <a href={buildGoogleMapsUrl(row)} target="_blank" rel="noreferrer">
         <Button variant="ghost" size="icon" aria-label="Open in Google Maps">
-          <ExternalLink className="h-4 w-4" />
+          <ExternalLink className="h-4 w-4 " />
         </Button>
       </a>
 
@@ -51,7 +55,7 @@ function SavedRow({
           size="icon"
           onClick={onRemove}
           aria-label="Remove from saved"
-          className="opacity-70 hover:opacity-100"
+          className="opacity-70 hover:opacity-100 cursor-pointer"
         >
           <Trash2 className="h-4 w-4" />
         </Button>
@@ -82,7 +86,7 @@ export function SavedPanel({
           </div>
 
           <Button variant="ghost" size="icon" onClick={onClose} aria-label="Close saved panel">
-            <X className="h-4 w-4" />
+            <X className="h-4 w-4 " />
           </Button>
         </CardHeader>
 

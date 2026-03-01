@@ -82,7 +82,6 @@ export default function MapView() {
     // keywords should be the emoji values (your “statements”)
     // If you want query to influence matching too, include it:
     // const keywords = query.trim() ? [query.trim(), ...emojis] : emojis
-
     await refreshScores({
       mode,
       keywords: emojis,

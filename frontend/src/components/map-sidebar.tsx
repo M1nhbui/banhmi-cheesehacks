@@ -114,7 +114,7 @@ export function MapSidebar({
         <ModePicker mode={mode} onModeChange={onModeChange} />
 
         <div className="text-[11px] text-muted-foreground">
-          Refresh sends <span className="font-mono">mode={mode}</span> to backend.
+          Refresh to see <span className="font-mono">{mode}</span> map!
         </div>
       </CardContent>
     </Card>
