@@ -5,15 +5,11 @@
     "source": "fake",
     "source_id": "demo_event_000",
     "name": "Live Jazz Night at The Bur Oak",
-    "lat": 43.09699364661361,
-    "lon": -89.35171720850634,
-    "address": "2262 Winnebago St, Madison, WI 53704",
+    "lat": 43.08,
+    "lon": -89.361,
+    "address": "2351 Atwood Ave, Madison, WI 53704",
     "description": "live jazz music bar chill night-out drinks. local jazz quartet smooth grooves craft beer. intimate venue east side cozy neighborhood spot",
-    "categories": [
-      "Jazz Club",
-      "Live Music",
-      "Bar"
-    ],
+    "categories": ["Jazz Club", "Live Music", "Bar"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -21,8 +17,8 @@
     "event_end": "2026-03-01T05:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "18:30",
-    "close": "00:00"
+    "open": "16:00",
+    "close": "01:00"
   },
   {
     "entity_id": "100001",
@@ -30,15 +26,11 @@
     "source": "fake",
     "source_id": "demo_event_001",
     "name": "Madison Winter Farmers Market at Capitol Square",
-    "lat": 43.075337,
-    "lon": -89.384996,
-    "address": "Capitol Square (at Mifflin, Main, Carroll, Pinckney), Madison, WI 53703",
+    "lat": 43.0748,
+    "lon": -89.3842,
+    "address": "Capitol Square, Madison, WI 53703",
     "description": "winter farmers market outdoor local food community. fresh produce cheese honey artisan baked goods. downtown Capitol Square weekly family-friendly",
-    "categories": [
-      "Farmers Market",
-      "Outdoor Event",
-      "Food"
-    ],
+    "categories": ["Farmers Market", "Outdoor Event", "Food"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -46,7 +38,7 @@
     "event_end": "2026-03-01T18:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "06:00",
+    "open": "08:00",
     "close": "14:00"
   },
   {
@@ -55,15 +47,11 @@
     "source": "fake",
     "source_id": "demo_event_002",
     "name": "Trivia Night at Merchant",
-    "lat": 43.058623,
-    "lon": -89.508502,
-    "address": "7301 Mineral Point Rd, Madison, WI 53717",
+    "lat": 43.0726,
+    "lon": -89.3852,
+    "address": "121 S Pinckney St, Madison, WI 53703",
     "description": "bar trivia night fun social event teams prizes. general knowledge pop culture sports rounds. great for friend groups date nights downtown",
-    "categories": [
-      "Bar",
-      "Trivia",
-      "Nightlife"
-    ],
+    "categories": ["Bar", "Trivia", "Nightlife"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -71,7 +59,7 @@
     "event_end": "2026-03-03T04:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
+    "open": "15:00",
     "close": "23:00"
   },
   {
@@ -80,15 +68,11 @@
     "source": "fake",
     "source_id": "demo_event_003",
     "name": "Indie Rock Show at The Sylvee",
-    "lat": 43.044214815954156,
-    "lon": -89.38004793613649,
-    "address": "1919 Alliant Energy Center Way, Madison, WI 53713",
+    "lat": 43.0817,
+    "lon": -89.3742,
+    "address": "25 S Livingston St, Madison, WI 53703",
     "description": "indie rock live concert venue night-out dance. touring indie bands loud guitars energy. full bar standing room balcony seats east Washington corridor",
-    "categories": [
-      "Music Venue",
-      "Concert",
-      "Indie Rock"
-    ],
+    "categories": ["Music Venue", "Concert", "Indie Rock"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -96,8 +80,8 @@
     "event_end": "2026-03-05T05:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "18:00"
+    "open": "17:00",
+    "close": "00:00"
   },
   {
     "entity_id": "100004",
@@ -105,15 +89,11 @@
     "source": "fake",
     "source_id": "demo_event_004",
     "name": "Yoga in the Park at Tenney Park",
-    "lat": 43.09227470104665,
-    "lon": -89.36752328969547,
-    "address": "N. Thornton Ave. (at Sherman Ave.), Madison, WI 53703",
+    "lat": 43.0906,
+    "lon": -89.353,
+    "address": "1330 Sherman Ave, Madison, WI 53703",
     "description": "outdoor yoga session park wellness fitness community. sunrise class by the lake all levels welcome. bring your own mat free neighborhood event",
-    "categories": [
-      "Park",
-      "Yoga",
-      "Fitness"
-    ],
+    "categories": ["Park", "Yoga", "Fitness"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -121,7 +101,7 @@
     "event_end": "2026-03-02T13:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
+    "open": "06:00",
     "close": "22:00"
   },
   {
@@ -130,15 +110,11 @@
     "source": "fake",
     "source_id": "demo_event_005",
     "name": "Comedy Open Mic at Comedy on State",
-    "lat": 43.0748818452259,
-    "lon": -89.38821401067847,
-    "address": "202 State St (at Dayton), Madison, WI 53703",
+    "lat": 43.0709,
+    "lon": -89.3933,
+    "address": "202 State St, Madison, WI 53703",
     "description": "comedy open mic funny laughs drinks night-out. local comics try new material lively crowd. downtown basement club two-drink minimum college vibe",
-    "categories": [
-      "Comedy Club",
-      "Bar",
-      "Nightlife"
-    ],
+    "categories": ["Comedy Club", "Bar", "Nightlife"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -146,8 +122,8 @@
     "event_end": "2026-03-04T05:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "12:00",
-    "close": "23:00"
+    "open": "17:00",
+    "close": "02:00"
   },
   {
     "entity_id": "100006",
@@ -155,15 +131,11 @@
     "source": "fake",
     "source_id": "demo_event_006",
     "name": "Great Dane Downtown Beer Fest",
-    "lat": 43.05367054857631,
-    "lon": -89.37670818439918,
-    "address": "1156 Olin-Turville Ct, Madison, WI 53715",
+    "lat": 43.073,
+    "lon": -89.383,
+    "address": "123 E Doty St, Madison, WI 53703",
     "description": "craft beer festival brewery tasting social event. dozens of Wisconsin craft beers to sample. live music food trucks lively crowd Capitol area",
-    "categories": [
-      "Beer Garden",
-      "Festival",
-      "Brewery"
-    ],
+    "categories": ["Beer Garden", "Festival", "Brewery"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -171,8 +143,8 @@
     "event_end": "2026-03-08T00:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "11:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100007",
@@ -180,15 +152,11 @@
     "source": "fake",
     "source_id": "demo_event_007",
     "name": "Yoga & Wine Night at Olbrich Gardens",
-    "lat": 43.073031975890856,
-    "lon": -89.52511319138051,
-    "address": "601 Junction Rd, Madison, WI 53717",
+    "lat": 43.0869,
+    "lon": -89.3332,
+    "address": "3330 Atwood Ave, Madison, WI 53704",
     "description": "yoga wine evening event botanical garden relaxing wellness. gentle flow class followed by local Wisconsin wine tasting. adults-only peaceful garden setting",
-    "categories": [
-      "Botanical Garden",
-      "Yoga",
-      "Wine Bar"
-    ],
+    "categories": ["Botanical Garden", "Yoga", "Wine Bar"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -196,8 +164,8 @@
     "event_end": "2026-03-07T01:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "16:00",
-    "close": "23:00"
+    "open": "09:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100008",
@@ -205,15 +173,11 @@
     "source": "fake",
     "source_id": "demo_event_008",
     "name": "UW Badgers Basketball Game at Kohl Center",
-    "lat": 43.12639032012118,
-    "lon": -89.2928191683398,
-    "address": "2121 East Springs Dr, Madison, WI 53704",
+    "lat": 43.0715,
+    "lon": -89.4125,
+    "address": "Kohl Center, 601 W Dayton St, Madison, WI 53715",
     "description": "UW Badgers basketball game arena sports exciting. Big Ten conference matchup student section loud. pregame tailgating downtown campus energy",
-    "categories": [
-      "Sports Venue",
-      "College Basketball",
-      "Arena"
-    ],
+    "categories": ["Sports Venue", "College Basketball", "Arena"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -221,8 +185,8 @@
     "event_end": "2026-03-08T03:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "10:00",
+    "close": "22:00"
   },
   {
     "entity_id": "100009",
@@ -230,15 +194,11 @@
     "source": "fake",
     "source_id": "demo_event_009",
     "name": "Outdoor Film Screening at Vilas Park",
-    "lat": 43.05444271971289,
-    "lon": -89.3777399074582,
-    "address": "1156 Olin-Turville Ct (East Lakeside Street), Madison, WI 53713",
+    "lat": 43.0631,
+    "lon": -89.418,
+    "address": "702 S Randall Ave, Madison, WI 53715",
     "description": "outdoor movie screening park evening family fun. bring blankets chairs classic film under the stars. free community event near Vilas Zoo",
-    "categories": [
-      "Park",
-      "Outdoor Movie",
-      "Family Activity"
-    ],
+    "categories": ["Park", "Outdoor Movie", "Family Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -246,7 +206,7 @@
     "event_end": "2026-03-09T03:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
+    "open": "06:00",
     "close": "22:00"
   },
   {
@@ -255,15 +215,11 @@
     "source": "fake",
     "source_id": "demo_event_010",
     "name": "State Street Spring Block Party",
-    "lat": 43.07482302135716,
-    "lon": -89.38684361554033,
-    "address": "100 State St, Madison, WI 53703",
+    "lat": 43.0714,
+    "lon": -89.3921,
+    "address": "State Street, Madison, WI 53703",
     "description": "outdoor street party live djs food vendors crowded. college students locals families costume contests. biggest spring celebration downtown pedestrian mall",
-    "categories": [
-      "Street Festival",
-      "Nightlife",
-      "Outdoor Event"
-    ],
+    "categories": ["Street Festival", "Nightlife", "Outdoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -271,8 +227,8 @@
     "event_end": "2026-04-21T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
-    "close": "02:30"
+    "open": "10:00",
+    "close": "02:00"
   },
   {
     "entity_id": "100011",
@@ -280,15 +236,11 @@
     "source": "fake",
     "source_id": "demo_event_011",
     "name": "Monona Terrace Rooftop Concert",
-    "lat": 43.0728241,
-    "lon": -89.3806299,
-    "address": "9 E Wilson St, Madison, WI 53703",
+    "lat": 43.0705,
+    "lon": -89.3793,
+    "address": "1 John Nolen Dr, Madison, WI 53703",
     "description": "summer rooftop concert overlooking Lake Monona. local bands food trucks craft beer scenic skyline. casual evening hangout downtown waterfront",
-    "categories": [
-      "Concert",
-      "Rooftop",
-      "Outdoor Event"
-    ],
+    "categories": ["Concert", "Rooftop", "Outdoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -296,8 +248,8 @@
     "event_end": "2026-06-15T03:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "00:00",
-    "close": "00:00"
+    "open": "17:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100012",
@@ -305,15 +257,11 @@
     "source": "fake",
     "source_id": "demo_event_012",
     "name": "Lake Mendota Sunset Paddle Tour",
-    "lat": 43.07192410381834,
-    "lon": -89.37940485051145,
-    "address": "1 John Nolen Dr, Madison, WI 53703",
+    "lat": 43.0835,
+    "lon": -89.4012,
+    "address": "Memorial Union Terrace, 800 Langdon St, Madison, WI 53706",
     "description": "guided kayak tour at sunset on Lake Mendota. scenic shoreline views campus skyline relaxing paddle. equipment provided beginner-friendly small group",
-    "categories": [
-      "Outdoor Activity",
-      "Kayaking",
-      "Tour"
-    ],
+    "categories": ["Outdoor Activity", "Kayaking", "Tour"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -321,8 +269,8 @@
     "event_end": "2026-06-20T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
-    "close": "20:00"
+    "open": "09:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100013",
@@ -330,15 +278,11 @@
     "source": "fake",
     "source_id": "demo_event_013",
     "name": "East Side Food Truck Rally",
-    "lat": 43.14817065963012,
-    "lon": -89.37007616590891,
-    "address": "Madison, WI",
+    "lat": 43.0901,
+    "lon": -89.34,
+    "address": "Madison East Side, Madison, WI 53704",
     "description": "weekly food truck rally with live music. tacos burgers ice cream vegetarian options family-friendly. picnic tables lawn games neighborhood vibe",
-    "categories": [
-      "Food Truck",
-      "Live Music",
-      "Family Activity"
-    ],
+    "categories": ["Food Truck", "Live Music", "Family Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -346,8 +290,8 @@
     "event_end": "2026-06-11T01:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "11:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100014",
@@ -355,15 +299,11 @@
     "source": "fake",
     "source_id": "demo_event_014",
     "name": "Barrymore Theater Film Festival Night",
-    "lat": 43.05780740201211,
-    "lon": -89.5193431264926,
-    "address": "7825 Big Sky Dr, Madison, WI 53717",
+    "lat": 43.0809,
+    "lon": -89.3529,
+    "address": "2090 Atwood Ave, Madison, WI 53704",
     "description": "independent film festival screening night double-feature. Q&A with directors local filmmakers community discussion. historic neighborhood theater on Atwood",
-    "categories": [
-      "Cinema",
-      "Film Festival",
-      "Arts"
-    ],
+    "categories": ["Cinema", "Film Festival", "Arts"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -371,8 +311,8 @@
     "event_end": "2026-05-12T03:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
-    "close": "00:00"
+    "open": "16:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100015",
@@ -380,15 +320,11 @@
     "source": "fake",
     "source_id": "demo_event_015",
     "name": "Capitol Square Art Fair",
-    "lat": 43.0531859,
-    "lon": -89.4844688,
-    "address": "5944 Odana Rd, Madison, WI 53719",
+    "lat": 43.0749,
+    "lon": -89.3844,
+    "address": "Capitol Square, Madison, WI 53703",
     "description": "outdoor art fair local painters sculptors makers. booths encircle Capitol live acoustic music food vendors. free to browse family-friendly downtown",
-    "categories": [
-      "Art Fair",
-      "Outdoor Event",
-      "Market"
-    ],
+    "categories": ["Art Fair", "Outdoor Event", "Market"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -397,7 +333,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "09:00",
-    "close": "17:00"
+    "close": "20:00"
   },
   {
     "entity_id": "100016",
@@ -405,15 +341,11 @@
     "source": "fake",
     "source_id": "demo_event_016",
     "name": "Breese Stevens Field Summer Soccer Match",
-    "lat": 43.08283663244908,
-    "lon": -89.37286327824701,
+    "lat": 43.0841,
+    "lon": -89.3773,
     "address": "917 E Mifflin St, Madison, WI 53703",
     "description": "professional soccer match under the lights. supporter section drum lines chants lively. food stands local beer downtown stadium atmosphere",
-    "categories": [
-      "Sports",
-      "Soccer",
-      "Stadium"
-    ],
+    "categories": ["Sports", "Soccer", "Stadium"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -421,8 +353,8 @@
     "event_end": "2026-07-18T03:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
-    "close": "22:00"
+    "open": "16:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100017",
@@ -430,15 +362,11 @@
     "source": "fake",
     "source_id": "demo_event_017",
     "name": "Madison Craft Coffee Crawl",
-    "lat": 43.055514466967196,
-    "lon": -89.52324887680514,
-    "address": "494 Commerce Dr (Watts Rd), Madison, WI 53719",
+    "lat": 43.0742,
+    "lon": -89.3891,
+    "address": "Downtown Madison, WI 53703",
     "description": "self-guided tour of local coffee shops. special tasting flights limited-time drinks latte art. perfect for caffeine lovers exploring downtown",
-    "categories": [
-      "Coffee Shop",
-      "Tour",
-      "Food"
-    ],
+    "categories": ["Coffee Shop", "Tour", "Food"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -446,8 +374,8 @@
     "event_end": "2026-05-05T20:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "06:30",
-    "close": "15:30"
+    "open": "07:00",
+    "close": "19:00"
   },
   {
     "entity_id": "100018",
@@ -455,15 +383,11 @@
     "source": "fake",
     "source_id": "demo_event_018",
     "name": "Tenney Park Winter Skate Night",
-    "lat": 43.09227470104665,
-    "lon": -89.36752328969547,
-    "address": "N. Thornton Ave. (at Sherman Ave.), Madison, WI 53703",
+    "lat": 43.091,
+    "lon": -89.3535,
+    "address": "1330 Sherman Ave, Madison, WI 53703",
     "description": "outdoor ice skating under string lights. skate rentals hot cocoa fire pits family-friendly. classic Madison winter activity on the lagoon",
-    "categories": [
-      "Ice Skating",
-      "Winter Activity",
-      "Family Activity"
-    ],
+    "categories": ["Ice Skating", "Winter Activity", "Family Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -471,8 +395,8 @@
     "event_end": "2026-01-15T03:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
-    "close": "22:00"
+    "open": "10:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100019",
@@ -480,15 +404,11 @@
     "source": "fake",
     "source_id": "demo_event_019",
     "name": "Atwood Avenue Porch Fest",
-    "lat": 43.04938429832417,
-    "lon": -89.3798303604126,
-    "address": "1919 Alliant Energy Center Way, Madison, WI 53713",
+    "lat": 43.0842,
+    "lon": -89.3538,
+    "address": "Atwood Ave, Madison, WI 53704",
     "description": "neighborhood porch music festival on Atwood. local bands play from porches front yards. walking route family-friendly east side community vibe",
-    "categories": [
-      "Neighborhood Event",
-      "Live Music",
-      "Outdoor Event"
-    ],
+    "categories": ["Neighborhood Event", "Live Music", "Outdoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -496,8 +416,8 @@
     "event_end": "2026-08-02T23:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "18:00"
+    "open": "11:00",
+    "close": "22:00"
   },
   {
     "entity_id": "100020",
@@ -505,15 +425,11 @@
     "source": "fake",
     "source_id": "demo_event_020",
     "name": "UW Memorial Union Terrace Live Music",
-    "lat": 43.07670720041492,
-    "lon": -89.39958722034066,
-    "address": "800 Langdon St (at Wisconsin Union), Madison, WI 53706",
+    "lat": 43.0766,
+    "lon": -89.3996,
+    "address": "800 Langdon St, Madison, WI 53706",
     "description": "free live music on the Memorial Union Terrace. colorful chairs lakefront sunset beer brats. classic UW Madison summer night-out",
-    "categories": [
-      "Live Music",
-      "College Hangout",
-      "Outdoor Event"
-    ],
+    "categories": ["Live Music", "College Hangout", "Outdoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -521,8 +437,8 @@
     "event_end": "2026-06-25T03:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "00:00",
-    "close": "00:00"
+    "open": "10:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100021",
@@ -530,15 +446,11 @@
     "source": "fake",
     "source_id": "demo_event_021",
     "name": "Monroe Street Wine Walk",
-    "lat": 43.073031975890856,
-    "lon": -89.52511319138051,
-    "address": "601 Junction Rd, Madison, WI 53717",
+    "lat": 43.0584,
+    "lon": -89.4203,
+    "address": "Monroe St, Madison, WI 53711",
     "description": "evening wine walk along Monroe Street shops. sample pours from local wine shops restaurants. boutique browsing small plates cozy neighborhood feel",
-    "categories": [
-      "Wine Bar",
-      "Shopping",
-      "Neighborhood Event"
-    ],
+    "categories": ["Wine Bar", "Shopping", "Neighborhood Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -546,8 +458,8 @@
     "event_end": "2026-05-23T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "16:00",
-    "close": "23:00"
+    "open": "11:00",
+    "close": "22:00"
   },
   {
     "entity_id": "100022",
@@ -555,15 +467,11 @@
     "source": "fake",
     "source_id": "demo_event_022",
     "name": "Hilldale Summer Night Market",
-    "lat": 43.075337,
-    "lon": -89.384996,
-    "address": "Capitol Square (at Mifflin, Main, Carroll, Pinckney), Madison, WI 53703",
+    "lat": 43.0773,
+    "lon": -89.4549,
+    "address": "726 N Midvale Blvd, Madison, WI 53705",
     "description": "evening market at Hilldale with makers food. live acoustic sets lawn seating string lights. upscale shopping center summer series west side",
-    "categories": [
-      "Market",
-      "Shopping",
-      "Live Music"
-    ],
+    "categories": ["Market", "Shopping", "Live Music"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -571,8 +479,8 @@
     "event_end": "2026-07-09T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "06:00",
-    "close": "14:00"
+    "open": "10:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100023",
@@ -580,15 +488,11 @@
     "source": "fake",
     "source_id": "demo_event_023",
     "name": "Downtown Madison Gallery Night",
-    "lat": 43.0966691610146,
-    "lon": -89.51134240737815,
-    "address": "6600-6800 University Ave, Middleton, WI 53562",
+    "lat": 43.0743,
+    "lon": -89.3839,
+    "address": "Downtown Madison, WI 53703",
     "description": "self-guided gallery night through downtown studios. extended hours art openings refreshments live demos. great way to explore local art scene",
-    "categories": [
-      "Art Gallery",
-      "Arts",
-      "Nightlife"
-    ],
+    "categories": ["Art Gallery", "Arts", "Nightlife"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -596,8 +500,8 @@
     "event_end": "2026-05-18T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "11:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100024",
@@ -605,15 +509,11 @@
     "source": "fake",
     "source_id": "demo_event_024",
     "name": "Olin Park Lakeside Yoga",
-    "lat": 43.05444271971289,
-    "lon": -89.3777399074582,
-    "address": "1156 Olin-Turville Ct (East Lakeside Street), Madison, WI 53713",
+    "lat": 43.0497,
+    "lon": -89.3783,
+    "address": "1156 Olin-Turville Ct, Madison, WI 53715",
     "description": "morning yoga class by Lake Monona. gentle flow all levels beautiful skyline view. bring mat water outdoor community session",
-    "categories": [
-      "Yoga",
-      "Park",
-      "Fitness"
-    ],
+    "categories": ["Yoga", "Park", "Fitness"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -621,7 +521,7 @@
     "event_end": "2026-06-05T13:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
+    "open": "06:00",
     "close": "22:00"
   },
   {
@@ -630,15 +530,11 @@
     "source": "fake",
     "source_id": "demo_event_025",
     "name": "Madison Night Market on State Street",
-    "lat": 43.07482302135716,
-    "lon": -89.38684361554033,
-    "address": "100 State St, Madison, WI 53703",
+    "lat": 43.074,
+    "lon": -89.392,
+    "address": "State Street, Madison, WI 53703",
     "description": "night market showcasing local makers food trucks music. string lights busy crowds college-town energy. downtown pedestrian mall monthly series",
-    "categories": [
-      "Market",
-      "Nightlife",
-      "Street Festival"
-    ],
+    "categories": ["Market", "Nightlife", "Street Festival"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -646,8 +542,8 @@
     "event_end": "2026-06-15T02:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
-    "close": "02:30"
+    "open": "10:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100026",
@@ -655,15 +551,11 @@
     "source": "fake",
     "source_id": "demo_event_026",
     "name": "Warner Park Community Drum Circle",
-    "lat": 43.1300442333771,
-    "lon": -89.36666253168835,
-    "address": "2930 N. Sherman Ave. (Northport Dr), Madison, WI 53704",
+    "lat": 43.1252,
+    "lon": -89.3642,
+    "address": "2930 N Sherman Ave, Madison, WI 53704",
     "description": "evening drum circle at Warner Park. bring own drum or borrow shared instruments. open to all ages relaxed north side gathering",
-    "categories": [
-      "Community Event",
-      "Music",
-      "Park"
-    ],
+    "categories": ["Community Event", "Music", "Park"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -671,7 +563,7 @@
     "event_end": "2026-06-02T01:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
+    "open": "07:00",
     "close": "22:00"
   },
   {
@@ -680,15 +572,11 @@
     "source": "fake",
     "source_id": "demo_event_027",
     "name": "Madison Jazz Jam at Cafe Coda",
-    "lat": 43.07195971351285,
-    "lon": -89.39555368851859,
-    "address": "223 N Frances St (at Johnson St), Madison, WI 53703",
+    "lat": 43.0745,
+    "lon": -89.3847,
+    "address": "1224 Williamson St, Madison, WI 53703",
     "description": "weekly jazz jam session open to musicians. rotating house band inviting sit-ins solos. intimate Williamson Street listening room",
-    "categories": [
-      "Jazz Club",
-      "Live Music",
-      "Bar"
-    ],
+    "categories": ["Jazz Club", "Live Music", "Bar"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -696,8 +584,8 @@
     "event_end": "2026-05-29T04:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "10:00",
-    "close": "01:00"
+    "open": "17:00",
+    "close": "00:00"
   },
   {
     "entity_id": "100028",
@@ -705,15 +593,11 @@
     "source": "fake",
     "source_id": "demo_event_028",
     "name": "Middleton Good Neighbor Festival Parade",
-    "lat": 43.071398,
-    "lon": -89.452694,
-    "address": "726 N Midvale Blvd, Madison, WI 53705",
+    "lat": 43.0972,
+    "lon": -89.5043,
+    "address": "Lakeview Park, Middleton, WI 53562",
     "description": "annual community parade through Middleton streets. marching bands floats local groups candy throwing. daytime family-friendly suburban festival",
-    "categories": [
-      "Parade",
-      "Community Event",
-      "Family Activity"
-    ],
+    "categories": ["Parade", "Community Event", "Family Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -721,8 +605,8 @@
     "event_end": "2026-08-24T18:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "08:00",
+    "close": "20:00"
   },
   {
     "entity_id": "100029",
@@ -730,15 +614,11 @@
     "source": "fake",
     "source_id": "demo_event_029",
     "name": "Monona Lake Loop Fun Run",
-    "lat": 43.07192410381834,
-    "lon": -89.37940485051145,
-    "address": "1 John Nolen Dr, Madison, WI 53703",
+    "lat": 43.064,
+    "lon": -89.362,
+    "address": "Monona Bay, Madison, WI 53703",
     "description": "5K fun run around Lake Monona path. casual pace strollers dogs welcome scenic water views. fundraiser for local nonprofit healthy community",
-    "categories": [
-      "Run",
-      "Fitness",
-      "Charity"
-    ],
+    "categories": ["Run", "Fitness", "Charity"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -746,8 +626,8 @@
     "event_end": "2026-05-03T16:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
-    "close": "20:00"
+    "open": "07:00",
+    "close": "19:00"
   },
   {
     "entity_id": "100030",
@@ -755,15 +635,11 @@
     "source": "fake",
     "source_id": "demo_event_030",
     "name": "Wingra Park Canoe Rentals & Music",
-    "lat": 43.05444271971289,
-    "lon": -89.3777399074582,
-    "address": "1156 Olin-Turville Ct (East Lakeside Street), Madison, WI 53713",
+    "lat": 43.0566,
+    "lon": -89.4225,
+    "address": "824 Knickerbocker St, Madison, WI 53711",
     "description": "afternoon of canoe rentals and acoustic tunes. relaxed family outing on Lake Wingra. small concession stand snacks drinks available",
-    "categories": [
-      "Outdoor Activity",
-      "Park",
-      "Live Music"
-    ],
+    "categories": ["Outdoor Activity", "Park", "Live Music"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -771,8 +647,8 @@
     "event_end": "2026-06-21T22:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
-    "close": "22:00"
+    "open": "09:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100031",
@@ -780,15 +656,11 @@
     "source": "fake",
     "source_id": "demo_event_031",
     "name": "State Capitol Building Night Tour",
-    "lat": 43.074446,
-    "lon": -89.384172,
-    "address": "Madison, WI 53703",
+    "lat": 43.0748,
+    "lon": -89.3841,
+    "address": "2 E Main St, Madison, WI 53703",
     "description": "guided night tour inside Wisconsin State Capitol. learn history architecture climb observation deck views. free educational downtown activity",
-    "categories": [
-      "Tour",
-      "History Museum",
-      "Educational"
-    ],
+    "categories": ["Tour", "History Museum", "Educational"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -797,7 +669,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "09:00",
-    "close": "17:00"
+    "close": "21:00"
   },
   {
     "entity_id": "100032",
@@ -805,15 +677,11 @@
     "source": "fake",
     "source_id": "demo_event_032",
     "name": "Union South Outdoor Film Series",
-    "lat": 43.07190875691948,
-    "lon": -89.40771811162381,
-    "address": "1308 W Dayton St (at Orchard St.), Madison, WI 53715",
+    "lat": 43.0713,
+    "lon": -89.4071,
+    "address": "1308 W Dayton St, Madison, WI 53715",
     "description": "free outdoor movies at Union South plaza. blankets lawn chairs popcorn campus crowd. student life classic film series warm evenings",
-    "categories": [
-      "Outdoor Movie",
-      "College Hangout",
-      "Family Activity"
-    ],
+    "categories": ["Outdoor Movie", "College Hangout", "Family Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -821,8 +689,8 @@
     "event_end": "2026-05-30T03:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "00:00",
-    "close": "00:00"
+    "open": "10:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100033",
@@ -830,15 +698,11 @@
     "source": "fake",
     "source_id": "demo_event_033",
     "name": "Madison Children's Museum Free Family Night",
-    "lat": 43.076790285220824,
-    "lon": -89.38442207631435,
+    "lat": 43.0804,
+    "lon": -89.3807,
     "address": "100 N Hamilton St, Madison, WI 53703",
     "description": "evening free admission at Madison Children's Museum. hands-on exhibits rooftop play area art studio. great for families budget-friendly downtown",
-    "categories": [
-      "Museum",
-      "Family Activity",
-      "Educational"
-    ],
+    "categories": ["Museum", "Family Activity", "Educational"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -846,8 +710,8 @@
     "event_end": "2026-04-13T01:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:30",
-    "close": "17:00"
+    "open": "09:00",
+    "close": "20:00"
   },
   {
     "entity_id": "100034",
@@ -855,15 +719,11 @@
     "source": "fake",
     "source_id": "demo_event_034",
     "name": "Madison Vegan Pop-Up Market",
-    "lat": 43.0531859,
-    "lon": -89.4844688,
-    "address": "5944 Odana Rd, Madison, WI 53719",
+    "lat": 43.0746,
+    "lon": -89.386,
+    "address": "Downtown Madison, WI 53703",
     "description": "indoor vegan market with food products artisans. plant-based vendors baked goods skincare small-batch items. inclusive community event central location",
-    "categories": [
-      "Market",
-      "Vegan",
-      "Indoor Event"
-    ],
+    "categories": ["Market", "Vegan", "Indoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -871,8 +731,8 @@
     "event_end": "2026-03-22T21:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "10:00",
+    "close": "19:00"
   },
   {
     "entity_id": "100035",
@@ -880,15 +740,11 @@
     "source": "fake",
     "source_id": "demo_event_035",
     "name": "Elver Park Sledding Party",
-    "lat": 43.05444271971289,
-    "lon": -89.3777399074582,
-    "address": "1156 Olin-Turville Ct (East Lakeside Street), Madison, WI 53713",
+    "lat": 43.0275,
+    "lon": -89.4973,
+    "address": "1250 McKenna Blvd, Madison, WI 53719",
     "description": "winter sledding party with hot chocolate stand. lit sledding hill snow tubes welcome. west side family fun cold-weather tradition",
-    "categories": [
-      "Winter Activity",
-      "Park",
-      "Family Activity"
-    ],
+    "categories": ["Winter Activity", "Park", "Family Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -896,8 +752,8 @@
     "event_end": "2026-01-20T22:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "04:00",
-    "close": "22:00"
+    "open": "08:00",
+    "close": "21:00"
   },
   {
     "entity_id": "100036",
@@ -905,15 +761,11 @@
     "source": "fake",
     "source_id": "demo_event_036",
     "name": "Williamson Street Block Party",
-    "lat": 43.079169054978415,
-    "lon": -89.3707414385964,
-    "address": "Madison, WI 53703",
+    "lat": 43.0795,
+    "lon": -89.3747,
+    "address": "Williamson St, Madison, WI 53703",
     "description": "daylong block party on Willy Street. live bands street performers food vendors art tents. eclectic east side crowd local businesses showcase",
-    "categories": [
-      "Street Festival",
-      "Live Music",
-      "Neighborhood Event"
-    ],
+    "categories": ["Street Festival", "Live Music", "Neighborhood Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -922,7 +774,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "09:00",
-    "close": "17:00"
+    "close": "23:00"
   },
   {
     "entity_id": "100037",
@@ -930,15 +782,11 @@
     "source": "fake",
     "source_id": "demo_event_037",
     "name": "Badger Tailgate at Union South",
-    "lat": 43.03543222603249,
-    "lon": -89.44411114126794,
-    "address": "1612 Seminole Hwy (Warwick Way), Madison, WI 53711",
+    "lat": 43.0712,
+    "lon": -89.4075,
+    "address": "1308 W Dayton St, Madison, WI 53715",
     "description": "pregame tailgate before UW football game. food stands live band student crowd red gear. easy walk to Camp Randall stadium",
-    "categories": [
-      "Tailgate",
-      "College Football",
-      "Bar"
-    ],
+    "categories": ["Tailgate", "College Football", "Bar"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -946,8 +794,8 @@
     "event_end": "2026-10-10T19:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "00:00",
-    "close": "00:00"
+    "open": "10:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100038",
@@ -955,15 +803,11 @@
     "source": "fake",
     "source_id": "demo_event_038",
     "name": "Camp Randall Stadium Concert",
-    "lat": 43.06939493080151,
-    "lon": -89.41275182074223,
+    "lat": 43.0699,
+    "lon": -89.4122,
     "address": "1440 Monroe St, Madison, WI 53711",
     "description": "big-name touring artist stadium show. thousands of fans huge production lights pyrotechnics. rare non-football event at Camp Randall",
-    "categories": [
-      "Concert",
-      "Stadium",
-      "Nightlife"
-    ],
+    "categories": ["Concert", "Stadium", "Nightlife"],
     "rating": null,
     "review_count": null,
     "price_tier": 4,
@@ -971,8 +815,8 @@
     "event_end": "2026-07-30T04:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "08:00",
-    "close": "16:00"
+    "open": "16:00",
+    "close": "00:00"
   },
   {
     "entity_id": "100039",
@@ -980,15 +824,11 @@
     "source": "fake",
     "source_id": "demo_event_039",
     "name": "Olbrich Gardens Summer Concert Series",
-    "lat": 43.09239340786083,
-    "lon": -89.33572651446806,
-    "address": "3330 Atwood Ave (Fair Oaks Ave.), Madison, WI 53704",
+    "lat": 43.087,
+    "lon": -89.3331,
+    "address": "3330 Atwood Ave, Madison, WI 53704",
     "description": "weekly outdoor concerts in the botanical gardens. picnic blankets allowed family-friendly mellow. mix of genres folk jazz world music",
-    "categories": [
-      "Botanical Garden",
-      "Live Music",
-      "Outdoor Event"
-    ],
+    "categories": ["Botanical Garden", "Live Music", "Outdoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -997,7 +837,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "09:00",
-    "close": "16:00"
+    "close": "21:00"
   },
   {
     "entity_id": "100040",
@@ -1005,15 +845,11 @@
     "source": "fake",
     "source_id": "demo_event_040",
     "name": "State Street Improv Comedy Night",
-    "lat": 43.07482302135716,
-    "lon": -89.38684361554033,
-    "address": "100 State St, Madison, WI 53703",
+    "lat": 43.0741,
+    "lon": -89.3928,
+    "address": "State Street, Madison, WI 53703",
     "description": "improv comedy showcase with rotating local troupes. audience suggestions fast-paced games lots of laughter. inexpensive night downtown close to campus",
-    "categories": [
-      "Comedy",
-      "Nightlife",
-      "Indoor Event"
-    ],
+    "categories": ["Comedy", "Nightlife", "Indoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -1021,8 +857,8 @@
     "event_end": "2026-03-19T03:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
-    "close": "02:30"
+    "open": "17:00",
+    "close": "00:00"
   },
   {
     "entity_id": "100041",
@@ -1030,15 +866,11 @@
     "source": "fake",
     "source_id": "demo_event_041",
     "name": "Cap Centre Ice Public Skate DJ Night",
-    "lat": 43.054292,
-    "lon": -89.450751,
-    "address": "555 S Midvale Blvd (Near Tokay Blvd.), Madison, WI 53711",
+    "lat": 43.1451,
+    "lon": -89.3018,
+    "address": "2616 N Pleasant View Rd, Middleton, WI 53562",
     "description": "public ice skating with live DJ lights. rental skates concessions youth groups couples. suburban rink fun evening activity",
-    "categories": [
-      "Ice Skating",
-      "Family Activity",
-      "Nightlife"
-    ],
+    "categories": ["Ice Skating", "Family Activity", "Nightlife"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -1046,7 +878,7 @@
     "event_end": "2026-02-15T03:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "11:00",
+    "open": "10:00",
     "close": "22:00"
   },
   {
@@ -1055,15 +887,11 @@
     "source": "fake",
     "source_id": "demo_event_042",
     "name": "Madison Makers Spring Craft Fair",
-    "lat": 43.0531859,
-    "lon": -89.4844688,
-    "address": "5944 Odana Rd, Madison, WI 53719",
+    "lat": 43.0747,
+    "lon": -89.3836,
+    "address": "Downtown Madison, WI 53703",
     "description": "indoor craft fair with local makers artisans. jewelry ceramics prints candles textiles unique gifts. bar area casual browsing downtown venue",
-    "categories": [
-      "Market",
-      "Craft Fair",
-      "Indoor Event"
-    ],
+    "categories": ["Market", "Craft Fair", "Indoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -1071,8 +899,8 @@
     "event_end": "2026-03-29T22:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "10:00",
+    "close": "20:00"
   },
   {
     "entity_id": "100043",
@@ -1080,15 +908,11 @@
     "source": "fake",
     "source_id": "demo_event_043",
     "name": "Henry Vilas Zoo After-Hours Adult Night",
-    "lat": 43.06046153164395,
-    "lon": -89.41011693637095,
+    "lat": 43.0593,
+    "lon": -89.4103,
     "address": "702 S Randall Ave, Madison, WI 53715",
     "description": "21+ after-hours event at the zoo. live music drink stations animal talks no kids. unique date-night experience near Vilas Park",
-    "categories": [
-      "Zoo",
-      "Nightlife",
-      "Educational"
-    ],
+    "categories": ["Zoo", "Nightlife", "Educational"],
     "rating": null,
     "review_count": null,
     "price_tier": 2,
@@ -1097,7 +921,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "09:30",
-    "close": "17:00"
+    "close": "21:00"
   },
   {
     "entity_id": "100044",
@@ -1105,15 +929,11 @@
     "source": "fake",
     "source_id": "demo_event_044",
     "name": "Library Late Night Study & Snacks",
-    "lat": 43.076358117940345,
-    "lon": -89.41316822864952,
-    "address": "550 Babcock Dr (at Observatory Dr), Madison, WI 53706",
+    "lat": 43.0738,
+    "lon": -89.398,
+    "address": "UW-Madison College Library, 600 N Park St, Madison, WI 53706",
     "description": "extended hours at College Library during finals. free snacks coffee study rooms open. popular with students quiet focus space",
-    "categories": [
-      "Study Event",
-      "Educational",
-      "College Hangout"
-    ],
+    "categories": ["Study Event", "Educational", "College Hangout"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -1122,7 +942,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "08:00",
-    "close": "22:00"
+    "close": "02:00"
   },
   {
     "entity_id": "100045",
@@ -1130,15 +950,11 @@
     "source": "fake",
     "source_id": "demo_event_045",
     "name": "Madison Science Pub at Local Brewery",
-    "lat": 43.071148699580355,
-    "lon": -89.45221552063161,
-    "address": "357 Price Pl (at Kelab Dr.), Madison, WI 53705",
+    "lat": 43.0749,
+    "lon": -89.3819,
+    "address": "Downtown Brewery, Madison, WI 53703",
     "description": "casual science talk at brewery with researchers. accessible lecture Q&A craft beer community science outreach. rotating topics astronomy climate health",
-    "categories": [
-      "Educational",
-      "Brewery",
-      "Talk"
-    ],
+    "categories": ["Educational", "Brewery", "Talk"],
     "rating": null,
     "review_count": null,
     "price_tier": 1,
@@ -1146,8 +962,8 @@
     "event_end": "2026-04-08T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "10:00",
-    "close": "02:30"
+    "open": "15:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100046",
@@ -1155,15 +971,11 @@
     "source": "fake",
     "source_id": "demo_event_046",
     "name": "State Street Buskers Showcase",
-    "lat": 43.07458056776602,
-    "lon": -89.38693718339454,
-    "address": "Madison, WI",
+    "lat": 43.0743,
+    "lon": -89.3923,
+    "address": "State Street, Madison, WI 53703",
     "description": "organized night highlighting State Street street performers. jugglers musicians magicians chalk artists in one evening. busking culture celebration downtown",
-    "categories": [
-      "Street Performance",
-      "Live Music",
-      "Outdoor Event"
-    ],
+    "categories": ["Street Performance", "Live Music", "Outdoor Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -1171,8 +983,8 @@
     "event_end": "2026-06-19T02:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "09:00",
-    "close": "17:00"
+    "open": "10:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100047",
@@ -1180,15 +992,11 @@
     "source": "fake",
     "source_id": "demo_event_047",
     "name": "Monona Bubbler Boats & Brunch",
-    "lat": 43.07237001751198,
-    "lon": -89.39359962541867,
-    "address": "444 W Johnson St, Madison, WI 53703",
+    "lat": 43.0644,
+    "lon": -89.3491,
+    "address": "Monona Terrace Lakefront, Madison, WI 53703",
     "description": "Sunday brunch boat ride on Lake Monona. mimosas pastries scenic skyline cruise. small-group reservations relaxing waterfront morning",
-    "categories": [
-      "Brunch",
-      "Boat Tour",
-      "Outdoor Activity"
-    ],
+    "categories": ["Brunch", "Boat Tour", "Outdoor Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -1196,8 +1004,8 @@
     "event_end": "2026-07-12T17:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "08:00",
-    "close": "22:00"
+    "open": "09:00",
+    "close": "18:00"
   },
   {
     "entity_id": "100048",
@@ -1205,15 +1013,11 @@
     "source": "fake",
     "source_id": "demo_event_048",
     "name": "Downtown Madison Pride Parade & Festival",
-    "lat": 43.05367054857631,
-    "lon": -89.37670818439918,
-    "address": "1156 Olin-Turville Ct, Madison, WI 53715",
+    "lat": 43.0749,
+    "lon": -89.3842,
+    "address": "Capitol Square, Madison, WI 53703",
     "description": "LGBTQ+ pride parade and festival around Capitol. floats music resource booths drag performances. inclusive celebration vibrant downtown crowd",
-    "categories": [
-      "Parade",
-      "Festival",
-      "Community Event"
-    ],
+    "categories": ["Parade", "Festival", "Community Event"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -1222,7 +1026,7 @@
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
     "open": "09:00",
-    "close": "17:00"
+    "close": "23:00"
   },
   {
     "entity_id": "100049",
@@ -1230,15 +1034,11 @@
     "source": "fake",
     "source_id": "demo_event_049",
     "name": "Madison Lakes Astronomy Night",
-    "lat": 43.055514466967196,
-    "lon": -89.52324887680514,
-    "address": "494 Commerce Dr (Watts Rd), Madison, WI 53719",
+    "lat": 43.109,
+    "lon": -89.3635,
+    "address": "Warner Park, 2930 N Sherman Ave, Madison, WI 53704",
     "description": "stargazing event with telescopes by local astronomy club. learn constellations planets light pollution awareness. blankets recommended cool lakeside air",
-    "categories": [
-      "Astronomy",
-      "Educational",
-      "Outdoor Activity"
-    ],
+    "categories": ["Astronomy", "Educational", "Outdoor Activity"],
     "rating": null,
     "review_count": null,
     "price_tier": 0,
@@ -1246,8 +1046,8 @@
     "event_end": "2026-08-15T04:00:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "06:30",
-    "close": "15:30"
+    "open": "08:00",
+    "close": "23:00"
   },
   {
     "entity_id": "100050",
@@ -1255,15 +1055,11 @@
     "source": "fake",
     "source_id": "demo_event_050",
     "name": "Capitol City Beer & Cheese Pairing",
-    "lat": 43.06833188678391,
-    "lon": -89.39163461183942,
-    "address": "554 W Main St, Madison, WI 53703",
+    "lat": 43.0745,
+    "lon": -89.3843,
+    "address": "Downtown Madison Tasting Room, Madison, WI 53703",
     "description": "guided tasting pairing Wisconsin cheeses with craft beers. small group session led by cicerone cheesemonger. downtown spot cozy indoor event",
-    "categories": [
-      "Tasting",
-      "Beer Garden",
-      "Cheese Shop"
-    ],
+    "categories": ["Tasting", "Beer Garden", "Cheese Shop"],
     "rating": null,
     "review_count": null,
     "price_tier": 3,
@@ -1271,7 +1067,7 @@
     "event_end": "2026-03-27T02:30:00Z",
     "created_at": "2026-02-28",
     "updated_at": "2026-02-28",
-    "open": "12:00",
-    "close": "01:15"
+    "open": "15:00",
+    "close": "22:00"
   }
 ]
